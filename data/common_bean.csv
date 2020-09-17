@@ -1,0 +1,843 @@
+"variety_a","variety_b","variety_c","best","worst","var_a","var_b","var_c","lon","lat","season","year","planting_date"
+"BRT 103-182","SJC 730-79","PM2 Don Rey","C","A","Worse","Worse","Better",-85.729,13.138,"Ap15",2015,2015-12-18
+"INTA Rojo","INTA Centro Sur","INTA Sequia","B","A","Worse","Better","Better",-85.375,13.331,"Ap15",2015,2015-12-18
+"INTA Ferroso","INTA Matagalpa","BRT 103-182","A","C","Better","Worse","Worse",-85.369,13.329,"Ap15",2015,2015-12-18
+"INTA Centro Sur","INTA Rojo","ALS 0532-6","B","C","Better","Better","Better",-85.358,13.332,"Ap15",2015,2015-12-18
+"INTA Sequia","PM2 Don Rey","SJC 730-79","B","C","Better","Better","Better",-85.368,13.332,"Ap15",2015,2015-12-20
+"ALS 0532-6","INTA Matagalpa","INTA Rojo","A","C","Better","Better","Better",-85.368,13.331,"Ap15",2015,2015-12-20
+"PM2 Don Rey","INTA Sequia","INTA Centro Sur","A","C","Better","Worse","Worse",-85.361,13.328,"Ap15",2015,2015-12-20
+"INTA Precoz","SJC 730-79","INTA Ferroso","C","B","Worse","Better","Worse",-85.373,13.332,"Ap15",2015,2015-12-18
+"BRT 103-182","INTA Matagalpa","INTA Rojo","C","B","Better","Better","Better",-85.357,13.336,"Ap15",2015,2015-12-18
+"INTA Sequia","INTA Centro Sur","INTA Matagalpa","B","C","Worse","Worse","Worse",-85.36,13.331,"Ap15",2015,2015-12-16
+"INTA Precoz","INTA Ferroso","INTA Centro Sur","B","A","Worse","Better","Better",-85.375,13.332,"Ap15",2015,2015-12-18
+"SJC 730-79","BRT 103-182","INTA Matagalpa","B","A","Worse","Better","Better",-85.342,13.336,"Ap15",2015,2015-12-18
+"ALS 0532-6","INTA Sequia","INTA Rojo","A","C","Better","Worse","Better",-85.367,13.332,"Ap15",2015,2015-12-18
+"PM2 Don Rey","INTA Ferroso","INTA Centro Sur","A","C","Better","Better","Better",-85.453,13.194,"Ap15",2015,2015-12-23
+"INTA Precoz","INTA Matagalpa","SJC 730-79","A","C","Better","Worse","Worse",-85.552,13.199,"Ap15",2015,2015-12-19
+"BRT 103-182","INTA Rojo","ALS 0532-6","A","C","Better","Worse","Worse",-85.571,13.207,"Ap15",2015,2015-12-19
+"PM2 Don Rey","INTA Precoz","INTA Matagalpa","A","C","Better","Better","Better",-85.548,13.177,"Ap15",2015,2015-12-19
+"ALS 0532-6","BRT 103-182","SJC 730-79","C","A","Worse","Better","Better",-85.475,13.181,"Ap15",2015,2015-12-17
+"INTA Ferroso","INTA Rojo","INTA Sequia","A","C","Better","Worse","Better",-85.236,12.903,"Ap15",2015,2015-12-15
+"INTA Centro Sur","INTA Matagalpa","PM2 Don Rey","A","C","Better","Better","Better",-85.46,13.2,"Ap15",2015,2015-12-17
+"INTA Sequia","INTA Rojo","BRT 103-182","A","C","Better","Better","Worse",-85.733,13.136,"Ap15",2015,2015-12-07
+"INTA Centro Sur","INTA Sequia","INTA Matagalpa","A","C","Better","Better","Better",-85.231,12.892,"Ap15",2015,2015-12-15
+"INTA Ferroso","ALS 0532-6","INTA Precoz","B","C","Better","Better","Better",-85.423,13.156,"Ap15",2015,2015-12-12
+"SJC 730-79","PM2 Don Rey","INTA Rojo","C","B","Worse","Better","Better",-85.369,13.337,"Ap15",2015,2015-12-15
+"INTA Matagalpa","BRT 103-182","INTA Sequia","A","C","Worse","Worse","Better",-85.37,13.338,"Ap15",2015,2015-12-15
+"INTA Precoz","INTA Centro Sur","ALS 0532-6","A","C","Worse","Worse","Worse",-85.371,13.337,"Ap15",2015,2015-12-15
+"PM2 Don Rey","INTA Ferroso","SJC 730-79","B","A","Worse","Better","Worse",-85.37,13.339,"Ap15",2015,2015-12-15
+"INTA Sequia","ALS 0532-6","INTA Centro Sur","A","C","Worse","Worse","Better",-85.369,13.338,"Ap15",2015,2015-12-15
+"INTA Ferroso","PM2 Don Rey","INTA Precoz","B","C","Better","Better","Better",-85.371,13.337,"Ap15",2015,2015-12-07
+"INTA Rojo","SJC 730-79","BRT 103-182","B","C","Better","Better","Better",-85.736,13.136,"Ap15",2015,2015-12-10
+"INTA Sequia","INTA Matagalpa","ALS 0532-6","A","C","Better","Worse","Worse",-85.735,13.138,"Ap15",2015,2015-12-07
+"PM2 Don Rey","INTA Precoz","INTA Centro Sur","C","A","Worse","Worse","Better",-85.735,13.137,"Ap15",2015,2015-12-16
+"INTA Sequia","ALS 0532-6","INTA Ferroso","B","A","Better","Better","Worse",-85.37,13.336,"Ap15",2015,2015-12-15
+"INTA Matagalpa","INTA Sequia","BRT 103-182","A","C","Better","Worse","Worse",-85.735,13.137,"Ap15",2015,2015-12-25
+"ALS 0532-6","INTA Centro Sur","PM2 Don Rey","B","A","Worse","Worse","Worse",-85.728,13.141,"Ap15",2016,2016-01-10
+"INTA Rojo","INTA Ferroso","INTA Precoz","A","B","Better","Worse","Worse",-85.743,13.129,"Ap15",2015,2015-12-24
+"BRT 103-182","INTA Sequia","SJC 730-79","B","C","Better","Better","Better",-85.733,13.136,"Ap15",2015,2015-12-10
+"INTA Centro Sur","INTA Matagalpa","ALS 0532-6","B","C","Better","Better","Worse",-85.735,13.138,"Ap15",2015,2015-12-18
+"INTA Precoz","PM2 Don Rey","INTA Rojo","A","C","Better","Worse","Worse",-85.735,13.138,"Ap15",2015,2015-12-07
+"BRT 103-182","SJC 730-79","INTA Ferroso","B","C","Worse","Better","Worse",-85.728,13.138,"Ap15",2015,2015-12-10
+"ALS 0532-6","INTA Centro Sur","INTA Sequia","B","C","Better","Worse","Worse",-85.728,13.145,"Ap15",2015,2015-12-22
+"INTA Rojo","INTA Matagalpa","INTA Precoz","B","A","Worse","Better","Worse",-85.732,13.14,"Ap15",2015,2015-12-07
+"BRT 103-182","INTA Rojo","SJC 730-79","C","A","Worse","Worse","Worse",-85.728,13.145,"Ap15",2015,2015-12-05
+"INTA Rojo","INTA Sequia","INTA Precoz","A","B","Better","Worse","Worse",-85.733,13.138,"Ap15",2015,2015-12-12
+"BRT 103-182","INTA Matagalpa","PM2 Don Rey","A","B","Better","Worse","Worse",-85.735,13.139,"Ap15",2015,2015-12-12
+"ALS 0532-6","INTA Ferroso","SJC 730-79","B","A","Worse","Worse","Worse",-85.733,13.141,"Ap15",2015,2015-12-10
+"INTA Rojo","INTA Centro Sur","INTA Precoz","C","A","Worse","Worse","Better",-85.733,13.136,"Ap15",2015,2015-12-16
+"SJC 730-79","INTA Matagalpa","INTA Ferroso","B","A","Worse","Better","Better",-85.736,13.137,"Ap15",2015,2015-12-16
+"INTA Rojo","ALS 0532-6","INTA Centro Sur","B","C","Worse","Better","Worse",-85.736,13.136,"Ap15",2015,2015-12-10
+"INTA Precoz","PM2 Don Rey","INTA Sequia","C","A","Worse","Worse","Worse",-85.736,13.144,"Ap15",2015,2015-12-10
+"SJC 730-79","INTA Centro Sur","ALS 0532-6","B","C","Worse","Better","Worse",-85.728,13.134,"Ap15",2015,2015-12-07
+"PM2 Don Rey","INTA Sequia","INTA Rojo","C","A","Worse","Worse","Worse",-85.735,13.137,"Ap15",2015,2015-12-16
+"ALS 0532-6","SJC 730-79","INTA Matagalpa","B","C","Worse","Better","Worse",-85.736,13.138,"Ap15",2015,2015-12-16
+"PM2 Don Rey","INTA Centro Sur","INTA Rojo","B","A","Worse","Better","Worse",-85.37,13.337,"Ap15",2015,2015-12-07
+"BRT 103-182","INTA Sequia","INTA Ferroso","C","B","Worse","Better","Worse",-85.734,13.136,"Ap15",2015,2015-12-16
+"INTA Precoz","SJC 730-79","INTA Matagalpa","B","C","Worse","Worse","Better",-85.734,13.136,"Ap15",2015,2015-12-17
+"PM2 Don Rey","INTA Matagalpa","SJC 730-79","B","C","Worse","Better","Worse",-85.73,13.129,"Ap15",2015,2015-11-25
+"INTA Sequia","INTA Ferroso","INTA Centro Sur","C","A","Worse","Worse","Worse",-85.737,13.136,"Ap15",2015,2015-12-14
+"INTA Rojo","SJC 730-79","INTA Matagalpa","C","B","Worse","Worse","Worse",-85.431,13.172,"Ap15",2016,2016-01-09
+"PM2 Don Rey","INTA Ferroso","INTA Sequia","B","A","Worse","Worse","Worse",-85.732,13.141,"Ap15",2015,2015-12-07
+"SJC 730-79","INTA Rojo","INTA Precoz","B","C","Worse","Better","Worse",-85.368,13.336,"Ap15",2015,2015-12-19
+"PM2 Don Rey","INTA Matagalpa","INTA Sequia","C","A","Worse","Better","Better",-85.364,13.335,"Ap15",2015,2015-12-16
+"INTA Centro Sur","BRT 103-182","INTA Ferroso","C","A","Worse","Worse","Better",-85.734,13.136,"Ap15",2015,2015-12-10
+"INTA Rojo","SJC 730-79","ALS 0532-6","C","B","Worse","Worse","Better",-85.481,13.221,"Ap15",2016,2016-01-09
+"INTA Rojo","INTA Matagalpa","INTA Sequia","C","A","Worse","Worse","Worse",-85.235,12.881,"Ap15",2015,2015-12-25
+"INTA Sequia","INTA Centro Sur","BRT 103-182","C","A","Worse","Worse","Worse",-85.735,13.136,"Ap15",2015,2015-12-09
+"PM2 Don Rey","ALS 0532-6","INTA Ferroso","B","C","Worse","Better","Worse",-85.735,13.141,"Ap15",2015,2015-11-26
+"INTA Rojo","INTA Precoz","SJC 730-79","C","A","Worse","Worse","Worse",-85.735,13.135,"Ap15",2015,2015-12-24
+"PM2 Don Rey","ALS 0532-6","INTA Sequia","C","B","Better","Better","Better",-85.731,13.134,"Ap15",2015,2015-12-22
+"INTA Matagalpa","SJC 730-79","INTA Ferroso","A","C","Better","Worse","Worse",-85.734,13.136,"Ap15",2015,2015-12-14
+"BRT 103-182","INTA Rojo","INTA Precoz","B","C","Better","Better","Worse",-85.734,13.135,"Ap15",2016,2016-01-05
+"INTA Matagalpa","ALS 0532-6","INTA Ferroso","B","A","Worse","Better","Worse",-85.733,13.133,"Ap15",2016,2016-01-05
+"INTA Centro Sur","BRT 103-182","INTA Precoz","A","C","Better","Worse","Worse",-85.732,13.135,"Ap15",2016,2016-01-05
+"INTA Centro Sur","SJC 730-79","INTA Ferroso","C","B","Better","Worse","Worse",-85.732,13.133,"Ap15",2015,2015-12-23
+"INTA Ferroso","INTA Sequia","INTA Precoz","B","A","Worse","Worse","Worse",-85.732,13.133,"Ap15",2015,2015-12-26
+"INTA Ferroso","INTA Matagalpa","INTA Rojo","B","C","Worse","Better","Worse",-85.369,13.333,"Ap15",2015,2015-12-15
+"INTA Rojo","INTA Matagalpa","INTA Precoz","C","A","Worse","Better","Better",-85.371,13.335,"Ap15",2015,2015-12-15
+"INTA Ferroso","ALS 0532-6","SJC 730-79","A","B","Better","Worse","Worse",-85.371,13.336,"Ap15",2015,2015-12-15
+"PM2 Don Rey","INTA Rojo","INTA Precoz","B","A","Worse","Better","Worse",-85.371,13.335,"Ap15",2015,2015-12-19
+"SJC 730-79","INTA Centro Sur","BRT 103-182","A","C","Better","Worse","Worse",-85.369,13.324,"Ap15",2015,2015-12-20
+"INTA Precoz","INTA Sequia","PM2 Don Rey","A","C","Better","Better","Better",-85.368,13.332,"Ap15",2015,2015-12-15
+"ALS 0532-6","INTA Rojo","INTA Ferroso","B","A","Worse","Better","Worse",-85.36,13.336,"Ap15",2015,2015-12-18
+"INTA Rojo","PM2 Don Rey","ALS 0532-6","A","C","Worse","Worse","Worse",-85.37,13.332,"Ap15",2015,2015-12-15
+"INTA Sequia","INTA Precoz","INTA Centro Sur","A","B","Better","Worse","Worse",-85.37,13.336,"Ap15",2015,2015-12-15
+"INTA Matagalpa","SJC 730-79","INTA Rojo","C","A","Better","Better","Worse",-85.37,13.333,"Ap15",2015,2015-12-19
+"ALS 0532-6","SJC 730-79","INTA Matagalpa","A","B","Better","Worse","Better",-85.367,13.335,"Ap15",2015,2015-12-20
+"INTA Precoz","INTA Rojo","INTA Sequia","C","B","Worse","Worse","Better",-85.372,13.331,"Ap15",2015,2015-12-18
+"PM2 Don Rey","ALS 0532-6","INTA Matagalpa","C","B","Better","Worse","Better",-85.372,13.332,"Ap15",2015,2015-12-19
+"SJC 730-79","BRT 103-182","INTA Centro Sur","C","A","Worse","Worse","Worse",-85.37,13.333,"Ap15",2015,2015-12-15
+"INTA Rojo","SJC 730-79","INTA Sequia","A","C","Better","Worse","Worse",-85.37,13.333,"Ap15",2015,2015-12-02
+"INTA Matagalpa","ALS 0532-6","PM2 Don Rey","A","B","Better","Worse","Better",-85.369,13.334,"Ap15",2015,2015-12-19
+"BRT 103-182","INTA Precoz","INTA Ferroso","C","A","Worse","Better","Better",-85.372,13.332,"Ap15",2015,2015-12-19
+"INTA Sequia","BRT 103-182","INTA Ferroso","A","B","Better","Better","Better",-85.371,13.335,"Ap15",2015,2015-12-20
+"INTA Precoz","INTA Centro Sur","INTA Matagalpa","C","A","Worse","Worse","Worse",-85.356,13.327,"Ap15",2015,2015-12-18
+"INTA Sequia","BRT 103-182","INTA Rojo","B","C","Worse","Worse","Worse",-85.371,13.335,"Ap15",2015,2015-12-19
+"INTA Centro Sur","INTA Precoz","BRT 103-182","A","C","Better","Better","Worse",-85.369,13.329,"Ap15",2015,2015-12-15
+"INTA Sequia","INTA Ferroso","INTA Matagalpa","A","C","Better","Worse","Worse",-85.369,13.334,"Ap15",2015,2015-12-19
+"PM2 Don Rey","INTA Matagalpa","INTA Sequia","C","A","Worse","Worse","Better",-85.367,13.331,"Ap15",2015,2015-12-19
+"SJC 730-79","ALS 0532-6","INTA Rojo","C","B","Better","Better","Better",-85.372,13.338,"Ap15",2015,2015-12-20
+"INTA Centro Sur","BRT 103-182","INTA Sequia","B","C","Worse","Better","Worse",-85.371,13.336,"Ap15",2015,2015-12-19
+"BRT 103-182","SJC 730-79","INTA Sequia","A","C","Better","Worse","Worse",-85.428,13.196,"Ap15",2016,2016-01-11
+"PM2 Don Rey","INTA Rojo","INTA Ferroso","B","C","Worse","Better","Worse",-85.369,13.334,"Ap15",2015,2015-12-19
+"SJC 730-79","INTA Sequia","ALS 0532-6","A","C","Worse","Worse","Worse",-85.371,13.329,"Ap15",2015,2015-12-20
+"INTA Matagalpa","BRT 103-182","INTA Centro Sur","A","C","Better","Worse","Worse",-85.376,13.334,"Ap15",2015,2015-12-20
+"SJC 730-79","ALS 0532-6","INTA Rojo","B","C","Worse","Worse","Worse",-85.371,13.329,"Ap15",2015,2015-12-20
+"INTA Sequia","BRT 103-182","INTA Matagalpa","B","C","Better","Better","Worse",-85.367,13.332,"Ap15",2015,2015-12-18
+"INTA Ferroso","BRT 103-182","INTA Precoz","B","C","Worse","Worse","Worse",-85.378,13.334,"Ap15",2015,2015-12-15
+"INTA Rojo","INTA Ferroso","SJC 730-79","B","C","Worse","Better","Worse",-85.242,12.915,"Ap15",2015,2015-12-15
+"INTA Precoz","INTA Centro Sur","PM2 Don Rey","B","C","Worse","Better","Worse",-85.372,13.335,"Ap15",2015,2015-12-15
+"INTA Precoz","INTA Centro Sur","SJC 730-79","A","C","Better","Better","Worse",-85.358,13.332,"Ap15",2015,2015-12-18
+"ALS 0532-6","INTA Rojo","INTA Ferroso","B","A","Worse","Better","Worse",-85.353,13.334,"Ap15",2015,2015-12-20
+"PM2 Don Rey","INTA Matagalpa","BRT 103-182","A","C","Worse","Worse","Worse",-85.369,13.334,"Ap15",2015,2015-12-20
+"INTA Matagalpa","INTA Rojo","PM2 Don Rey","B","C","Worse","Better","Worse",-85.353,13.335,"Ap15",2015,2015-12-18
+"SJC 730-79","INTA Ferroso","INTA Precoz","B","A","Worse","Better","Worse",-85.347,13.334,"Ap15",2015,2015-12-18
+"INTA Precoz","PM2 Don Rey","ALS 0532-6","B","C","Worse","Better","Better",-85.37,13.334,"Ap15",2015,2015-12-15
+"INTA Centro Sur","INTA Rojo","BRT 103-182","A","C","Worse","Worse","Worse",-85.37,13.336,"Ap15",2015,2015-12-15
+"SJC 730-79","PM2 Don Rey","INTA Precoz","A","C","Better","Worse","Worse",-85.368,13.334,"Ap15",2015,2015-12-20
+"INTA Matagalpa","INTA Centro Sur","INTA Rojo","B","C","Worse","Worse","Worse",-85.225,12.879,"Ap15",2015,2015-12-25
+"BRT 103-182","INTA Precoz","SJC 730-79","C","B","Worse","Worse","Better",-85.375,13.334,"Ap15",2015,2015-12-18
+"INTA Ferroso","ALS 0532-6","PM2 Don Rey","B","A","Worse","Better","Worse",-85.349,13.332,"Ap15",2015,2015-12-18
+"INTA Ferroso","SJC 730-79","PM2 Don Rey","C","A","Worse","Worse","Better",-85.36,13.328,"Ap15",2015,2015-12-20
+"INTA Matagalpa","BRT 103-182","INTA Centro Sur","B","C","Worse","Better","Worse",-85.369,13.335,"Ap15",2015,2015-12-18
+"INTA Sequia","INTA Matagalpa","INTA Rojo","A","B","Better","Worse","Worse",-85.459,13.184,"Ap15",2015,2015-12-14
+"BRT 103-182","PM2 Don Rey","INTA Precoz","B","A","Worse","Better","Better",-85.43,13.152,"Ap15",2015,2015-12-16
+"INTA Sequia","INTA Matagalpa","ALS 0532-6","A","B","Better","Better","Better",-85.578,13.272,"Ap15",2015,2015-12-09
+"INTA Ferroso","SJC 730-79","PM2 Don Rey","B","C","Worse","Better","Worse",-85.593,13.217,"Ap15",2015,2015-12-19
+"SJC 730-79","INTA Sequia","ALS 0532-6","A","C","Better","Worse","Worse",-85.568,13.197,"Ap15",2015,2015-12-19
+"INTA Centro Sur","INTA Rojo","INTA Matagalpa","B","C","Worse","Better","Worse",-85.491,13.201,"Ap15",2015,2015-12-19
+"BRT 103-182","INTA Ferroso","PM2 Don Rey","B","C","Worse","Better","Worse",-85.463,12.823,"Ap15",2015,2015-12-05
+"ALS 0532-6","SJC 730-79","INTA Precoz","B","A","Worse","Better","Worse",-85.463,13.197,"Ap15",2015,2015-12-15
+"INTA Centro Sur","INTA Matagalpa","INTA Sequia","C","A","Worse","Worse","Better",-85.578,13.264,"Ap15",2015,2015-12-12
+"INTA Ferroso","BRT 103-182","INTA Rojo","B","C","Worse","Better","Worse",-85.42,13.149,"Ap15",2015,2015-12-12
+"INTA Sequia","SJC 730-79","INTA Matagalpa","B","C","Worse","Better","Worse",-85.568,13.189,"Ap15",2015,2015-12-21
+"INTA Ferroso","BRT 103-182","INTA Centro Sur","B","A","Worse","Better","Worse",-85.465,13.201,"Ap15",2015,2015-12-23
+"ALS 0532-6","SJC 730-79","INTA Sequia","B","C","Worse","Better","Worse",-85.721,13.141,"Ap15",2015,2015-12-16
+"INTA Ferroso","INTA Matagalpa","BRT 103-182","C","A","Worse","Worse","Better",-85.431,13.178,"Ap15",2015,2015-12-30
+"ALS 0532-6","PM2 Don Rey","SJC 730-79","C","A","Worse","Worse","Better",-85.454,12.816,"Ap15",2015,2015-12-08
+"INTA Matagalpa","INTA Rojo","INTA Centro Sur","C","A","Worse","Worse","Better",-85.483,13.211,"Ap15",2015,2015-12-12
+"INTA Precoz","PM2 Don Rey","SJC 730-79","B","C","Worse","Better","Worse",-85.713,13.144,"Ap15",2016,2016-01-06
+"ALS 0532-6","INTA Sequia","BRT 103-182","B","C","Worse","Better","Worse",-85.483,13.196,"Ap15",2015,2015-12-17
+"INTA Centro Sur","INTA Ferroso","INTA Rojo","A","C","Better","Worse","Worse",-85.364,13.334,"Ap15",2015,2015-12-16
+"INTA Centro Sur","BRT 103-182","INTA Ferroso","C","A","Worse","Worse","Better",-85.367,13.342,"Ap15",2015,2015-12-16
+"PM2 Don Rey","INTA Matagalpa","INTA Rojo","C","B","Worse","Worse","Better",-85.598,12.735,"Ap15",2015,2015-12-07
+"ALS 0532-6","INTA Precoz","SJC 730-79","B","A","Worse","Better","Worse",-85.371,13.34,"Ap15",2015,2015-12-16
+"BRT 103-182","PM2 Don Rey","INTA Matagalpa","B","C","Worse","Better","Worse",-85.367,13.339,"Ap15",2015,2015-12-15
+"INTA Rojo","INTA Precoz","ALS 0532-6","B","A","Worse","Better","Worse",-85.369,13.338,"Ap15",2015,2015-12-16
+"SJC 730-79","INTA Sequia","INTA Ferroso","B","A","Worse","Better","Worse",-85.367,13.342,"Ap15",2015,2015-12-16
+"ALS 0532-6","BRT 103-182","INTA Precoz","C","A","Worse","Worse","Better",-85.373,13.335,"Ap15",2015,2015-12-16
+"SJC 730-79","INTA Rojo","INTA Sequia","B","A","Worse","Better","Worse",-85.465,12.821,"Ap15",2015,2015-12-08
+"INTA Centro Sur","INTA Matagalpa","INTA Ferroso","A","C","Better","Worse","Worse",-85.371,13.335,"Ap15",2015,2015-12-15
+"SJC 730-79","PM2 Don Rey","ALS 0532-6","C","B","Worse","Worse","Better",-85.674,13.371,"Ap15",2015,2015-12-20
+"INTA Precoz","BRT 103-182","PM2 Don Rey","A","C","Better","Worse","Better",-85.371,13.335,"Ap15",2015,2015-12-15
+"INTA Rojo","SJC 730-79","ALS 0532-6","A","B","Better","Worse","Better",-85.729,13.133,"Ap15",2015,2015-12-06
+"INTA Ferroso","INTA Sequia","INTA Matagalpa","C","A","Worse","Worse","Better",-85.369,13.337,"Ap15",2015,2015-12-15
+"BRT 103-182","INTA Centro Sur","PM2 Don Rey","B","C","Better","Better","Worse",-85.368,13.339,"Ap15",2015,2015-12-09
+"INTA Ferroso","BRT 103-182","PM2 Don Rey","C","A","Worse","Worse","Better",-85.475,13.201,"Ap15",2016,2016-01-09
+"SJC 730-79","INTA Rojo","INTA Centro Sur","A","C","Worse","Worse","Worse",-85.37,13.337,"Ap15",2015,2015-12-15
+"INTA Matagalpa","INTA Precoz","ALS 0532-6","A","C","Better","Better","Worse",-85.369,13.337,"Ap15",2015,2015-12-15
+"PM2 Don Rey","INTA Sequia","INTA Ferroso","A","C","Better","Worse","Worse",-85.371,13.336,"Ap15",2015,2015-12-15
+"INTA Precoz","INTA Sequia","INTA Ferroso","A","B","Better","Worse","Better",-85.371,13.337,"Ap15",2015,2015-12-12
+"INTA Rojo","ALS 0532-6","INTA Precoz","A","B","Worse","Worse","Better",-85.37,13.336,"Ap15",2015,2015-12-15
+"INTA Matagalpa","PM2 Don Rey","INTA Sequia","C","A","Worse","Better","Better",-85.527,13.228,"Ap15",2015,2015-12-16
+"INTA Ferroso","INTA Centro Sur","SJC 730-79","B","C","Better","Better","Worse",-85.37,13.338,"Ap15",2015,2015-12-15
+"INTA Rojo","BRT 103-182","INTA Precoz","B","C","Worse","Worse","Worse",-85.37,13.338,"Ap15",2015,2015-12-07
+"ALS 0532-6","PM2 Don Rey","INTA Sequia","B","C","Worse","Better","Better",-85.37,13.338,"Ap15",2015,2015-12-07
+"INTA Centro Sur","SJC 730-79","INTA Matagalpa","B","C","Better","Better","Better",-85.369,13.336,"Ap15",2015,2015-12-07
+"INTA Sequia","ALS 0532-6","INTA Rojo","A","C","Better","Better","Worse",-85.369,13.333,"Ap15",2015,2015-12-16
+"PM2 Don Rey","INTA Centro Sur","SJC 730-79","A","C","Better","Worse","Worse",-85.37,13.335,"Ap15",2015,2015-12-15
+"INTA Matagalpa","BRT 103-182","INTA Precoz","B","A","Worse","Better","Worse",-85.369,13.336,"Ap15",2015,2015-12-15
+"PM2 Don Rey","INTA Matagalpa","SJC 730-79","A","C","Better","Worse","Worse",-85.368,13.339,"Ap15",2015,2015-12-16
+"PM2 Don Rey","INTA Sequia","SJC 730-79","B","A","Worse","Better","Worse",-85.37,13.336,"Ap15",2015,2015-12-15
+"BRT 103-182","INTA Centro Sur","INTA Matagalpa","C","B","Better","Better","Better",-85.367,13.339,"Ap15",2015,2015-12-10
+"ALS 0532-6","PM2 Don Rey","INTA Sequia","C","A","Worse","Worse","Better",-85.371,13.336,"Ap15",2015,2015-12-15
+"INTA Centro Sur","BRT 103-182","SJC 730-79","B","C","Worse","Worse","Worse",-85.728,13.137,"Ap15",2015,2015-12-14
+"INTA Ferroso","INTA Matagalpa","INTA Rojo","C","A","Worse","Worse","Better",-85.368,13.339,"Ap15",2015,2015-12-16
+"INTA Sequia","ALS 0532-6","INTA Precoz","A","C","Better","Better","Better",-85.37,13.336,"Ap15",2015,2015-12-07
+"PM2 Don Rey","SJC 730-79","BRT 103-182","A","B","Better","Worse","Better",-85.369,13.336,"Ap15",2015,2015-12-16
+"INTA Rojo","INTA Ferroso","INTA Centro Sur","B","C","Worse","Worse","Worse",-85.367,13.335,"Ap15",2015,2015-12-16
+"INTA Matagalpa","INTA Precoz","ALS 0532-6","C","A","Better","Worse","Better",-85.369,13.338,"Ap15",2015,2015-12-16
+"BRT 103-182","ALS 0532-6","INTA Rojo","C","B","Worse","Worse","Better",-85.432,13.176,"Ap15",2016,2016-01-18
+"INTA Sequia","PM2 Don Rey","SJC 730-79","A","C","Worse","Worse","Worse",-85.734,13.136,"Ap15",2015,2015-12-15
+"INTA Centro Sur","BRT 103-182","INTA Rojo","C","B","Worse","Worse","Worse",-85.432,13.158,"Ap15",2015,2015-12-29
+"ALS 0532-6","INTA Ferroso","INTA Precoz","C","B","Worse","Worse","Better",-85.22,12.884,"Ap15",2015,2015-12-15
+"INTA Matagalpa","INTA Sequia","INTA Precoz","C","A","Better","Worse","Better",-85.232,12.889,"Ap15",2015,2015-12-15
+"INTA Rojo","SJC 730-79","PM2 Don Rey","C","A","Better","Worse","Better",-85.732,13.138,"Ap15",2015,2015-12-10
+"ALS 0532-6","BRT 103-182","INTA Centro Sur","A","C","Better","Worse","Worse",-85.24,12.914,"Ap15",2015,2015-12-18
+"SJC 730-79","ALS 0532-6","BRT 103-182","C","A","Worse","Worse","Better",-85.367,13.338,"Ap15",2015,2015-12-16
+"INTA Matagalpa","SJC 730-79","ALS 0532-6","C","A","Worse","Worse","Better",-85.725,13.124,"Ap15",2015,2015-12-25
+"SJC 730-79","INTA Matagalpa","INTA Precoz","C","B","Worse","Worse","Better",-85.218,12.884,"Ap15",2015,2015-12-15
+"PM2 Don Rey","BRT 103-182","SJC 730-79","B","A","Better","Worse","Worse",-85.367,13.34,"Ap15",2015,2015-12-10
+"INTA Precoz","INTA Matagalpa","INTA Rojo","B","C","Worse","Better","Worse",-85.369,13.339,"Ap15",2015,2015-12-16
+"INTA Sequia","BRT 103-182","INTA Matagalpa","B","A","Worse","Better","Worse",-85.614,13.39,"Ap15",2015,2015-12-25
+"INTA Centro Sur","PM2 Don Rey","INTA Ferroso","C","A","Worse","Worse","Better",-85.368,13.335,"Ap15",2015,2015-12-16
+"BRT 103-182","INTA Sequia","INTA Rojo","C","A","Worse","Worse","Better",-85.494,13.182,"Ap15",2015,2015-12-15
+"INTA Sequia","INTA Ferroso","INTA Centro Sur","A","B","Better","Worse","Worse",-85.229,12.902,"Ap15",2015,2015-12-14
+"INTA Precoz","INTA Matagalpa","INTA Ferroso","C","A","Better","Better","Worse",-85.209,12.892,"Ap15",2015,2015-12-15
+"INTA Centro Sur","INTA Rojo","INTA Sequia","B","C","Worse","Better","Worse",-85.369,13.335,"Ap15",2015,2015-12-16
+"ALS 0532-6","BRT 103-182","INTA Precoz","C","A","Worse","Better","Worse",-85.367,13.338,"Ap15",2015,2015-12-16
+"SJC 730-79","INTA Rojo","INTA Centro Sur","B","C","Worse","Better","Worse",-85.369,13.339,"Ap15",2015,2015-12-16
+"ALS 0532-6","SJC 730-79","INTA Sequia","C","A","Worse","Worse","Better",-85.368,13.339,"Ap15",2015,2015-12-16
+"SJC 730-79","INTA Centro Sur","PM2 Don Rey","C","B","Worse","Worse","Worse",-85.368,13.335,"Ap15",2015,2015-12-15
+"INTA Precoz","INTA Rojo","INTA Sequia","B","A","Worse","Better","Worse",-85.456,13.194,"Ap15",2015,2015-12-30
+"INTA Ferroso","INTA Matagalpa","INTA Rojo","A","C","Better","Better","Better",-85.368,13.336,"Ap15",2015,2015-12-16
+"INTA Precoz","INTA Sequia","INTA Rojo","B","A","Worse","Better","Worse",-85.367,13.338,"Ap15",2015,2015-12-16
+"ALS 0532-6","INTA Rojo","BRT 103-182","B","A","Worse","Worse","Better",-85.368,13.339,"Ap15",2015,2015-12-16
+"INTA Centro Sur","INTA Precoz","INTA Sequia","A","B","Better","Worse","Worse",-85.464,12.832,"Ap15",2015,2015-12-14
+"ALS 0532-6","BRT 103-182","INTA Ferroso","C","A","Worse","Worse","Better",-85.364,13.331,"Ap15",2015,2015-12-18
+"INTA Precoz","INTA Matagalpa","INTA Sequia","C","A","Worse","Worse","Better",-85.367,13.339,"Ap15",2015,2015-12-16
+"ALS 0532-6","INTA Centro Sur","BRT 103-182","A","C","Better","Worse","Worse",-85.367,13.339,"Ap15",2015,2015-12-16
+"ALS 0532-6","INTA Centro Sur","INTA Matagalpa","B","A","Worse","Better","Worse",-85.456,12.835,"Ap15",2015,2015-12-26
+"PM2 Don Rey","INTA Centro Sur","INTA Ferroso","C","A","Worse","Worse","Better",-85.368,13.339,"Ap15",2015,2015-12-16
+"INTA Matagalpa","INTA Centro Sur","INTA Sequia","C","A","Worse","Worse","Better",-85.654,13.451,"Ap15",2015,2015-12-28
+"INTA Ferroso","PM2 Don Rey","ALS 0532-6","B","C","Worse","Better","Worse",-85.191,13.014,"Ap15",2015,2015-12-20
+"INTA Sequia","INTA Matagalpa","INTA Precoz","A","B","Better","Worse","Worse",-85.73,13.132,"Ap15",2015,2015-12-21
+"PM2 Don Rey","INTA Ferroso","INTA Centro Sur","B","A","Better","Better","Worse",-85.281,12.963,"Ap15",2015,2015-12-22
+"BRT 103-182","SJC 730-79","ALS 0532-6","B","A","Worse","Better","Worse",-85.467,13.212,"Ap15",2016,2016-01-04
+"INTA Sequia","INTA Precoz","INTA Rojo","A","B","Worse","Worse","Worse",-85.732,13.134,"Ap15",2015,2015-12-14
+"SJC 730-79","INTA Ferroso","BRT 103-182","B","C","Worse","Better","Worse",-86.003,13.092,"Ap15",2015,2015-12-21
+"BRT 103-182","SJC 730-79","INTA Matagalpa","A","C","Better","Worse","Worse",-85.437,13.182,"Ap15",2015,2015-12-28
+"INTA Sequia","INTA Rojo","ALS 0532-6","C","A","Worse","Worse","Better",-85.733,13.152,"Ap15",2015,2015-12-17
+"INTA Precoz","INTA Centro Sur","PM2 Don Rey","B","C","Worse","Better","Worse",-85.248,12.885,"Ap15",2015,2015-12-23
+"INTA Rojo","PM2 Don Rey","INTA Centro Sur","A","C","Better","Worse","Worse",-86.003,13.093,"Ap15",2015,2015-12-21
+"INTA Precoz","SJC 730-79","INTA Ferroso","A","C","Better","Worse","Worse",-85.449,13.185,"Ap15",2015,2015-12-30
+"ALS 0532-6","INTA Matagalpa","BRT 103-182","A","C","Better","Better","Better",-85.751,13.37,"Ap15",2015,2015-12-26
+"INTA Ferroso","INTA Precoz","INTA Matagalpa","A","B","Better","Worse","Worse",-85.47,13.201,"Ap15",2016,2016-01-05
+"BRT 103-182","PM2 Don Rey","ALS 0532-6","A","C","Better","Worse","Worse",-85.457,13.208,"Ap15",2015,2015-12-16
+"INTA Sequia","ALS 0532-6","INTA Rojo","C","A","Better","Worse","Worse",-85.461,12.813,"Ap15",2015,2015-12-15
+"ALS 0532-6","PM2 Don Rey","BRT 103-182","C","A","Worse","Worse","Better",-85.717,13.137,"Ap15",2015,2015-12-18
+"SJC 730-79","INTA Sequia","INTA Centro Sur","A","B","Better","Worse","Worse",-85.233,12.908,"Ap15",2015,2015-12-12
+"INTA Matagalpa","INTA Ferroso","INTA Precoz","B","A","Worse","Better","Worse",-85.236,12.904,"Ap15",2015,2015-12-14
+"ALS 0532-6","BRT 103-182","PM2 Don Rey","C","A","Worse","Worse","Better",-85.713,13.14,"Ap15",2015,2015-12-17
+"PM2 Don Rey","BRT 103-182","ALS 0532-6","B","A","Worse","Better","Worse",-85.729,13.141,"Ap15",2015,2015-12-14
+"INTA Centro Sur","INTA Rojo","INTA Sequia","A","B","Better","Worse","Worse",-85.479,13.186,"Ap15",2016,2016-01-06
+"INTA Ferroso","ALS 0532-6","PM2 Don Rey","A","C","Better","Worse","Worse",-85.714,13.137,"Ap15",2015,2015-12-14
+"INTA Ferroso","INTA Precoz","PM2 Don Rey","A","C","Better","Worse","Worse",-85.574,13.201,"Ap15",2015,2015-12-19
+"BRT 103-182","INTA Rojo","INTA Sequia","B","A","Worse","Better","Worse",-85.457,13.212,"Ap15",2015,2015-12-16
+"INTA Matagalpa","INTA Precoz","INTA Centro Sur","C","B","Worse","Worse","Better",-85.486,13.177,"Ap15",2015,2015-12-15
+"ALS 0532-6","BRT 103-182","INTA Rojo","C","A","Worse","Worse","Better",-85.459,13.193,"Ap15",2015,2015-12-08
+"INTA Rojo","SJC 730-79","ALS 0532-6","A","C","Better","Worse","Worse",-85.576,13.208,"Ap15",2015,2015-12-19
+"INTA Sequia","BRT 103-182","INTA Centro Sur","B","A","Worse","Better","Worse",-85.541,13.207,"Ap15",2015,2015-12-19
+"INTA Ferroso","INTA Centro Sur","BRT 103-182","A","C","Better","Worse","Worse",-85.457,12.838,"Ap15",2015,2015-12-03
+"SJC 730-79","INTA Matagalpa","INTA Centro Sur","C","A","Worse","Worse","Better",-85.457,12.812,"Ap15",2015,2015-12-15
+"INTA Rojo","ALS 0532-6","PM2 Don Rey","A","C","Better","Worse","Worse",-85.456,13.205,"Ap15",2015,2015-12-27
+"BRT 103-182","INTA Matagalpa","PM2 Don Rey","C","B","Worse","Worse","Better",-85.46,12.809,"Ap15",2015,2015-12-16
+"INTA Centro Sur","PM2 Don Rey","INTA Sequia","B","C","Worse","Better","Worse",-85.37,13.337,"Ap15",2015,2015-12-15
+"INTA Rojo","INTA Precoz","INTA Matagalpa","A","B","Better","Worse","Worse",-85.726,13.13,"Ap15",2015,2015-12-06
+"ALS 0532-6","INTA Centro Sur","BRT 103-182","A","C","Better","Worse","Worse",-85.693,13.455,"Ap15",2015,2015-12-27
+"INTA Matagalpa","INTA Rojo","PM2 Don Rey","B","A","Worse","Better","Worse",-85.46,12.831,"Ap15",2015,2015-12-16
+"INTA Ferroso","INTA Sequia","SJC 730-79","A","C","Better","Worse","Worse",-86.001,13.085,"Ap15",2015,2015-12-21
+"INTA Precoz","INTA Centro Sur","BRT 103-182","C","A","Worse","Worse","Better",-85.67,13.361,"Ap15",2015,2015-12-15
+"BRT 103-182","SJC 730-79","PM2 Don Rey","A","B","Better","Worse","Worse",-85.493,13.22,"Ap15",2016,2016-01-03
+"INTA Rojo","INTA Sequia","INTA Ferroso","A","C","Better","Worse","Worse",-85.442,13.209,"Ap15",2015,2015-12-16
+"INTA Precoz","SJC 730-79","BRT 103-182","B","C","Worse","Better","Worse",-85.73,13.13,"Ap15",2015,2015-12-17
+"ALS 0532-6","INTA Centro Sur","PM2 Don Rey","A","C","Better","Worse","Worse",-85.426,13.153,"Ap15",2015,2015-12-29
+"INTA Sequia","INTA Matagalpa","INTA Ferroso","A","C","Better","Worse","Worse",-85.459,12.827,"Ap15",2015,2015-12-16
+"INTA Precoz","BRT 103-182","INTA Rojo","B","C","Worse","Better","Worse",-86.003,13.092,"Ap15",2015,2015-12-10
+"INTA Centro Sur","SJC 730-79","ALS 0532-6","A","C","Better","Worse","Worse",-85.722,13.134,"Ap15",2015,2015-12-07
+"INTA Sequia","PM2 Don Rey","INTA Ferroso","A","C","Better","Worse","Worse",-85.658,13.411,"Ap15",2015,2015-12-23
+"INTA Matagalpa","BRT 103-182","INTA Rojo","B","A","Worse","Better","Worse",-85.459,12.825,"Ap15",2015,2015-12-10
+"INTA Centro Sur","INTA Precoz","SJC 730-79","C","B","Worse","Worse","Better",-85.46,12.816,"Ap15",2015,2015-12-10
+"ALS 0532-6","INTA Ferroso","INTA Sequia","B","A","Worse","Better","Worse",-85.575,12.727,"Ap15",2015,2015-12-07
+"INTA Matagalpa","BRT 103-182","PM2 Don Rey","B","A","Worse","Better","Worse",-85.437,13.256,"Ap15",2016,2016-01-05
+"INTA Rojo","SJC 730-79","INTA Precoz","B","A","Worse","Better","Worse",-85.526,13.436,"Ap15",2015,2015-12-23
+"INTA Precoz","BRT 103-182","INTA Rojo","B","A","Worse","Better","Worse",-85.495,13.223,"Ap15",2015,2015-12-23
+"INTA Sequia","PM2 Don Rey","INTA Matagalpa","A","C","Better","Worse","Worse",-85.243,12.892,"Ap15",2015,2015-12-15
+"SJC 730-79","ALS 0532-6","INTA Centro Sur","B","C","Worse","Better","Worse",-85.461,12.835,"Ap15",2015,2015-12-26
+"INTA Sequia","INTA Ferroso","PM2 Don Rey","A","B","Better","Worse","Worse",-85.714,13.14,"Ap15",2015,2015-12-12
+"INTA Rojo","INTA Matagalpa","BRT 103-182","B","C","Worse","Better","Worse",-85.608,13.395,"Ap15",2015,2015-12-15
+"INTA Precoz","SJC 730-79","ALS 0532-6","C","A","Worse","Worse","Better",-85.616,13.458,"Ap15",2015,2015-12-17
+"INTA Centro Sur","INTA Ferroso","INTA Sequia","C","A","Worse","Worse","Better",-85.594,13.446,"Ap15",2016,2016-01-05
+"INTA Ferroso","ALS 0532-6","INTA Centro Sur","B","C","Worse","Better","Worse",-85.666,13.364,"Ap15",2015,2015-12-20
+"INTA Matagalpa","INTA Sequia","BRT 103-182","C","A","Worse","Worse","Better",-85.678,13.382,"Ap15",2015,2015-12-07
+"PM2 Don Rey","INTA Precoz","INTA Rojo","B","C","Worse","Better","Worse",-85.483,13.235,"Ap15",2016,2016-01-18
+"INTA Centro Sur","SJC 730-79","INTA Ferroso","A","C","Better","Worse","Worse",-85.669,13.362,"Ap15",2015,2015-12-15
+"SJC 730-79","INTA Rojo","INTA Centro Sur","C","B","Worse","Worse","Worse",-85.459,13.189,"Ap15",2015,2015-12-15
+"INTA Matagalpa","BRT 103-182","INTA Rojo","C","A","Worse","Worse","Better",-85.737,13.132,"Ap15",2015,2015-12-20
+"PM2 Don Rey","INTA Precoz","ALS 0532-6","B","C","Worse","Better","Worse",-85.507,13.219,"Ap15",2015,2015-12-23
+"BRT 103-182","INTA Centro Sur","SJC 730-79","C","B","Worse","Worse","Worse",-85.627,13.317,"Ap15",2015,2015-12-25
+"INTA Ferroso","INTA Matagalpa","INTA Sequia","A","C","Better","Worse","Worse",-85.37,13.337,"Ap15",2015,2015-12-15
+"INTA Rojo","INTA Sequia","INTA Centro Sur","B","C","Worse","Better","Worse",-85.627,13.387,"Ap15",2016,2016-01-11
+"SJC 730-79","ALS 0532-6","BRT 103-182","B","A","Worse","Better","Worse",-85.434,13.17,"Ap15",2016,2016-01-08
+"INTA Rojo","INTA Sequia","INTA Centro Sur","C","A","Worse","Worse","Better",-85.577,13.266,"Ap15",2015,2015-12-14
+"INTA Ferroso","ALS 0532-6","SJC 730-79","B","C","Worse","Worse","Worse",-85.665,13.388,"Ap15",2015,2015-12-28
+"ALS 0532-6","INTA Ferroso","INTA Sequia","C","A","Better","Worse","Worse",-85.457,13.199,"Ap15",2016,2016-01-08
+"SJC 730-79","INTA Ferroso","INTA Matagalpa","B","A","Worse","Better","Worse",-85.719,13.132,"Ap15",2015,2015-12-18
+"INTA Sequia","INTA Precoz","BRT 103-182","A","C","Better","Worse","Worse",-85.722,13.138,"Ap15",2015,2015-12-20
+"INTA Matagalpa","INTA Precoz","INTA Sequia","A","C","Better","Worse","Worse",-85.368,13.336,"Ap15",2015,2015-12-15
+"INTA Sequia","INTA Precoz","INTA Centro Sur","C","A","Worse","Worse","Better",-85.589,13.404,"Ap15",2015,2015-12-28
+"SJC 730-79","PM2 Don Rey","INTA Matagalpa","B","C","Worse","Better","Worse",-85.457,12.828,"Ap15",2015,2015-12-08
+"SJC 730-79","INTA Sequia","INTA Matagalpa","B","A","Worse","Better","Worse",-85.505,13.241,"Ap15",2015,2015-12-12
+"INTA Precoz","SJC 730-79","INTA Sequia","C","B","Worse","Worse","Better",-85.453,13.208,"Ap15",2015,2015-12-08
+"INTA Precoz","PM2 Don Rey","INTA Matagalpa","B","C","Worse","Worse","Worse",-85.453,12.824,"Ap15",2015,2015-12-09
+"PM2 Don Rey","INTA Rojo","ALS 0532-6","B","C","Worse","Better","Worse",-85.468,12.803,"Ap15",2016,2016-01-06
+"INTA Centro Sur","INTA Ferroso","INTA Sequia","B","A","Worse","Better","Worse",-85.231,12.915,"Ap15",2015,2015-12-15
+"INTA Matagalpa","ALS 0532-6","BRT 103-182","C","A","Worse","Worse","Better",-85.663,13.363,"Ap15",2015,2015-12-16
+"ALS 0532-6","INTA Ferroso","INTA Rojo","C","B","Worse","Better","Worse",-85.717,13.133,"Ap15",2015,2015-12-11
+"INTA Matagalpa","ALS 0532-6","INTA Centro Sur","C","A","Worse","Worse","Better",-86.001,13.084,"Ap15",2015,2015-12-01
+"INTA Rojo","PM2 Don Rey","ALS 0532-6","A","B","Better","Worse","Worse",-85.46,12.831,"Ap15",2015,2015-12-14
+"ALS 0532-6","INTA Sequia","BRT 103-182","B","A","Worse","Better","Worse",-85.237,12.899,"Ap15",2016,2016-01-15
+"INTA Precoz","INTA Centro Sur","INTA Ferroso","A","C","Worse","Better","Worse",-85.434,13.022,"Ap15",2015,2015-12-18
+"SJC 730-79","PM2 Don Rey","INTA Sequia","B","A","Worse","Better","Worse",-85.629,13.36,"Ap15",2015,2015-12-20
+"INTA Rojo","INTA Matagalpa","SJC 730-79","B","C","Worse","Better","Worse",-85.67,13.43,"Ap15",2016,2016-01-17
+"PM2 Don Rey","ALS 0532-6","INTA Matagalpa","B","A","Worse","Better","Worse",-85.637,13.402,"Ap15",2016,2016-01-10
+"INTA Centro Sur","BRT 103-182","INTA Sequia","C","A","Worse","Worse","Better",-86.002,13.087,"Ap15",2015,2015-11-30
+"INTA Centro Sur","BRT 103-182","INTA Precoz","A","B","Better","Worse","Worse",-85.544,12.664,"Ap15",2015,2015-12-09
+"ALS 0532-6","INTA Rojo","INTA Matagalpa","A","C","Better","Worse","Worse",-85.672,13.365,"Ap15",2015,2015-12-15
+"BRT 103-182","SJC 730-79","PM2 Don Rey","C","B","Worse","Worse","Better",-85.401,13.003,"Ap15",2016,2016-01-20
+"INTA Rojo","INTA Centro Sur","INTA Matagalpa","C","B","Worse","Worse","Better",-85.57,13.392,"Ap15",2015,2015-12-19
+"PM2 Don Rey","SJC 730-79","ALS 0532-6","A","C","Better","Worse","Worse",-85.618,13.419,"Ap15",2015,2015-12-15
+"PM2 Don Rey","SJC 730-79","INTA Rojo","C","A","Better","Better","Better",-85.594,13.395,"Ap15",2015,2015-12-15
+"SJC 730-79","BRT 103-182","INTA Matagalpa","A","C","Better","Worse","Worse",-85.685,13.414,"Ap15",2016,2016-01-12
+"INTA Matagalpa","ALS 0532-6","INTA Rojo","A","C","Better","Worse","Worse",-86.003,13.087,"Ap15",2015,2015-12-14
+"INTA Matagalpa","INTA Centro Sur","INTA Sequia","C","A","Worse","Worse","Better",-85.553,13.459,"Ap15",2015,2015-12-24
+"ALS 0532-6","BRT 103-182","INTA Ferroso","B","A","Worse","Better","Worse",-85.622,13.386,"Ap15",2015,2015-12-16
+"PM2 Don Rey","ALS 0532-6","INTA Rojo","B","A","Worse","Better","Worse",-85.46,12.819,"Ap15",2015,2015-12-14
+"SJC 730-79","INTA Ferroso","INTA Centro Sur","C","B","Worse","Worse","Better",-85.459,12.796,"Ap15",2016,2016-01-01
+"BRT 103-182","ALS 0532-6","INTA Precoz","C","A","Better","Better","Better",-86.001,13.084,"Ap15",2015,2015-12-08
+"INTA Matagalpa","SJC 730-79","INTA Centro Sur","C","B","Worse","Worse","Better",-85.452,12.816,"Ap15",2015,2015-12-18
+"INTA Ferroso","INTA Sequia","SJC 730-79","B","A","Worse","Better","Better",-86.002,13.084,"Ap15",2015,2015-12-01
+"INTA Ferroso","INTA Rojo","INTA Sequia","A","B","Worse","Worse","Better",-85.467,12.829,"Ap15",2015,2015-12-16
+"INTA Rojo","INTA Precoz","ALS 0532-6","A","B","Better","Better","Better",-86.001,13.084,"Ap15",2015,2015-12-05
+"INTA Matagalpa","INTA Centro Sur","INTA Ferroso","C","A","Worse","Worse","Better",-85.679,13.382,"Ap15",2015,2015-12-14
+"ALS 0532-6","INTA Centro Sur","INTA Rojo","A","C","Worse","Better","Worse",-86.003,13.093,"Ap15",2015,2015-12-23
+"INTA Rojo","INTA Sequia","SJC 730-79","B","A","Better","Better","Better",-85.588,12.719,"Ap15",2015,2015-12-08
+"INTA Centro Sur","INTA Ferroso","PM2 Don Rey","B","C","Better","Better","Worse",-85.625,13.37,"Ap15",2015,2015-12-04
+"BRT 103-182","INTA Matagalpa","ALS 0532-6","B","C","Worse","Better","Better",-85.46,12.795,"Ap15",2015,2015-12-16
+"INTA Precoz","SJC 730-79","INTA Sequia","B","A","Worse","Better","Better",-85.463,12.835,"Ap15",2015,2015-12-10
+"INTA Centro Sur","INTA Rojo","PM2 Don Rey","C","B","Better","Better","Better",-85.464,12.831,"Ap15",2015,2015-12-01
+"INTA Sequia","INTA Matagalpa","SJC 730-79","C","A","Worse","Better","Better",-85.671,13.364,"Ap15",2015,2015-12-15
+"INTA Sequia","INTA Centro Sur","PM2 Don Rey","C","B","Better","Worse","Better",-85.64,13.378,"Ap15",2015,2015-12-21
+"SJC 730-79","INTA Matagalpa","INTA Precoz","B","C","Better","Better","Worse",-85.658,13.359,"Ap15",2015,2015-12-15
+"INTA Centro Sur","BRT 103-182","PM2 Don Rey","C","B","Worse","Better","Worse",-85.457,12.824,"Ap15",2015,2015-12-23
+"INTA Matagalpa","INTA Sequia","INTA Precoz","A","C","Worse","Worse","Worse",-85.461,12.812,"Ap15",2015,2015-12-15
+"SJC 730-79","INTA Rojo","INTA Ferroso","A","C","Better","Worse","Worse",-85.578,13.412,"Ap15",2015,2015-12-20
+"ALS 0532-6","BRT 103-182","INTA Centro Sur","B","C","Worse","Better","Worse",-86.001,13.084,"Ap15",2015,2015-11-30
+"INTA Matagalpa","INTA Sequia","SJC 730-79","B","A","Worse","Better","Worse",-85.553,12.691,"Ap15",2015,2015-12-08
+"INTA Matagalpa","BRT 103-182","INTA Precoz","B","A","Worse","Better","Worse",-85.552,12.711,"Ap15",2015,2015-12-08
+"INTA Rojo","BRT 103-182","INTA Sequia","A","C","Better","Worse","Worse",-85.645,13.379,"Ap15",2015,2015-12-20
+"INTA Precoz","PM2 Don Rey","ALS 0532-6","C","B","Worse","Worse","Better",-85.467,12.823,"Ap15",2015,2015-12-11
+"ALS 0532-6","INTA Matagalpa","INTA Rojo","A","C","Better","Worse","Worse",-85.46,12.814,"Ap15",2015,2015-12-16
+"BRT 103-182","INTA Centro Sur","PM2 Don Rey","C","A","Worse","Worse","Better",-85.638,13.391,"Ap15",2015,2015-12-15
+"INTA Ferroso","INTA Sequia","SJC 730-79","B","C","Worse","Better","Worse",-85.461,12.812,"Ap15",2015,2015-12-10
+"INTA Rojo","INTA Matagalpa","INTA Precoz","A","C","Worse","Better","Worse",-85.67,13.366,"Ap15",2015,2015-12-15
+"ALS 0532-6","INTA Centro Sur","PM2 Don Rey","C","A","Better","Worse","Better",-85.577,12.711,"Ap15",2015,2015-12-09
+"INTA Precoz","INTA Rojo","INTA Ferroso","A","C","Worse","Better","Worse",-85.454,12.82,"Ap15",2015,2015-12-03
+"BRT 103-182","INTA Precoz","INTA Ferroso","B","C","Worse","Better","Worse",-85.6,12.733,"Ap15",2015,2015-12-08
+"INTA Rojo","INTA Matagalpa","INTA Centro Sur","C","A","Worse","Worse","Better",-85.461,12.834,"Ap15",2015,2015-12-15
+"INTA Sequia","ALS 0532-6","SJC 730-79","C","A","Worse","Worse","Better",-85.456,12.835,"Ap15",2015,2015-12-15
+"INTA Rojo","INTA Matagalpa","INTA Ferroso","C","A","Worse","Worse","Better",-85.622,13.398,"Ap15",2016,2016-01-15
+"BRT 103-182","INTA Precoz","SJC 730-79","A","C","Worse","Worse","Better",-85.568,12.719,"Ap15",2015,2015-12-08
+"INTA Matagalpa","PM2 Don Rey","INTA Ferroso","A","C","Better","Worse","Worse",-85.66,13.373,"Ap15",2015,2015-12-27
+"INTA Rojo","INTA Matagalpa","SJC 730-79","B","C","Worse","Better","Worse",-85.621,13.41,"Ap15",2015,2015-12-16
+"INTA Precoz","ALS 0532-6","BRT 103-182","C","B","Worse","Worse","Better",-85.638,13.384,"Ap15",2015,2015-12-24
+"INTA Rojo","INTA Sequia","ALS 0532-6","B","C","Worse","Better","Worse",-85.388,12.934,"Ap15",2016,2016-01-13
+"BRT 103-182","INTA Centro Sur","SJC 730-79","C","A","Worse","Worse","Better",-85.461,12.808,"Ap15",2015,2015-12-15
+"ALS 0532-6","INTA Sequia","INTA Matagalpa","B","C","Worse","Better","Worse",-85.729,13.43,"Ap15",2015,2015-12-18
+"PM2 Don Rey","SJC 730-79","INTA Precoz","A","C","Better","Worse","Worse",-85.461,12.824,"Ap15",2015,2015-12-23
+"INTA Sequia","INTA Centro Sur","INTA Rojo","B","A","Worse","Better","Worse",-85.657,13.373,"Ap15",2015,2015-12-27
+"BRT 103-182","INTA Precoz","PM2 Don Rey","A","B","Better","Worse","Worse",-85.46,12.8,"Ap15",2015,2015-12-20
+"INTA Matagalpa","ALS 0532-6","SJC 730-79","A","C","Better","Worse","Worse",-86.001,13.093,"Ap15",2015,2015-12-21
+"INTA Matagalpa","INTA Rojo","INTA Sequia","B","C","Worse","Better","Worse",-85.667,13.383,"Ap15",2015,2015-12-15
+"INTA Sequia","INTA Rojo","INTA Ferroso","C","A","Worse","Worse","Better",-85.669,13.364,"Ap15",2015,2015-12-15
+"PM2 Don Rey","INTA Precoz","INTA Rojo","C","B","Better","Worse","Better",-85.632,13.372,"Ap15",2015,2015-12-17
+"SJC 730-79","INTA Ferroso","ALS 0532-6","B","C","Worse","Better","Worse",-85.467,12.797,"Ap15",2016,2016-01-06
+"INTA Sequia","INTA Matagalpa","BRT 103-182","B","C","Worse","Better","Worse",-85.67,13.382,"Ap15",2015,2015-12-17
+"INTA Rojo","INTA Centro Sur","INTA Precoz","B","C","Worse","Better","Worse",-85.461,12.831,"Ap15",2015,2015-12-30
+"PM2 Don Rey","INTA Ferroso","SJC 730-79","B","C","Worse","Better","Worse",-85.582,13.395,"Ap15",2016,2016-01-01
+"PM2 Don Rey","INTA Centro Sur","INTA Ferroso","B","C","Worse","Better","Worse",-85.574,13.454,"Ap15",2015,2015-12-24
+"SJC 730-79","INTA Centro Sur","INTA Ferroso","C","B","Better","Worse","Better",-85.564,13.46,"Ap15",2015,2015-12-22
+"BRT 103-182","INTA Matagalpa","SJC 730-79","B","C","Worse","Better","Worse",-85.372,12.962,"Ap15",2015,2015-12-29
+"ALS 0532-6","INTA Sequia","INTA Precoz","C","B","Worse","Worse","Better",-85.461,12.797,"Ap15",2015,2015-12-10
+"INTA Rojo","INTA Ferroso","INTA Centro Sur","B","C","Worse","Better","Worse",-85.46,12.823,"Ap15",2015,2015-12-10
+"SJC 730-79","PM2 Don Rey","INTA Matagalpa","B","C","Worse","Better","Worse",-85.465,12.812,"Ap15",2015,2015-12-09
+"BRT 103-182","INTA Ferroso","INTA Sequia","A","C","Better","Worse","Worse",-85.46,12.794,"Ap15",2015,2015-12-09
+"INTA Precoz","INTA Centro Sur","ALS 0532-6","B","A","Worse","Better","Worse",-85.468,12.801,"Ap15",2015,2015-12-14
+"INTA Rojo","PM2 Don Rey","SJC 730-79","B","C","Worse","Better","Worse",-85.453,12.818,"Ap15",2015,2015-12-04
+"INTA Sequia","INTA Precoz","ALS 0532-6","B","A","Worse","Better","Worse",-85.657,13.373,"Ap15",2015,2015-12-20
+"BRT 103-182","INTA Ferroso","SJC 730-79","A","B","Better","Worse","Worse",-85.626,13.387,"Ap15",2015,2015-12-27
+"ALS 0532-6","INTA Precoz","INTA Centro Sur","B","A","Worse","Better","Better",-85.669,13.361,"Ap15",2015,2015-12-15
+"INTA Matagalpa","PM2 Don Rey","BRT 103-182","C","B","Better","Worse","Better",-85.655,13.389,"Ap15",2015,2015-12-16
+"SJC 730-79","ALS 0532-6","INTA Sequia","C","B","Better","Worse","Better",-85.548,12.824,"Ap15",2015,2015-12-21
+"INTA Ferroso","INTA Centro Sur","INTA Precoz","A","B","Better","Worse","Worse",-85.633,13.447,"Ap15",2016,2016-01-04
+"INTA Rojo","ALS 0532-6","INTA Matagalpa","B","C","Better","Worse","Better",-85.583,12.73,"Ap15",2015,2015-12-08
+"INTA Matagalpa","SJC 730-79","BRT 103-182","C","A","Worse","Worse","Better",-85.222,12.875,"Ap15",2016,2016-01-15
+"INTA Rojo","INTA Sequia","PM2 Don Rey","B","C","Worse","Worse","Better",-85.457,12.823,"Ap15",2015,2015-12-23
+"ALS 0532-6","INTA Centro Sur","INTA Precoz","B","A","Better","Better","Worse",-85.629,13.371,"Ap15",2015,2015-12-20
+"SJC 730-79","BRT 103-182","INTA Ferroso","B","A","Worse","Better","Worse",-85.651,13.384,"Ap15",2015,2015-12-20
+"INTA Sequia","INTA Matagalpa","INTA Rojo","A","C","Better","Worse","Worse",-85.671,13.369,"Ap15",2015,2015-12-15
+"ALS 0532-6","INTA Centro Sur","PM2 Don Rey","C","A","Worse","Worse","Better",-85.593,13.442,"Ap15",2015,2015-12-24
+"SJC 730-79","INTA Ferroso","INTA Sequia","A","C","Better","Better","Worse",-85.676,13.382,"Ap15",2016,2016-01-08
+"INTA Precoz","ALS 0532-6","INTA Rojo","A","B","Better","Worse","Worse",-85.599,13.434,"Ap15",2016,2016-01-01
+"SJC 730-79","INTA Ferroso","INTA Sequia","B","A","Worse","Worse","Better",-85.261,12.9,"Ap15",2015,2015-12-15
+"INTA Sequia","BRT 103-182","SJC 730-79","C","A","Worse","Better","Better",-85.671,13.367,"Ap15",2015,2015-12-20
+"INTA Centro Sur","INTA Ferroso","PM2 Don Rey","B","A","Worse","Better","Worse",-85.608,13.391,"Ap15",2015,2015-12-25
+"INTA Precoz","INTA Rojo","INTA Matagalpa","C","A","Worse","Worse","Better",-85.618,13.414,"Ap15",2015,2015-12-28
+"BRT 103-182","SJC 730-79","INTA Centro Sur","A","C","Better","Worse","Better",-85.651,13.398,"Ap15",2015,2015-12-26
+"INTA Matagalpa","INTA Precoz","PM2 Don Rey","A","C","Better","Worse","Worse",-85.468,12.804,"Ap15",2015,2015-12-14
+"INTA Sequia","ALS 0532-6","INTA Rojo","A","C","Better","Worse","Worse",-85.443,13.03,"Ap15",2015,2015-12-16
+"PM2 Don Rey","SJC 730-79","INTA Matagalpa","B","C","Worse","Better","Worse",-85.56,13.418,"Ap15",2015,2015-12-23
+"INTA Precoz","INTA Centro Sur","ALS 0532-6","B","C","Worse","Better","Worse",-85.671,13.363,"Ap15",2015,2015-12-15
+"SJC 730-79","INTA Sequia","INTA Rojo","B","C","Worse","Better","Better",-85.599,13.392,"Ap15",2015,2015-12-23
+"INTA Centro Sur","PM2 Don Rey","INTA Precoz","C","A","Worse","Worse","Better",-85.667,13.363,"Ap15",2015,2015-12-20
+"INTA Precoz","SJC 730-79","ALS 0532-6","B","A","Worse","Better","Worse",-85.573,13.414,"Ap15",2015,2015-12-22
+"INTA Rojo","INTA Sequia","INTA Matagalpa","B","A","Worse","Better","Worse",-85.457,12.814,"Ap15",2015,2015-12-16
+"PM2 Don Rey","INTA Precoz","INTA Sequia","A","C","Better","Better","Better",-85.456,12.813,"Ap15",2015,2015-12-15
+"BRT 103-182","INTA Rojo","INTA Matagalpa","A","B","Better","Worse","Worse",-85.653,13.37,"Ap15",2015,2015-12-15
+"ALS 0532-6","INTA Ferroso","INTA Centro Sur","C","B","Worse","Worse","Better",-85.463,12.824,"Ap15",2015,2015-12-16
+"BRT 103-182","SJC 730-79","INTA Matagalpa","C","A","Worse","Worse","Better",-85.465,12.833,"Ap15",2015,2015-12-06
+"PM2 Don Rey","INTA Sequia","INTA Ferroso","C","A","Worse","Better","Worse",-85.674,13.371,"Ap15",2015,2015-12-20
+"BRT 103-182","INTA Matagalpa","ALS 0532-6","A","B","Better","Worse","Worse",-85.67,13.363,"Ap15",2015,2015-12-15
+"INTA Centro Sur","INTA Matagalpa","SJC 730-79","A","C","Better","Worse","Worse",-85.369,12.916,"Ap15",2016,2016-01-18
+"SJC 730-79","ALS 0532-6","INTA Matagalpa","C","B","Better","Better","Better",-85.637,13.424,"Ap15",2015,2015-12-19
+"INTA Matagalpa","INTA Sequia","INTA Centro Sur","A","C","Better","Worse","Worse",-85.461,12.832,"Ap15",2015,2015-12-18
+"INTA Matagalpa","SJC 730-79","INTA Ferroso","B","C","Worse","Better","Worse",-85.64,13.383,"Ap15",2016,2016-01-15
+"INTA Rojo","INTA Centro Sur","ALS 0532-6","B","C","Worse","Better","Worse",-85.655,13.363,"Ap15",2016,2016-01-01
+"INTA Rojo","PM2 Don Rey","INTA Ferroso","C","A","Worse","Worse","Better",-85.633,13.439,"Ap15",2015,2015-12-19
+"PM2 Don Rey","INTA Centro Sur","SJC 730-79","C","A","Worse","Worse","Better",-85.257,12.906,"Ap15",2015,2015-12-16
+"INTA Centro Sur","INTA Precoz","INTA Sequia","C","A","Worse","Worse","Better",-85.567,13.436,"Ap15",2015,2015-12-24
+"PM2 Don Rey","INTA Centro Sur","ALS 0532-6","C","A","Worse","Worse","Better",-85.273,12.895,"Ap15",2015,2015-12-15
+"PM2 Don Rey","ALS 0532-6","INTA Matagalpa","C","A","Worse","Worse","Better",-85.644,13.351,"Ap15",2015,2015-12-05
+"INTA Centro Sur","INTA Rojo","ALS 0532-6","A","C","Worse","Worse","Better",-86.001,13.084,"Ap15",2015,2015-12-03
+"ALS 0532-6","INTA Ferroso","SJC 730-79","A","B","Better","Worse","Worse",-85.202,12.879,"Ap15",2015,2015-12-15
+"INTA Rojo","BRT 103-182","INTA Centro Sur","B","A","Worse","Better","Worse",-85.674,13.38,"Ap15",2016,2016-01-08
+"PM2 Don Rey","INTA Precoz","ALS 0532-6","C","A","Better","Worse","Better",-85.615,13.406,"Ap15",2015,2015-12-25
+"ALS 0532-6","INTA Centro Sur","INTA Matagalpa","C","A","Worse","Worse","Better",-85.679,13.381,"Ap15",2015,2015-12-16
+"INTA Rojo","INTA Ferroso","INTA Centro Sur","C","A","Worse","Worse","Better",-85.608,13.414,"Ap15",2015,2015-12-14
+"ALS 0532-6","INTA Matagalpa","BRT 103-182","C","A","Worse","Worse","Better",-85.573,13.427,"Ap15",2015,2015-12-18
+"PM2 Don Rey","ALS 0532-6","SJC 730-79","B","A","Worse","Better","Worse",-85.459,12.816,"Ap15",2015,2015-12-07
+"SJC 730-79","INTA Ferroso","INTA Sequia","A","B","Better","Worse","Better",-85.611,13.416,"Ap15",2015,2015-12-16
+"INTA Sequia","INTA Precoz","SJC 730-79","C","A","Worse","Worse","Better",-85.599,13.404,"Ap15",2015,2015-12-20
+"INTA Precoz","INTA Ferroso","ALS 0532-6","A","C","Better","Worse","Worse",-85.757,13.466,"Ap15",2015,2015-12-20
+"BRT 103-182","PM2 Don Rey","INTA Sequia","B","A","Worse","Better","Worse",-85.457,12.813,"Ap15",2015,2015-12-08
+"INTA Rojo","INTA Matagalpa","BRT 103-182","C","B","Better","Worse","Better",-85.682,13.387,"Ap15",2015,2015-12-28
+"INTA Sequia","ALS 0532-6","INTA Ferroso","A","C","Better","Better","Worse",-85.456,12.794,"Ap15",2015,2015-12-16
+"ALS 0532-6","INTA Rojo","PM2 Don Rey","C","A","Worse","Worse","Better",-85.674,13.365,"Ap15",2015,2015-12-15
+"INTA Matagalpa","INTA Precoz","PM2 Don Rey","A","C","Better","Better","Worse",-85.608,13.407,"Ap15",2015,2015-12-25
+"INTA Ferroso","INTA Precoz","BRT 103-182","A","C","Better","Better","Worse",-85.538,12.681,"Ap15",2015,2015-12-08
+"INTA Sequia","INTA Precoz","BRT 103-182","C","A","Worse","Worse","Better",-85.607,13.39,"Ap15",2015,2015-12-20
+"INTA Matagalpa","INTA Precoz","SJC 730-79","B","C","Worse","Better","Worse",-85.649,13.382,"Ap15",2015,2015-12-22
+"ALS 0532-6","BRT 103-182","INTA Ferroso","B","C","Worse","Better","Worse",-85.674,13.374,"Ap15",2016,2016-01-06
+"INTA Ferroso","ALS 0532-6","INTA Centro Sur","C","B","Worse","Worse","Better",-85.713,13.404,"Ap15",2015,2015-12-18
+"INTA Centro Sur","SJC 730-79","PM2 Don Rey","C","A","Better","Worse","Worse",-85.711,13.424,"Ap15",2015,2015-12-18
+"INTA Matagalpa","SJC 730-79","INTA Precoz","B","A","Worse","Better","Worse",-85.649,13.42,"Ap15",2015,2015-12-24
+"INTA Sequia","INTA Matagalpa","ALS 0532-6","C","A","Worse","Worse","Better",-85.226,12.871,"Ap15",2015,2015-12-15
+"INTA Precoz","INTA Ferroso","SJC 730-79","C","B","Worse","Worse","Better",-85.279,12.923,"Ap15",2015,2015-12-26
+"INTA Sequia","INTA Precoz","BRT 103-182","C","A","Better","Better","Better",-85.665,13.39,"Ap15",2015,2015-12-30
+"INTA Centro Sur","INTA Matagalpa","INTA Precoz","A","C","Worse","Worse","Worse",-85.641,13.376,"Ap15",2016,2016-01-04
+"INTA Ferroso","INTA Matagalpa","INTA Centro Sur","B","A","Worse","Worse","Better",-85.674,13.378,"Ap15",2015,2015-12-19
+"SJC 730-79","INTA Sequia","INTA Rojo","A","B","Better","Worse","Worse",-85.669,13.365,"Ap15",2016,2016-01-05
+"BRT 103-182","INTA Sequia","INTA Centro Sur","A","C","Better","Worse","Worse",-85.465,12.791,"Ap15",2015,2015-12-14
+"BRT 103-182","INTA Rojo","PM2 Don Rey","C","A","Worse","Worse","Worse",-85.678,13.382,"Ap15",2015,2015-12-15
+"INTA Sequia","INTA Precoz","SJC 730-79","A","B","Better","Worse","Worse",-85.679,13.381,"Ap15",2015,2015-12-18
+"INTA Rojo","INTA Centro Sur","SJC 730-79","A","C","Better","Worse","Worse",-85.589,13.407,"Ap15",2015,2015-12-21
+"PM2 Don Rey","INTA Precoz","INTA Ferroso","B","A","Worse","Worse","Worse",-85.557,13.43,"Ap15",2015,2015-12-21
+"SJC 730-79","INTA Ferroso","INTA Sequia","B","A","Worse","Worse","Better",-85.367,12.911,"Ap15",2016,2016-01-02
+"ALS 0532-6","INTA Precoz","BRT 103-182","A","B","Better","Worse","Worse",-85.585,13.43,"Ap15",2016,2016-01-01
+"INTA Rojo","SJC 730-79","PM2 Don Rey","B","C","Worse","Better","Worse",-85.676,13.381,"Ap15",2015,2015-12-15
+"BRT 103-182","INTA Rojo","INTA Ferroso","C","A","Worse","Worse","Worse",-85.451,12.798,"Ap15",2015,2015-12-17
+"INTA Sequia","INTA Ferroso","BRT 103-182","A","C","Better","Better","Worse",-85.644,13.368,"Ap15",2015,2015-12-21
+"INTA Ferroso","INTA Sequia","BRT 103-182","A","B","Worse","Better","Worse",-85.637,13.382,"Ap15",2016,2016-01-04
+"PM2 Don Rey","BRT 103-182","INTA Ferroso","A","B","Worse","Better","Worse",-85.63,13.385,"Ap15",2015,2015-12-24
+"ALS 0532-6","SJC 730-79","INTA Centro Sur","C","B","Worse","Worse","Better",-85.61,13.376,"Ap15",2015,2015-12-17
+"PM2 Don Rey","INTA Precoz","INTA Sequia","C","B","Better","Worse","Better",-85.534,12.658,"Ap15",2015,2015-12-08
+"SJC 730-79","PM2 Don Rey","INTA Precoz","C","B","Better","Worse","Better",-85.253,12.877,"Ap15",2015,2015-12-16
+"INTA Matagalpa","INTA Sequia","INTA Ferroso","C","A","Worse","Worse","Better",-85.46,12.805,"Ap15",2015,2015-12-16
+"INTA Matagalpa","INTA Rojo","ALS 0532-6","A","B","Better","Worse","Better",-85.665,13.424,"Ap15",2015,2015-12-27
+"BRT 103-182","INTA Precoz","PM2 Don Rey","B","A","Worse","Worse","Worse",-85.46,12.818,"Ap15",2015,2015-12-06
+"INTA Ferroso","INTA Centro Sur","ALS 0532-6","B","C","Worse","Worse","Worse",-85.632,13.392,"Ap15",2015,2015-12-20
+"INTA Centro Sur","INTA Precoz","INTA Ferroso","A","B","Worse","Better","Worse",-85.379,12.863,"Ap15",2015,2015-12-29
+"PM2 Don Rey","INTA Rojo","BRT 103-182","A","C","Worse","Worse","Worse",-85.671,13.364,"Ap15",2015,2015-12-15
+"INTA Matagalpa","INTA Sequia","SJC 730-79","A","C","Better","Worse","Worse",-85.459,12.833,"Ap15",2015,2015-12-15
+"PM2 Don Rey","INTA Centro Sur","INTA Matagalpa","C","B","Worse","Worse","Better",-85.665,13.374,"Ap15",2015,2015-12-30
+"INTA Precoz","PM2 Don Rey","INTA Sequia","B","A","Worse","Better","Worse",-85.668,13.365,"Ap15",2015,2015-12-15
+"BRT 103-182","SJC 730-79","INTA Ferroso","A","C","Better","Worse","Worse",-85.669,13.364,"Ap15",2015,2015-12-15
+"INTA Matagalpa","INTA Ferroso","INTA Centro Sur","C","B","Worse","Worse","Better",-85.347,12.914,"Ap15",2016,2016-01-20
+"PM2 Don Rey","INTA Rojo","ALS 0532-6","A","B","Worse","Worse","Worse",-85.597,13.39,"Ap15",2015,2015-12-15
+"ALS 0532-6","INTA Sequia","BRT 103-182","A","C","Better","Worse","Better",-85.663,13.36,"Ap15",2015,2015-12-20
+"INTA Matagalpa","INTA Ferroso","PM2 Don Rey","B","C","Better","Better","Better",-85.625,13.391,"Ap15",2016,2016-01-03
+"INTA Sequia","INTA Centro Sur","INTA Precoz","A","C","Better","Worse","Worse",-85.654,13.356,"Ap15",2015,2015-12-15
+"INTA Matagalpa","PM2 Don Rey","SJC 730-79","A","C","Better","Worse","Worse",-85.57,13.42,"Ap15",2015,2015-12-16
+"ALS 0532-6","INTA Ferroso","BRT 103-182","B","C","Worse","Worse","Better",-85.627,13.403,"Ap15",2015,2015-12-20
+"INTA Precoz","INTA Matagalpa","INTA Sequia","B","A","Worse","Better","Worse",-85.521,13.337,"Ap16",2016,2016-12-27
+"INTA Rojo","INTA Sequia","BRT 103-182","A","C","Better","Worse","Worse",-85.521,13.337,"Ap16",2016,2016-12-27
+"INTA Centro Sur","INTA Precoz","BRT 103-182","A","C","Better","Worse","Worse",-85.55,13.385,"Ap16",2016,2016-12-31
+"INTA Sequia","SJC 730-79","ALS 0532-6","B","C","Worse","Better","Worse",-85.602,13.072,"Ap16",2016,2016-12-27
+"BRT 103-182","PM2 Don Rey","INTA Sequia","C","A","Worse","Worse","Better",-85.521,13.337,"Ap16",2016,2016-12-27
+"BRT 103-182","INTA Precoz","PM2 Don Rey","A","C","Better","Worse","Worse",-85.521,13.337,"Ap16",2016,2016-12-27
+"SJC 730-79","ALS 0532-6","BRT 103-182","A","C","Better","Worse","Worse",-85.602,13.072,"Ap16",2016,2016-12-27
+"INTA Matagalpa","INTA Centro Sur","INTA Precoz","A","C","Better","Worse","Worse",-85.521,13.337,"Ap16",2016,2016-12-27
+"INTA Rojo","BRT 103-182","INTA Sequia","A","C","Better","Worse","Worse",-85.735,13.139,"Ap16",2016,2016-12-31
+"INTA Precoz","INTA Sequia","INTA Centro Sur","C","A","Worse","Worse","Better",-85.521,13.337,"Ap16",2016,2016-12-27
+"ALS 0532-6","INTA Precoz","PM2 Don Rey","A","C","Better","Worse","Worse",-85.521,13.337,"Ap16",2016,2016-12-27
+"INTA Rojo","INTA Sequia","PM2 Don Rey","B","A","Worse","Better","Worse",-85.735,13.139,"Ap16",2016,2016-12-24
+"INTA Matagalpa","SJC 730-79","INTA Precoz","C","A","Worse","Worse","Better",-85.735,13.139,"Ap16",2016,2016-12-23
+"INTA Sequia","PM2 Don Rey","INTA Matagalpa","A","C","Better","Worse","Worse",-85.521,13.337,"Ap16",2016,2016-12-27
+"INTA Centro Sur","PM2 Don Rey","INTA Ferroso","C","A","Worse","Worse","Better",-85.476,12.819,"Ap16",2016,2016-12-21
+"ALS 0532-6","BRT 103-182","INTA Matagalpa","A","C","Better","Worse","Worse",-85.653,13.369,"Ap16",2016,2016-12-27
+"BRT 103-182","INTA Matagalpa","INTA Rojo","A","C","Better","Worse","Worse",-85.873,13.337,"Ap16",2016,2016-12-27
+"INTA Rojo","INTA Centro Sur","INTA Precoz","A","C","Better","Worse","Worse",-85.521,13.337,"Ap16",2016,2016-12-27
+"SJC 730-79","INTA Centro Sur","INTA Rojo","C","B","Worse","Worse","Better",-85.476,12.819,"Ap16",2016,2016-12-22
+"INTA Precoz","INTA Ferroso","INTA Sequia","C","A","Worse","Worse","Better",-85.873,13.337,"Ap16",2016,2016-12-27
+"INTA Precoz","INTA Centro Sur","INTA Sequia","C","A","Worse","Worse","Better",-85.521,13.337,"Ap16",2016,2016-12-27
+"INTA Matagalpa","INTA Rojo","ALS 0532-6","C","A","Worse","Worse","Better",-85.735,13.139,"Ap16",2016,2016-12-23
+"INTA Centro Sur","INTA Matagalpa","INTA Precoz","B","C","Worse","Better","Worse",-85.873,13.072,"Ap16",2016,2016-12-27
+"INTA Sequia","BRT 103-182","INTA Centro Sur","A","B","Better","Worse","Worse",-85.521,13.337,"Ap16",2016,2016-12-27
+"BRT 103-182","SJC 730-79","ALS 0532-6","C","A","Worse","Worse","Better",-85.653,13.369,"Ap16",2016,2016-12-27
+"PM2 Don Rey","INTA Precoz","SJC 730-79","B","C","Worse","Better","Worse",-85.476,12.819,"Ap16",2016,2016-12-22
+"INTA Ferroso","BRT 103-182","INTA Rojo","B","A","Better","Worse","Worse",-85.521,13.337,"Ap16",2016,2016-12-27
+"PM2 Don Rey","INTA Matagalpa","BRT 103-182","A","C","Better","Worse","Worse",-85.521,13.337,"Ap16",2016,2016-12-27
+"PM2 Don Rey","INTA Matagalpa","BRT 103-182","A","B","Better","Worse","Worse",-85.476,12.819,"Ap16",2016,2016-12-30
+"SJC 730-79","INTA Rojo","INTA Precoz","C","A","Worse","Worse","Better",-85.476,12.819,"Ap16",2016,2016-12-25
+"INTA Ferroso","PM2 Don Rey","SJC 730-79","C","A","Worse","Worse","Better",-85.735,13.139,"Ap16",2017,2017-01-06
+"ALS 0532-6","INTA Ferroso","INTA Matagalpa","A","B","Better","Worse","Worse",-85.476,12.819,"Ap16",2016,2016-12-25
+"INTA Centro Sur","ALS 0532-6","PM2 Don Rey","A","B","Better","Worse","Worse",-85.476,12.819,"Ap16",2016,2016-12-14
+"INTA Matagalpa","INTA Precoz","BRT 103-182","A","C","Better","Worse","Worse",-85.476,12.819,"Ap16",2016,2016-12-22
+"SJC 730-79","INTA Rojo","INTA Sequia","C","A","Worse","Worse","Better",-85.836,13.337,"Ap16",2016,2016-12-27
+"ALS 0532-6","INTA Ferroso","BRT 103-182","A","C","Better","Better","Worse",-85.873,13.337,"Ap16",2016,2016-12-27
+"INTA Ferroso","INTA Sequia","ALS 0532-6","A","C","Better","Worse","Worse",-85.735,13.139,"Ap16",2016,2016-12-27
+"PM2 Don Rey","SJC 730-79","INTA Ferroso","B","A","Worse","Better","Worse",-85.653,13.369,"Ap16",2016,2016-12-27
+"INTA Centro Sur","INTA Rojo","INTA Ferroso","A","C","Better","Worse","Better",-85.521,13.337,"Ap16",2016,2016-12-27
+"INTA Centro Sur","INTA Precoz","PM2 Don Rey","B","C","Better","Better","Better",-85.549,13.385,"Ap16",2017,2017-01-01
+"INTA Precoz","INTA Sequia","SJC 730-79","C","A","Worse","Better","Better",-85.873,13.337,"Ap16",2016,2016-12-27
+"INTA Ferroso","INTA Matagalpa","INTA Precoz","B","C","Better","Better","Better",-85.521,13.337,"Ap16",2016,2016-12-27
+"BRT 103-182","INTA Centro Sur","INTA Matagalpa","A","B","Better","Worse","Better",-85.476,12.819,"Ap16",2016,2016-12-24
+"INTA Rojo","SJC 730-79","ALS 0532-6","B","A","Better","Better","Worse",-85.735,13.139,"Ap16",2016,2016-12-25
+"INTA Matagalpa","ALS 0532-6","INTA Sequia","A","B","Better","Better","Better",-85.873,13.072,"Ap16",2016,2016-12-27
+"INTA Precoz","INTA Sequia","INTA Rojo","B","C","Better","Better","Better",-85.653,13.369,"Ap16",2016,2016-12-27
+"ALS 0532-6","INTA Centro Sur","BRT 103-182","B","A","Worse","Better","Worse",-85.521,13.337,"Ap16",2016,2016-12-27
+"INTA Ferroso","INTA Sequia","BRT 103-182","A","C","Better","Better","Better",-85.566,13.387,"Ap16",2017,2017-01-10
+"INTA Sequia","SJC 730-79","INTA Matagalpa","A","B","Better","Better","Better",-85.565,13.387,"Ap16",2016,2016-12-29
+"SJC 730-79","INTA Centro Sur","INTA Ferroso","A","C","Better","Better","Worse",-85.476,12.819,"Ap16",2016,2016-12-13
+"INTA Rojo","ALS 0532-6","INTA Ferroso","B","C","Better","Better","Better",-85.476,12.819,"Ap16",2016,2016-12-20
+"INTA Matagalpa","PM2 Don Rey","BRT 103-182","C","A","Worse","Better","Better",-85.796,13.337,"Ap16",2016,2016-12-27
+"BRT 103-182","INTA Centro Sur","INTA Ferroso","A","C","Better","Worse","Worse",-85.476,12.819,"Ap16",2017,2017-01-02
+"PM2 Don Rey","SJC 730-79","INTA Centro Sur","C","B","Worse","Worse","Better",-85.873,13.337,"Ap16",2016,2016-12-27
+"INTA Rojo","INTA Ferroso","SJC 730-79","C","A","Worse","Worse","Better",-85.653,13.369,"Ap16",2016,2016-12-27
+"INTA Centro Sur","INTA Ferroso","ALS 0532-6","A","C","Better","Better","Worse",-85.873,13.337,"Ap16",2016,2016-12-27
+"INTA Sequia","INTA Rojo","INTA Matagalpa","B","A","Better","Better","Better",-85.571,13.39,"Ap16",2016,2016-12-27
+"BRT 103-182","INTA Matagalpa","INTA Rojo","A","B","Better","Worse","Worse",-85.476,12.819,"Ap16",2016,2016-12-21
+"INTA Matagalpa","INTA Centro Sur","INTA Rojo","A","B","Better","Worse","Better",-85.916,13.369,"Ap16",2016,2016-12-27
+"INTA Matagalpa","INTA Precoz","INTA Rojo","A","C","Better","Worse","Worse",-85.873,13.337,"Ap16",2016,2016-12-27
+"SJC 730-79","ALS 0532-6","INTA Centro Sur","A","B","Better","Worse","Worse",-85.653,13.369,"Ap16",2016,2016-12-27
+"PM2 Don Rey","BRT 103-182","INTA Rojo","A","B","Better","Worse","Worse",-85.476,12.819,"Ap16",2017,2017-01-03
+"INTA Precoz","INTA Sequia","ALS 0532-6","B","A","Worse","Worse","Worse",-85.476,12.819,"Ap16",2016,2016-12-26
+"INTA Centro Sur","ALS 0532-6","INTA Rojo","A","C","Better","Worse","Worse",-85.521,13.337,"Ap16",2016,2016-12-27
+"INTA Ferroso","INTA Sequia","ALS 0532-6","A","B","Better","Worse","Better",-85.873,13.337,"Ap16",2016,2016-12-27
+"PM2 Don Rey","SJC 730-79","INTA Centro Sur","A","B","Worse","Better","Worse",-85.735,13.139,"Ap16",2016,2016-12-31
+"INTA Ferroso","ALS 0532-6","BRT 103-182","B","C","Worse","Better","Worse",-85.873,13.337,"Ap16",2016,2016-12-27
+"INTA Rojo","SJC 730-79","BRT 103-182","A","B","Better","Worse","Worse",-85.865,12.819,"Ap16",2016,2016-12-03
+"SJC 730-79","INTA Rojo","INTA Ferroso","B","A","Worse","Better","Worse",-85.476,12.819,"Ap16",2016,2016-12-24
+"INTA Ferroso","INTA Sequia","PM2 Don Rey","B","C","Better","Better","Worse",-85.873,13.337,"Ap16",2016,2016-12-27
+"INTA Rojo","INTA Centro Sur","INTA Ferroso","B","C","Better","Worse","Worse",-85.653,13.369,"Ap16",2016,2016-12-27
+"PM2 Don Rey","ALS 0532-6","INTA Centro Sur","A","B","Worse","Worse","Worse",-85.521,13.337,"Ap16",2016,2016-12-27
+"PM2 Don Rey","INTA Precoz","INTA Centro Sur","C","B","Better","Worse","Better",-85.476,12.819,"Ap16",2016,2016-12-28
+"INTA Precoz","INTA Rojo","ALS 0532-6","C","B","Worse","Better","Better",-85.602,13.072,"Ap16",2016,2016-12-27
+"INTA Rojo","ALS 0532-6","INTA Sequia","B","A","Worse","Better","Better",-85.476,12.819,"Ap16",2016,2016-12-22
+"INTA Matagalpa","PM2 Don Rey","ALS 0532-6","A","B","Better","Worse","Worse",-85.549,13.385,"Ap16",2016,2016-12-27
+"SJC 730-79","BRT 103-182","INTA Rojo","B","A","Better","Better","Worse",-85.476,12.819,"Ap16",2016,2016-12-16
+"INTA Matagalpa","INTA Sequia","PM2 Don Rey","B","C","Better","Better","Worse",-85.735,13.139,"Ap16",2016,2016-12-27
+"BRT 103-182","INTA Precoz","PM2 Don Rey","A","C","Better","Better","Worse",-85.873,13.337,"Ap16",2016,2016-12-27
+"INTA Sequia","SJC 730-79","INTA Precoz","C","B","Better","Better","Worse",-85.572,13.39,"Ap16",2016,2016-12-27
+"INTA Rojo","SJC 730-79","BRT 103-182","C","A","Worse","Worse","Worse",-85.476,12.819,"Ap16",2017,2017-01-08
+"SJC 730-79","ALS 0532-6","INTA Sequia","C","B","Worse","Worse","Better",-85.476,12.819,"Ap16",2016,2016-12-26
+"PM2 Don Rey","INTA Matagalpa","INTA Rojo","C","A","Worse","Better","Better",-85.521,13.337,"Ap16",2016,2016-12-27
+"INTA Centro Sur","INTA Precoz","SJC 730-79","A","C","Better","Worse","Worse",-85.873,13.337,"Ap16",2016,2016-12-27
+"INTA Ferroso","INTA Centro Sur","INTA Matagalpa","A","C","Better","Worse","Worse",-85.476,12.819,"Ap16",2017,2017-01-04
+"INTA Centro Sur","PM2 Don Rey","INTA Precoz","A","B","Worse","Better","Worse",-85.521,13.337,"Ap16",2016,2016-12-27
+"INTA Rojo","INTA Ferroso","INTA Precoz","B","A","Worse","Better","Better",-85.873,13.337,"Ap16",2016,2016-12-27
+"PM2 Don Rey","INTA Precoz","BRT 103-182","B","C","Better","Better","Better",-85.77,12.852,"Po15",2015,2015-09-12
+"INTA Centro Sur","INTA Sequia","INTA Precoz","A","C","Better","Worse","Worse",-85.649,13.174,"Po15",2015,2015-09-11
+"PM2 Don Rey","SJC 730-79","BRT 103-182","A","B","Better","Worse","Worse",-85.717,12.847,"Po15",2015,2015-10-22
+"INTA Rojo","SJC 730-79","BRT 103-182","A","B","Better","Worse","Worse",-85.717,12.869,"Po15",2015,2015-09-23
+"INTA Ferroso","INTA Precoz","PM2 Don Rey","A","C","Better","Worse","Worse",-85.799,12.863,"Po15",2015,2015-10-03
+"INTA Centro Sur","PM2 Don Rey","BRT 103-182","A","B","Better","Worse","Worse",-85.567,12.727,"Po15",2015,2015-09-21
+"INTA Ferroso","PM2 Don Rey","SJC 730-79","B","C","Worse","Better","Worse",-85.736,12.814,"Po15",2015,2015-09-28
+"ALS 0532-6","BRT 103-182","INTA Centro Sur","B","C","Worse","Better","Worse",-85.811,12.881,"Po15",2015,2015-09-17
+"INTA Matagalpa","INTA Sequia","INTA Ferroso","B","A","Worse","Better","Worse",-85.718,12.944,"Po15",2015,2015-10-02
+"INTA Rojo","INTA Matagalpa","INTA Sequia","A","C","Better","Worse","Worse",-85.61,12.745,"Po15",2015,2015-09-21
+"BRT 103-182","INTA Ferroso","INTA Matagalpa","C","A","Worse","Worse","Better",-85.611,12.739,"Po15",2015,2015-09-21
+"INTA Sequia","INTA Precoz","PM2 Don Rey","A","C","Better","Worse","Worse",-85.586,13.166,"Po15",2015,2015-09-12
+"ALS 0532-6","SJC 730-79","BRT 103-182","A","B","Better","Worse","Worse",-85.582,12.713,"Po15",2015,2015-09-20
+"SJC 730-79","INTA Centro Sur","INTA Rojo","C","A","Worse","Worse","Better",-85.555,13.188,"Po15",2015,2015-09-11
+"PM2 Don Rey","INTA Precoz","SJC 730-79","C","B","Worse","Worse","Better",-85.614,12.738,"Po15",2015,2015-09-21
+"ALS 0532-6","SJC 730-79","PM2 Don Rey","A","C","Better","Worse","Worse",-85.789,12.844,"Po15",2015,2015-09-15
+"BRT 103-182","INTA Ferroso","ALS 0532-6","A","C","Worse","Better","Worse",-85.714,12.877,"Po15",2015,2015-09-24
+"SJC 730-79","INTA Ferroso","BRT 103-182","A","C","Better","Worse","Worse",-85.574,12.729,"Po15",2015,2015-09-20
+"INTA Rojo","BRT 103-182","INTA Centro Sur","A","C","Better","Worse","Worse",-85.6,12.735,"Po15",2015,2015-09-21
+"INTA Ferroso","SJC 730-79","INTA Matagalpa","C","A","Worse","Worse","Better",-85.828,12.879,"Po15",2015,2015-09-29
+"SJC 730-79","INTA Ferroso","ALS 0532-6","A","C","Better","Worse","Worse",-85.763,12.812,"Po15",2015,2015-09-26
+"INTA Matagalpa","INTA Sequia","PM2 Don Rey","A","C","Better","Worse","Better",-85.608,12.73,"Po15",2015,2015-09-20
+"ALS 0532-6","INTA Rojo","BRT 103-182","B","C","Worse","Worse","Worse",-85.747,12.817,"Po15",2015,2015-09-29
+"BRT 103-182","INTA Ferroso","INTA Rojo","A","C","Worse","Worse","Worse",-85.796,13.085,"Po15",2015,2015-09-20
+"INTA Rojo","SJC 730-79","ALS 0532-6","B","A","Worse","Worse","Worse",-85.59,12.729,"Po15",2015,2015-09-20
+"PM2 Don Rey","INTA Centro Sur","INTA Precoz","A","C","Worse","Worse","Worse",-85.68,12.91,"Po15",2015,2015-10-14
+"SJC 730-79","INTA Matagalpa","ALS 0532-6","B","A","Worse","Better","Better",-85.68,12.794,"Po15",2015,2015-09-25
+"SJC 730-79","ALS 0532-6","INTA Precoz","A","C","Better","Worse","Worse",-85.611,12.738,"Po15",2015,2015-09-20
+"PM2 Don Rey","INTA Sequia","INTA Precoz","A","C","Worse","Worse","Worse",-85.739,12.811,"Po15",2015,2015-09-17
+"PM2 Don Rey","INTA Sequia","ALS 0532-6","A","C","Worse","Worse","Worse",-85.501,13.096,"Po15",2015,2015-09-11
+"INTA Sequia","INTA Matagalpa","INTA Centro Sur","A","C","Worse","Worse","Worse",-85.703,12.946,"Po15",2015,2015-10-12
+"INTA Centro Sur","INTA Rojo","INTA Precoz","A","C","Worse","Worse","Worse",-85.594,12.726,"Po15",2015,2015-09-21
+"PM2 Don Rey","INTA Rojo","INTA Centro Sur","A","C","Worse","Worse","Worse",-85.77,12.841,"Po15",2015,2015-09-15
+"BRT 103-182","ALS 0532-6","INTA Sequia","C","A","Worse","Worse","Better",-85.715,12.952,"Po15",2015,2015-09-22
+"INTA Rojo","INTA Sequia","INTA Ferroso","B","C","Worse","Worse","Worse",-85.81,12.88,"Po15",2015,2015-09-22
+"INTA Precoz","SJC 730-79","INTA Matagalpa","A","C","Worse","Worse","Worse",-85.757,12.827,"Po15",2015,2015-09-30
+"BRT 103-182","ALS 0532-6","INTA Precoz","A","C","Worse","Worse","Worse",-85.776,12.839,"Po15",2015,2015-09-12
+"INTA Centro Sur","INTA Matagalpa","SJC 730-79","C","A","Worse","Worse","Better",-85.6,12.714,"Po15",2015,2015-09-20
+"PM2 Don Rey","INTA Rojo","INTA Sequia","A","C","Better","Worse","Worse",-85.729,12.8,"Po15",2015,2015-09-21
+"BRT 103-182","INTA Rojo","INTA Ferroso","A","C","Better","Worse","Worse",-85.802,12.867,"Po15",2015,2015-09-23
+"INTA Ferroso","BRT 103-182","SJC 730-79","A","C","Worse","Worse","Worse",-85.739,12.908,"Po15",2015,2015-09-14
+"INTA Sequia","PM2 Don Rey","INTA Centro Sur","C","A","Worse","Worse","Better",-85.583,12.734,"Po15",2015,2015-09-20
+"INTA Matagalpa","PM2 Don Rey","INTA Centro Sur","A","C","Better","Worse","Better",-85.685,12.827,"Po15",2015,2015-09-22
+"INTA Rojo","PM2 Don Rey","INTA Sequia","A","C","Better","Worse","Worse",-85.605,13.149,"Po15",2015,2015-09-15
+"INTA Matagalpa","ALS 0532-6","INTA Precoz","A","C","Better","Worse","Worse",-85.806,12.881,"Po15",2015,2015-09-24
+"ALS 0532-6","INTA Precoz","INTA Centro Sur","A","C","Better","Worse","Worse",-85.784,13.074,"Po15",2015,2015-09-16
+"INTA Precoz","INTA Matagalpa","INTA Ferroso","A","C","Better","Worse","Worse",-85.594,13.178,"Po15",2015,2015-09-17
+"PM2 Don Rey","ALS 0532-6","BRT 103-182","C","A","Worse","Worse","Better",-85.803,12.879,"Po15",2015,2015-10-10
+"ALS 0532-6","BRT 103-182","INTA Rojo","A","C","Better","Worse","Worse",-85.585,12.722,"Po15",2015,2015-09-20
+"INTA Ferroso","ALS 0532-6","PM2 Don Rey","B","C","Worse","Better","Worse",-85.772,12.833,"Po15",2015,2015-09-15
+"INTA Sequia","SJC 730-79","INTA Centro Sur","A","C","Better","Worse","Worse",-85.742,12.908,"Po15",2015,2015-09-23
+"INTA Matagalpa","INTA Ferroso","INTA Precoz","C","B","Worse","Worse","Better",-85.798,12.892,"Po15",2015,2015-09-25
+"INTA Ferroso","INTA Matagalpa","INTA Precoz","B","C","Worse","Better","Worse",-85.728,12.805,"Po15",2015,2015-09-29
+"INTA Centro Sur","SJC 730-79","INTA Sequia","A","B","Better","Worse","Worse",-85.818,12.893,"Po15",2015,2015-09-23
+"INTA Matagalpa","SJC 730-79","INTA Precoz","A","C","Better","Worse","Better",-85.814,12.887,"Po15",2015,2015-10-15
+"INTA Matagalpa","PM2 Don Rey","INTA Precoz","A","C","Better","Worse","Worse",-85.59,12.733,"Po15",2015,2015-09-21
+"INTA Centro Sur","SJC 730-79","INTA Sequia","A","B","Better","Worse","Worse",-85.742,12.893,"Po15",2015,2015-09-30
+"PM2 Don Rey","SJC 730-79","INTA Ferroso","B","C","Worse","Better","Worse",-85.758,12.825,"Po15",2015,2015-09-30
+"INTA Matagalpa","INTA Precoz","INTA Ferroso","C","B","Worse","Worse","Better",-85.711,12.934,"Po15",2015,2015-09-12
+"PM2 Don Rey","INTA Precoz","INTA Centro Sur","A","B","Better","Worse","Better",-85.713,12.856,"Po15",2015,2015-10-01
+"INTA Ferroso","ALS 0532-6","INTA Rojo","B","A","Worse","Better","Worse",-85.81,12.895,"Po15",2015,2015-10-03
+"ALS 0532-6","BRT 103-182","PM2 Don Rey","B","A","Worse","Better","Worse",-85.813,12.899,"Po15",2015,2015-09-28
+"INTA Centro Sur","SJC 730-79","INTA Sequia","B","A","Worse","Better","Worse",-85.605,12.741,"Po15",2015,2015-09-20
+"SJC 730-79","INTA Sequia","BRT 103-182","C","A","Worse","Worse","Better",-85.747,12.939,"Po15",2015,2015-09-22
+"INTA Centro Sur","PM2 Don Rey","INTA Sequia","A","C","Better","Worse","Better",-85.777,12.802,"Po15",2015,2015-10-05
+"INTA Matagalpa","INTA Precoz","INTA Centro Sur","B","C","Worse","Better","Worse",-85.803,12.884,"Po15",2015,2015-09-24
+"INTA Sequia","BRT 103-182","INTA Centro Sur","C","B","Better","Worse","Better",-85.669,13.019,"Po15",2015,2015-09-18
+"BRT 103-182","INTA Rojo","INTA Sequia","B","C","Worse","Better","Worse",-85.692,12.816,"Po15",2015,2015-09-27
+"SJC 730-79","INTA Sequia","INTA Centro Sur","C","B","Worse","Better","Better",-85.574,12.721,"Po15",2015,2015-09-20
+"INTA Matagalpa","INTA Ferroso","INTA Precoz","C","A","Worse","Worse","Better",-85.688,12.823,"Po15",2015,2015-09-26
+"INTA Centro Sur","SJC 730-79","INTA Sequia","B","A","Worse","Better","Better",-85.773,12.84,"Po15",2015,2015-09-22
+"BRT 103-182","ALS 0532-6","PM2 Don Rey","A","B","Better","Worse","Worse",-85.574,12.718,"Po15",2015,2015-09-21
+"INTA Centro Sur","SJC 730-79","INTA Sequia","B","A","Better","Better","Worse",-85.811,12.875,"Po15",2015,2015-10-01
+"INTA Precoz","INTA Ferroso","INTA Matagalpa","A","B","Better","Worse","Worse",-85.721,13.043,"Po15",2015,2015-09-18
+"INTA Centro Sur","INTA Rojo","INTA Sequia","C","B","Worse","Worse","Better",-85.574,12.723,"Po15",2015,2015-09-21
+"INTA Rojo","SJC 730-79","ALS 0532-6","C","A","Worse","Worse","Better",-85.794,12.872,"Po15",2015,2015-09-17
+"SJC 730-79","INTA Sequia","INTA Centro Sur","A","C","Better","Better","Worse",-85.732,12.806,"Po15",2015,2015-09-26
+"INTA Ferroso","INTA Precoz","INTA Matagalpa","C","B","Worse","Worse","Better",-85.781,12.841,"Po15",2015,2015-09-21
+"PM2 Don Rey","BRT 103-182","ALS 0532-6","A","C","Better","Worse","Worse",-85.784,12.836,"Po15",2015,2015-09-25
+"PM2 Don Rey","INTA Ferroso","INTA Matagalpa","B","A","Worse","Better","Better",-85.586,12.73,"Po15",2015,2015-09-20
+"SJC 730-79","BRT 103-182","INTA Rojo","A","B","Better","Worse","Worse",-85.813,12.915,"Po15",2015,2015-09-22
+"INTA Precoz","INTA Matagalpa","INTA Ferroso","B","C","Worse","Better","Worse",-85.796,13.085,"Po15",2015,2015-09-20
+"INTA Sequia","INTA Centro Sur","INTA Precoz","C","A","Better","Better","Better",-85.735,12.808,"Po15",2015,2015-09-10
+"PM2 Don Rey","ALS 0532-6","BRT 103-182","A","B","Better","Worse","Worse",-85.578,13.181,"Po15",2015,2015-09-18
+"ALS 0532-6","BRT 103-182","PM2 Don Rey","A","C","Better","Worse","Worse",-85.77,12.832,"Po15",2015,2015-09-27
+"INTA Sequia","INTA Precoz","INTA Centro Sur","B","C","Worse","Better","Worse",-85.596,12.802,"Po15",2015,2015-09-27
+"INTA Ferroso","INTA Rojo","INTA Matagalpa","C","B","Worse","Worse","Better",-85.697,12.952,"Po15",2015,2015-09-24
+"INTA Rojo","INTA Centro Sur","INTA Precoz","A","C","Better","Better","Worse",-85.68,12.794,"Po15",2015,2015-09-25
+"SJC 730-79","INTA Ferroso","INTA Sequia","C","A","Worse","Worse","Better",-85.777,12.84,"Po15",2015,2015-10-16
+"ALS 0532-6","BRT 103-182","SJC 730-79","B","C","Worse","Worse","Better",-85.699,12.94,"Po15",2015,2015-09-26
+"INTA Centro Sur","PM2 Don Rey","INTA Ferroso","B","C","Worse","Worse","Better",-85.81,12.88,"Po15",2015,2015-09-25
+"INTA Ferroso","ALS 0532-6","SJC 730-79","A","C","Better","Better","Worse",-85.781,12.833,"Po15",2015,2015-10-13
+"INTA Matagalpa","PM2 Don Rey","ALS 0532-6","B","A","Better","Better","Better",-85.8,12.892,"Po15",2015,2015-10-01
+"INTA Rojo","INTA Precoz","INTA Matagalpa","B","C","Worse","Better","Worse",-85.491,13.085,"Po15",2015,2015-09-11
+"INTA Matagalpa","SJC 730-79","ALS 0532-6","B","A","Worse","Better","Worse",-85.809,12.888,"Po15",2015,2015-10-07
+"INTA Sequia","BRT 103-182","INTA Ferroso","B","A","Worse","Better","Worse",-85.802,12.873,"Po15",2015,2015-10-15
+"PM2 Don Rey","BRT 103-182","INTA Rojo","B","C","Worse","Better","Worse",-85.774,12.836,"Po15",2015,2015-09-11
+"INTA Sequia","INTA Rojo","PM2 Don Rey","A","C","Worse","Worse","Worse",-85.809,12.887,"Po15",2015,2015-10-10
+"INTA Centro Sur","ALS 0532-6","INTA Precoz","C","A","Worse","Worse","Better",-85.711,12.797,"Po15",2015,2015-09-12
+"ALS 0532-6","PM2 Don Rey","INTA Centro Sur","A","C","Better","Worse","Worse",-85.811,12.855,"Po15",2015,2015-09-30
+"INTA Matagalpa","ALS 0532-6","BRT 103-182","A","C","Better","Worse","Worse",-85.733,12.809,"Po15",2015,2015-09-28
+"INTA Sequia","INTA Ferroso","INTA Centro Sur","A","C","Better","Worse","Worse",-85.807,12.869,"Po15",2015,2015-09-28
+"INTA Rojo","INTA Precoz","SJC 730-79","A","B","Better","Worse","Worse",-85.811,12.875,"Po15",2015,2015-10-11
+"INTA Matagalpa","INTA Ferroso","SJC 730-79","C","A","Worse","Worse","Better",-85.816,12.885,"Po15",2015,2015-10-07
+"BRT 103-182","INTA Centro Sur","ALS 0532-6","A","C","Better","Worse","Worse",-85.737,12.868,"Po15",2015,2015-09-21
+"INTA Matagalpa","INTA Rojo","ALS 0532-6","A","B","Better","Better","Better",-85.817,12.879,"Po15",2015,2015-09-25
+"BRT 103-182","INTA Centro Sur","INTA Sequia","C","A","Worse","Better","Better",-85.761,12.924,"Po15",2015,2015-09-17
+"INTA Precoz","SJC 730-79","PM2 Don Rey","C","B","Worse","Worse","Better",-85.702,12.95,"Po15",2015,2015-09-16
+"INTA Sequia","ALS 0532-6","INTA Centro Sur","C","B","Better","Worse","Better",-85.762,12.927,"Po15",2015,2015-10-22
+"INTA Centro Sur","INTA Ferroso","INTA Rojo","C","B","Better","Worse","Better",-85.817,12.88,"Po15",2015,2015-10-06
+"INTA Sequia","PM2 Don Rey","INTA Matagalpa","C","A","Better","Worse","Worse",-85.818,12.873,"Po15",2015,2015-10-02
+"SJC 730-79","INTA Precoz","INTA Centro Sur","C","A","Worse","Better","Better",-85.803,12.888,"Po15",2015,2015-09-27
+"SJC 730-79","INTA Precoz","BRT 103-182","A","B","Better","Worse","Worse",-85.544,12.823,"Po15",2015,2015-09-24
+"INTA Matagalpa","SJC 730-79","BRT 103-182","A","C","Better","Better","Worse",-85.816,12.879,"Po15",2015,2015-10-13
+"INTA Precoz","SJC 730-79","INTA Sequia","C","B","Better","Worse","Worse",-85.71,12.944,"Po15",2015,2015-09-23
+"INTA Centro Sur","ALS 0532-6","INTA Ferroso","A","C","Better","Better","Worse",-85.692,13.045,"Po15",2015,2015-09-22
+"PM2 Don Rey","ALS 0532-6","INTA Rojo","A","C","Better","Worse","Worse",-85.597,12.713,"Po15",2015,2015-09-20
+"BRT 103-182","SJC 730-79","INTA Centro Sur","A","B","Better","Better","Worse",-85.713,12.943,"Po15",2015,2015-09-30
+"INTA Precoz","ALS 0532-6","INTA Sequia","C","A","Worse","Worse","Better",-85.732,12.808,"Po15",2015,2015-09-28
+"SJC 730-79","INTA Rojo","INTA Matagalpa","A","C","Better","Worse","Worse",-85.81,12.877,"Po15",2015,2015-09-17
+"INTA Precoz","INTA Sequia","INTA Matagalpa","A","C","Worse","Worse","Worse",-85.761,12.828,"Po15",2015,2015-09-22
+"BRT 103-182","PM2 Don Rey","INTA Rojo","C","B","Worse","Better","Better",-85.807,12.897,"Po15",2015,2015-10-25
+"BRT 103-182","INTA Matagalpa","INTA Sequia","A","C","Better","Worse","Worse",-85.739,12.813,"Po15",2015,2015-10-05
+"INTA Precoz","INTA Rojo","BRT 103-182","C","A","Worse","Worse","Better",-85.59,12.725,"Po15",2015,2015-09-20
+"INTA Matagalpa","ALS 0532-6","INTA Centro Sur","B","A","Worse","Better","Worse",-85.583,12.733,"Po15",2015,2015-09-20
+"SJC 730-79","INTA Rojo","INTA Ferroso","B","A","Better","Better","Better",-85.578,12.718,"Po15",2015,2015-09-20
+"ALS 0532-6","INTA Matagalpa","INTA Ferroso","A","C","Better","Worse","Worse",-85.813,12.881,"Po15",2015,2015-09-18
+"BRT 103-182","SJC 730-79","PM2 Don Rey","A","C","Better","Worse","Worse",-85.692,12.831,"Po15",2015,2015-09-23
+"INTA Matagalpa","ALS 0532-6","INTA Precoz","A","C","Better","Worse","Worse",-85.762,12.916,"Po15",2015,2015-10-12
+"INTA Precoz","INTA Centro Sur","ALS 0532-6","A","C","Better","Worse","Worse",-85.691,12.84,"Po15",2015,2015-09-19
+"INTA Precoz","PM2 Don Rey","ALS 0532-6","B","A","Worse","Better","Better",-85.838,12.865,"Po15",2015,2015-09-30
+"INTA Centro Sur","PM2 Don Rey","INTA Precoz","A","C","Worse","Worse","Worse",-85.813,12.893,"Po15",2015,2015-09-26
+"ALS 0532-6","INTA Rojo","INTA Ferroso","A","C","Better","Worse","Worse",-85.779,12.856,"Po15",2015,2015-09-30
+"INTA Matagalpa","INTA Sequia","ALS 0532-6","A","C","Better","Worse","Worse",-85.713,12.833,"Po15",2015,2015-10-08
+"INTA Matagalpa","INTA Rojo","INTA Sequia","C","A","Worse","Worse","Better",-85.814,12.907,"Po15",2015,2015-09-26
+"ALS 0532-6","INTA Matagalpa","SJC 730-79","A","C","Better","Worse","Better",-85.807,12.892,"Po15",2015,2015-10-01
+"ALS 0532-6","INTA Ferroso","INTA Precoz","A","C","Better","Better","Worse",-85.735,12.81,"Po15",2015,2015-09-28
+"INTA Rojo","INTA Sequia","INTA Centro Sur","C","A","Better","Better","Worse",-85.784,13.074,"Po15",2015,2015-09-16
+"PM2 Don Rey","INTA Matagalpa","ALS 0532-6","C","A","Worse","Better","Better",-85.678,12.813,"Po15",2015,2015-09-27
+"INTA Precoz","BRT 103-182","INTA Sequia","A","C","Better","Worse","Better",-85.738,12.812,"Po15",2015,2015-09-29
+"INTA Precoz","INTA Sequia","ALS 0532-6","B","C","Worse","Better","Worse",-85.696,12.96,"Po15",2015,2015-10-14
+"INTA Precoz","BRT 103-182","SJC 730-79","A","C","Better","Worse","Better",-85.556,12.717,"Po15",2015,2015-09-21
+"SJC 730-79","INTA Rojo","INTA Precoz","B","A","Worse","Better","Worse",-85.761,12.947,"Po15",2015,2015-10-20
+"PM2 Don Rey","ALS 0532-6","SJC 730-79","B","A","Worse","Better","Better",-85.752,12.82,"Po15",2015,2015-09-29
+"INTA Sequia","INTA Centro Sur","PM2 Don Rey","C","B","Better","Better","Worse",-85.803,12.88,"Po15",2015,2015-09-23
+"INTA Centro Sur","PM2 Don Rey","BRT 103-182","C","B","Worse","Worse","Worse",-85.779,12.837,"Po15",2015,2015-09-29
+"ALS 0532-6","PM2 Don Rey","INTA Rojo","B","C","Worse","Better","Worse",-85.56,12.828,"Po15",2015,2015-09-16
+"BRT 103-182","ALS 0532-6","SJC 730-79","C","A","Worse","Worse","Worse",-85.597,12.734,"Po15",2015,2015-09-20
+"INTA Sequia","BRT 103-182","SJC 730-79","C","B","Worse","Worse","Better",-85.801,12.895,"Po15",2015,2015-10-26
+"INTA Ferroso","SJC 730-79","INTA Matagalpa","B","C","Better","Worse","Worse",-85.686,12.823,"Po15",2015,2015-09-23
+"INTA Precoz","BRT 103-182","INTA Rojo","C","A","Worse","Better","Better",-85.669,12.805,"Po15",2015,2015-09-22
+"INTA Matagalpa","INTA Precoz","INTA Rojo","C","B","Better","Worse","Better",-85.817,12.884,"Po15",2015,2015-10-02
+"ALS 0532-6","INTA Sequia","PM2 Don Rey","B","C","Worse","Better","Better",-85.769,12.931,"Po15",2015,2015-10-05
+"SJC 730-79","PM2 Don Rey","INTA Matagalpa","A","C","Better","Better","Worse",-85.807,12.893,"Po15",2015,2015-09-26
+"PM2 Don Rey","ALS 0532-6","INTA Ferroso","B","C","Worse","Better","Better",-85.711,12.954,"Po15",2015,2015-09-29
+"INTA Ferroso","ALS 0532-6","INTA Matagalpa","B","A","Worse","Better","Worse",-85.724,12.948,"Po15",2015,2015-09-22
+"BRT 103-182","INTA Rojo","INTA Centro Sur","A","B","Better","Worse","Better",-85.577,12.725,"Po15",2015,2015-09-21
+"INTA Matagalpa","PM2 Don Rey","INTA Centro Sur","A","C","Better","Better","Better",-85.557,12.817,"Po15",2015,2015-09-14
+"SJC 730-79","INTA Centro Sur","PM2 Don Rey","B","C","Worse","Better","Worse",-85.751,12.942,"Po15",2015,2015-09-22
+"INTA Ferroso","INTA Centro Sur","INTA Rojo","B","A","Worse","Better","Worse",-85.807,12.896,"Po15",2015,2015-09-23
+"INTA Sequia","SJC 730-79","BRT 103-182","A","C","Better","Worse","Worse",-85.577,12.706,"Po15",2015,2015-09-20
+"PM2 Don Rey","BRT 103-182","SJC 730-79","A","B","Better","Worse","Worse",-85.735,12.81,"Po15",2015,2015-10-02
+"INTA Matagalpa","INTA Precoz","INTA Sequia","A","B","Better","Worse","Worse",-85.781,12.839,"Po15",2015,2015-10-13
+"SJC 730-79","INTA Centro Sur","INTA Precoz","C","B","Better","Better","Better",-85.674,12.809,"Po15",2015,2015-09-23
+"INTA Ferroso","ALS 0532-6","INTA Precoz","B","A","Worse","Better","Worse",-85.684,13.035,"Po15",2015,2015-09-23
+"INTA Precoz","INTA Ferroso","INTA Rojo","B","A","Worse","Better","Worse",-85.792,12.924,"Po15",2015,2015-10-01
+"INTA Centro Sur","INTA Matagalpa","INTA Precoz","B","A","Worse","Better","Worse",-85.805,12.897,"Po15",2015,2015-10-15
+"SJC 730-79","INTA Precoz","INTA Ferroso","B","A","Worse","Better","Worse",-85.557,12.824,"Po15",2015,2015-09-12
+"INTA Precoz","INTA Rojo","ALS 0532-6","A","B","Better","Worse","Worse",-85.769,12.832,"Po15",2015,2015-10-05
+"INTA Centro Sur","INTA Matagalpa","BRT 103-182","B","A","Worse","Worse","Better",-85.737,12.88,"Po15",2015,2015-09-20
+"INTA Rojo","SJC 730-79","INTA Sequia","A","C","Worse","Better","Better",-85.54,12.828,"Po15",2015,2015-09-13
+"INTA Matagalpa","INTA Sequia","INTA Centro Sur","C","A","Worse","Better","Better",-85.777,12.84,"Po15",2015,2015-09-27
+"INTA Ferroso","PM2 Don Rey","BRT 103-182","C","B","Worse","Better","Better",-85.555,12.829,"Po15",2015,2015-09-23
+"INTA Rojo","SJC 730-79","INTA Ferroso","C","A","Worse","Worse","Better",-85.759,12.955,"Po15",2015,2015-09-30
+"INTA Matagalpa","PM2 Don Rey","INTA Ferroso","B","A","Worse","Better","Worse",-85.655,12.777,"Po15",2015,2015-09-24
+"INTA Matagalpa","INTA Centro Sur","ALS 0532-6","C","A","Worse","Worse","Better",-85.688,12.825,"Po15",2015,2015-09-22
+"INTA Sequia","ALS 0532-6","INTA Centro Sur","A","B","Better","Worse","Worse",-85.761,12.943,"Po15",2015,2015-09-19
+"PM2 Don Rey","ALS 0532-6","INTA Precoz","A","C","Better","Worse","Worse",-85.594,12.735,"Po16",2016,2016-09-20
+"SJC 730-79","ALS 0532-6","INTA Sequia","B","A","Worse","Better","Worse",-85.639,12.75,"Po16",2016,2016-09-15
+"SJC 730-79","BRT 103-182","INTA Centro Sur","B","A","Better","Worse","Worse",-85.578,12.725,"Po16",2016,2016-09-20
+"INTA Ferroso","ALS 0532-6","INTA Centro Sur","B","C","Worse","Better","Worse",-85.69,12.795,"Po16",2016,2016-09-13
+"INTA Ferroso","INTA Centro Sur","INTA Rojo","B","A","Worse","Better","Worse",-85.639,12.75,"Po16",2016,2016-09-15
+"INTA Sequia","INTA Centro Sur","INTA Ferroso","B","C","Worse","Better","Worse",-85.639,12.75,"Po16",2016,2016-09-10
+"INTA Centro Sur","PM2 Don Rey","INTA Rojo","A","C","Better","Worse","Worse",-85.639,12.75,"Po16",2016,2016-09-12
+"SJC 730-79","INTA Rojo","BRT 103-182","A","C","Worse","Worse","Worse",-85.583,12.739,"Po16",2016,2016-09-20
+"INTA Precoz","INTA Ferroso","BRT 103-182","C","A","Better","Worse","Worse",-85.577,12.717,"Po16",2016,2016-09-20
+"INTA Centro Sur","INTA Matagalpa","INTA Rojo","C","A","Better","Worse","Better",-85.639,12.75,"Po16",2016,2016-09-09
+"ALS 0532-6","INTA Precoz","INTA Centro Sur","B","A","Better","Better","Better",-85.69,12.795,"Po16",2016,2016-09-17
+"INTA Sequia","INTA Matagalpa","INTA Rojo","B","A","Worse","Better","Better",-85.596,12.733,"Po16",2016,2016-09-20
+"INTA Precoz","INTA Ferroso","INTA Rojo","A","C","Better","Better","Better",-85.616,12.738,"Po16",2016,2016-09-20
+"SJC 730-79","INTA Ferroso","INTA Centro Sur","A","C","Better","Better","Worse",-85.59,12.723,"Po16",2016,2016-09-20
+"PM2 Don Rey","INTA Matagalpa","INTA Centro Sur","B","A","Worse","Better","Better",-85.69,12.795,"Po16",2016,2016-09-15
+"INTA Sequia","PM2 Don Rey","SJC 730-79","C","A","Better","Better","Better",-85.69,12.795,"Po16",2016,2016-09-12
+"ALS 0532-6","INTA Precoz","INTA Rojo","C","A","Worse","Better","Better",-85.573,12.745,"Po16",2016,2016-09-20
+"BRT 103-182","INTA Rojo","INTA Matagalpa","A","C","Better","Better","Better",-85.69,12.795,"Po16",2016,2016-09-14
+"INTA Matagalpa","INTA Sequia","ALS 0532-6","A","C","Better","Better","Worse",-85.639,12.75,"Po16",2016,2016-09-12
+"INTA Centro Sur","INTA Rojo","BRT 103-182","A","B","Better","Worse","Better",-85.59,12.735,"Po16",2016,2016-09-20
+"ALS 0532-6","BRT 103-182","PM2 Don Rey","B","C","Better","Better","Worse",-85.593,12.733,"Po16",2016,2016-09-20
+"BRT 103-182","INTA Precoz","INTA Sequia","C","A","Worse","Better","Better",-85.573,12.792,"Po16",2016,2016-09-15
+"ALS 0532-6","INTA Precoz","INTA Sequia","C","B","Worse","Better","Better",-85.69,12.795,"Po16",2016,2016-09-16
+"SJC 730-79","INTA Precoz","PM2 Don Rey","A","C","Better","Better","Worse",-85.639,12.75,"Po16",2016,2016-09-12
+"INTA Rojo","ALS 0532-6","SJC 730-79","B","A","Worse","Better","Better",-85.557,12.722,"Po16",2016,2016-09-20
+"ALS 0532-6","INTA Ferroso","INTA Rojo","C","A","Worse","Better","Better",-85.639,12.75,"Po16",2016,2016-09-15
+"BRT 103-182","INTA Matagalpa","INTA Sequia","C","A","Worse","Better","Better",-85.639,12.75,"Po16",2016,2016-09-08
+"PM2 Don Rey","INTA Sequia","INTA Matagalpa","A","C","Better","Worse","Better",-85.576,12.745,"Po16",2016,2016-09-20
+"BRT 103-182","INTA Matagalpa","PM2 Don Rey","A","C","Better","Worse","Better",-85.607,12.735,"Po16",2016,2016-09-20
+"ALS 0532-6","SJC 730-79","INTA Ferroso","B","A","Worse","Better","Better",-85.57,12.739,"Po16",2016,2016-09-20
+"INTA Precoz","PM2 Don Rey","INTA Sequia","A","B","Better","Worse","Worse",-85.604,12.727,"Po16",2016,2016-09-20
+"INTA Ferroso","PM2 Don Rey","INTA Centro Sur","C","A","Worse","Worse","Better",-85.578,12.725,"Po16",2016,2016-09-20
+"INTA Matagalpa","INTA Centro Sur","INTA Precoz","B","A","Worse","Better","Worse",-85.639,12.75,"Po16",2016,2016-09-10
+"ALS 0532-6","INTA Sequia","BRT 103-182","C","B","Better","Better","Better",-85.749,12.911,"Pr15",2016,2016-06-16
+"INTA Centro Sur","INTA Precoz","INTA Rojo","A","B","Better","Better","Better",-85.749,12.911,"Pr15",2016,2016-06-16
+"INTA Rojo","INTA Ferroso","INTA Matagalpa","C","B","Better","Better","Better",-85.948,13.013,"Pr15",2016,2016-06-21
+"INTA Centro Sur","INTA Rojo","ALS 0532-6","A","C","Worse","Worse","Worse",-85.769,12.923,"Pr15",2016,2016-06-22
+"BRT 103-182","INTA Centro Sur","SJC 730-79","B","C","Worse","Better","Worse",-85.882,12.687,"Pr15",2016,2016-06-16
+"SJC 730-79","INTA Ferroso","INTA Sequia","A","C","Worse","Worse","Worse",-85.778,12.84,"Pr15",2016,2016-06-23
+"INTA Matagalpa","INTA Precoz","ALS 0532-6","B","C","Worse","Better","Worse",-85.749,12.911,"Pr15",2016,2016-06-15
+"INTA Rojo","INTA Matagalpa","PM2 Don Rey","A","C","Better","Worse","Worse",-85.712,12.947,"Pr15",2016,2016-06-26
+"INTA Sequia","SJC 730-79","INTA Ferroso","A","C","Better","Worse","Worse",-86.023,13.013,"Pr15",2016,2016-06-21
+"INTA Rojo","PM2 Don Rey","BRT 103-182","A","C","Better","Worse","Worse",-85.749,12.911,"Pr15",2016,2016-06-23
+"INTA Precoz","INTA Sequia","INTA Ferroso","A","C","Worse","Worse","Worse",-85.749,12.911,"Pr15",2016,2016-06-15
+"PM2 Don Rey","INTA Rojo","ALS 0532-6","B","C","Worse","Worse","Worse",-86.068,13.013,"Pr15",2016,2016-06-20
+"INTA Ferroso","INTA Rojo","SJC 730-79","B","C","Worse","Better","Worse",-85.778,12.84,"Pr15",2016,2016-06-23
+"ALS 0532-6","INTA Precoz","BRT 103-182","A","C","Worse","Worse","Worse",-85.827,12.921,"Pr15",2016,2016-06-22
+"INTA Sequia","SJC 730-79","INTA Matagalpa","A","C","Better","Worse","Worse",-85.749,12.911,"Pr15",2016,2016-06-21
+"ALS 0532-6","BRT 103-182","PM2 Don Rey","B","A","Worse","Better","Worse",-85.712,12.947,"Pr15",2016,2016-06-22
+"INTA Precoz","INTA Matagalpa","INTA Rojo","A","B","Better","Worse","Worse",-85.749,12.911,"Pr15",2016,2016-06-23
+"INTA Centro Sur","PM2 Don Rey","INTA Ferroso","B","C","Worse","Better","Worse",-85.948,13.013,"Pr15",2016,2016-07-01
+"SJC 730-79","INTA Sequia","BRT 103-182","B","C","Worse","Better","Worse",-85.749,12.911,"Pr15",2016,2016-06-23
+"PM2 Don Rey","INTA Sequia","INTA Centro Sur","A","C","Worse","Worse","Worse",-85.882,12.687,"Pr15",2016,2016-06-18
+"INTA Rojo","INTA Precoz","BRT 103-182","A","C","Better","Worse","Worse",-85.749,12.911,"Pr15",2016,2016-06-23
+"INTA Matagalpa","INTA Ferroso","SJC 730-79","A","C","Better","Worse","Worse",-85.769,12.923,"Pr15",2016,2016-06-22
+"INTA Centro Sur","PM2 Don Rey","ALS 0532-6","A","C","Better","Better","Better",-85.712,12.947,"Pr15",2016,2016-06-22
+"ALS 0532-6","INTA Sequia","INTA Centro Sur","A","B","Worse","Worse","Worse",-85.838,12.923,"Pr15",2016,2016-06-22
+"SJC 730-79","BRT 103-182","INTA Ferroso","A","C","Worse","Worse","Worse",-85.778,12.84,"Pr15",2016,2016-06-22
+"INTA Centro Sur","INTA Precoz","PM2 Don Rey","A","C","Worse","Worse","Worse",-85.706,13.013,"Pr15",2016,2016-06-23
+"INTA Matagalpa","INTA Ferroso","INTA Centro Sur","A","C","Worse","Worse","Worse",-85.995,13.013,"Pr15",2016,2016-06-23
+"INTA Matagalpa","SJC 730-79","PM2 Don Rey","B","C","Worse","Worse","Worse",-85.778,12.84,"Pr15",2016,2016-06-22
+"SJC 730-79","INTA Ferroso","INTA Precoz","C","A","Worse","Worse","Better",-85.712,12.947,"Pr15",2016,2016-06-22
+"INTA Precoz","INTA Matagalpa","INTA Ferroso","A","C","Better","Worse","Worse",-85.948,13.013,"Pr15",2016,2016-06-21
+"INTA Rojo","SJC 730-79","PM2 Don Rey","A","C","Better","Worse","Worse",-85.712,12.947,"Pr15",2016,2016-06-22
+"ALS 0532-6","INTA Precoz","INTA Ferroso","A","C","Better","Worse","Worse",-85.882,12.687,"Pr15",2016,2016-06-16
+"INTA Ferroso","ALS 0532-6","INTA Sequia","C","B","Better","Better","Better",-85.749,12.911,"Pr15",2016,2016-06-23
+"INTA Precoz","INTA Ferroso","INTA Centro Sur","A","C","Worse","Worse","Worse",-85.712,12.947,"Pr15",2016,2016-06-25
+"INTA Matagalpa","ALS 0532-6","INTA Rojo","C","A","Worse","Worse","Better",-85.712,12.947,"Pr15",2016,2016-06-26
+"PM2 Don Rey","INTA Centro Sur","BRT 103-182","C","B","Worse","Worse","Better",-85.749,12.911,"Pr15",2016,2016-06-23
+"INTA Centro Sur","SJC 730-79","INTA Precoz","A","C","Better","Worse","Worse",-85.749,12.911,"Pr15",2016,2016-06-23
+"INTA Sequia","SJC 730-79","INTA Precoz","A","B","Better","Worse","Worse",-85.728,12.978,"Pr15",2016,2016-06-22
+"INTA Ferroso","INTA Matagalpa","BRT 103-182","C","A","Worse","Worse","Better",-85.749,12.911,"Pr15",2016,2016-06-23
+"ALS 0532-6","INTA Rojo","INTA Precoz","A","C","Worse","Worse","Worse",-85.712,12.947,"Pr15",2016,2016-06-25
+"INTA Centro Sur","PM2 Don Rey","SJC 730-79","A","C","Better","Worse","Worse",-85.712,12.947,"Pr15",2016,2016-06-23
+"ALS 0532-6","INTA Precoz","INTA Centro Sur","B","A","Worse","Better","Worse",-85.712,12.947,"Pr15",2016,2016-06-26
+"INTA Precoz","SJC 730-79","INTA Rojo","A","B","Worse","Worse","Better",-85.778,12.84,"Pr15",2016,2016-06-22
+"SJC 730-79","INTA Rojo","BRT 103-182","C","A","Better","Better","Better",-85.778,12.84,"Pr15",2016,2016-06-23
+"SJC 730-79","ALS 0532-6","INTA Centro Sur","B","C","Worse","Better","Worse",-85.948,13.013,"Pr15",2016,2016-06-22
+"PM2 Don Rey","INTA Rojo","INTA Precoz","C","A","Worse","Worse","Better",-85.712,12.947,"Pr15",2016,2016-06-22
+"INTA Ferroso","PM2 Don Rey","INTA Sequia","C","A","Worse","Worse","Better",-85.769,12.923,"Pr15",2016,2016-06-23
+"INTA Matagalpa","SJC 730-79","INTA Precoz","A","B","Better","Worse","Worse",-85.882,12.687,"Pr15",2016,2016-06-16
+"INTA Centro Sur","INTA Sequia","SJC 730-79","C","B","Worse","Worse","Better",-85.882,12.687,"Pr15",2016,2016-06-16
+"BRT 103-182","INTA Centro Sur","ALS 0532-6","C","A","Worse","Worse","Better",-85.749,12.911,"Pr15",2016,2016-06-15
+"BRT 103-182","ALS 0532-6","INTA Ferroso","B","A","Worse","Better","Better",-85.882,12.687,"Pr15",2016,2016-06-27
+"BRT 103-182","INTA Ferroso","INTA Sequia","B","A","Worse","Better","Better",-85.882,12.687,"Pr15",2016,2016-06-20
+"SJC 730-79","INTA Rojo","INTA Matagalpa","A","B","Better","Worse","Worse",-85.948,13.013,"Pr15",2016,2016-06-21
+"ALS 0532-6","INTA Sequia","BRT 103-182","C","A","Better","Better","Better",-85.769,12.923,"Pr15",2016,2016-06-24
+"SJC 730-79","INTA Matagalpa","BRT 103-182","A","C","Worse","Worse","Worse",-85.749,12.911,"Pr15",2016,2016-06-16
+"PM2 Don Rey","INTA Ferroso","INTA Precoz","A","B","Better","Worse","Better",-85.778,12.84,"Pr15",2016,2016-06-23
+"INTA Centro Sur","INTA Sequia","INTA Matagalpa","B","C","Worse","Worse","Worse",-85.882,12.687,"Pr15",2016,2016-06-17
+"SJC 730-79","INTA Rojo","INTA Matagalpa","A","B","Better","Worse","Worse",-85.948,13.013,"Pr15",2016,2016-06-22
+"BRT 103-182","INTA Centro Sur","INTA Sequia","C","A","Worse","Worse","Better",-85.749,12.911,"Pr15",2016,2016-06-22
+"INTA Centro Sur","INTA Rojo","INTA Sequia","C","A","Worse","Worse","Better",-85.749,12.911,"Pr15",2016,2016-06-23
+"ALS 0532-6","INTA Matagalpa","BRT 103-182","B","C","Better","Worse","Better",-85.712,12.947,"Pr15",2016,2016-06-27
+"INTA Ferroso","INTA Sequia","INTA Matagalpa","A","C","Better","Better","Worse",-85.749,12.911,"Pr15",2016,2016-06-23
+"PM2 Don Rey","INTA Sequia","INTA Rojo","B","C","Worse","Worse","Worse",-85.778,12.84,"Pr15",2016,2016-06-23
+"INTA Matagalpa","INTA Centro Sur","SJC 730-79","B","A","Better","Worse","Worse",-85.749,12.911,"Pr15",2016,2016-06-23
