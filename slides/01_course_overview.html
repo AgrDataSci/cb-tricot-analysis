@@ -16,7 +16,7 @@
 class: center, middle, inverse, title-slide
 
 # Analysis of <em>tricot</em> data
-## course overview
+## Course overview
 ### Kauê de Sousa
 ### 2021-03-10
 
@@ -31,8 +31,8 @@ class: center, middle, inverse, title-slide
 
 * Short introduction to R 
 * Project-oriented workflow
-* Get data from ClimMob into R
 * Introduction to the Plackett-Luce model
+* Get data from ClimMob into R
 * Turning *tricot* rankings into Plackett-Luce rankings
 * Visualization and summary
 * Plackett-Luce Trees (model with covariates)
@@ -45,166 +45,30 @@ class: center, middle, inverse, title-slide
 Learn the principles to analyse the tricot data and how to interpret the results
 
 ---
-class: middle, inverse
-# Short introduction to R
+# The tricot approach
+
+To know more about the triadic comparison of technologies (tricot) approach, read the working papers and watch the series of videos prepared by the ClimMob Team. 
+
+Click [here](https://hdl.handle.net/10568/109942) and [here](https://hdl.handle.net/10568/111044) to read about tricot
+
+Click [here](https://www.youtube.com/channel/UCmqo4KCZwX8R-H4SNkXfuSA/playlists) to watch the videos
 
 ---
-# Why R
+# **Thank you!**
+.pull-left[
+&lt;img src="img/inn-uni.png" width="40%"/&gt;
 
-Free and open source$^1$.
+&lt;img src="img/bioversity.png" width="50%"/&gt;
 
-Software for data science:
+&lt;img src="img/climmob.png" width="40%"/&gt;
+]
 
-* experiment/survey design
-* data retrieval
-* data wrangling
-* data analysis
-* reporting
+.pull-right[
 
-A programming language, so we can
+&lt;img src="https://img.icons8.com/color/64/000000/twitter.png" width = "10%"&gt;[@desousakaue](https://twitter.com/desousakaue)
 
-* use existing functions to code up our data science tasks
-* write new functions for customized/novel tasks
-
-.footnote[
-[1] [Download here](https://cran.r-project.org/)]
-
----
-# R code-along
-
-We can type commands directly into the R console
-
-
-```r
-3 + 4
-?"+" #look up help for "+"
-x &lt;- 3 + 4
-y &lt;- log(x)
-ls() # list of objects in the current workspace
-data() # find out what standard data sets there are
-plot(iris) # plot Fisher's iris data
-```
-
----
-# RStudio
-
-&lt;center&gt;
-&lt;img src="img/R-ui.png" width="60%"/&gt;
-&lt;/center&gt;
-
-.footnote[
-[1] [Download here](https://rstudio.com/products/rstudio/download/)]
----
-# Data structures
-
-R is a vector based language
-
-Data structures are the building blocks of code. In R there are four main types of structure:
-
-* vectors
-* matrices and arrays
-* lists
-* data frames
-
----
-# Vectors
-
-A single number is a special case of a numeric vector. Vectors of length greater than one can be created using the concatenate function `c()`.
-
-The elements of the vector must be of the same type: common types are integer, numeric, character, factor and logical
-
-
-```r
-c(1,2,3)
-
-c("red", "yellow", "green")
-
-c(TRUE, FALSE, TRUE)
-```
-
-R is a case sensitive language, for example, TRUE is different than true or True 
-
----
-# Vectors
-
-Elements of a vector are separated to each other with a comma 
-
-
-```r
-c(1, 4, 8)
-```
-
-Numbers are native elements and are recognised by R without the need of quotation mark " ". To assign strings (characters) to a vector you need to wrap each element with a quotation mark.
-
-
-```r
-c("apple", "banana", "orange", 1, 2)
-```
-
-Logical constants can be coerced to integers where `TRUE` becomes `1` and `FALSE` becomes `0`. For this we use the function `as.integer()`
-
-
-```r
-as.integer(c(TRUE, FALSE, FALSE, TRUE))
-```
-
----
-# Missing values
-
-Missing values (of any type) are represented by logical constant `NA`.
-
-
-```r
-c("apple", "banana", "orange", NA)
-```
-
-The first vector below is different from the second vector because the first have a length 3 (three elements inside the vector), while the last has a length 4 (four elements), even though the last element is non-available. We can check the length of a vector with the function `length()`
-
-
-```r
-length(c("apple", "banana", "orange"))
-
-length(c("apple", "banana", "orange", NA))
-```
-
----
-# R packages
-
-A collection of R functions, complied code and sample data. They are stored under a directory called "library" in the R environment
-
-Most day-to-day work will require at least one contributed package.
-
-The Comprehensive R Archive Network [(CRAN)](https://cran.r-project.org/) is where most of the packages are
-
-To install a package from CRAN we use the command
-
-
-```r
-install.packages("ggplot2")
-```
-
-
-In this example, we used the native R function `install.packages()` to install the package "ggplot2".
-
----
-# R packages, developer version
-
-Develop a R package is often an ongoing project. Once a package's version is stable enough, the developer published it on CRAN. 
-
-Currently, most R packages under development are deposited on [GitHub](https://github.com/). To install a developing version from GitHub we use the command
-
-
-```r
-install.packages("remotes")
-remotes::install_github("agrobioinfoservices/gosset")
-```
-
-In this example we used the function `install_github()` from the R package "remotes" to install the R package "gosset"
-
----
-# Error messages
-
-Error messages from native functions in R are often not so informative. 
+&lt;img src="https://img.icons8.com/ios-filled/50/000000/email-open.png" width = "10%"&gt;[k.desousa@cgiar.org](mailto:k.desousa@cgiar.org)
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

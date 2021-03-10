@@ -37,6 +37,15 @@ options(htmltools.dir.version = FALSE)
 Learn the principles to analyse the tricot data and how to interpret the results
 
 ---
+# The tricot approach
+
+To know more about the triadic comparison of technologies (tricot) approach, read the working papers and watch the series of videos prepared by the ClimMob Team. 
+
+Click [here](https://hdl.handle.net/10568/109942) and [here](https://hdl.handle.net/10568/111044) to read about tricot
+
+Click [here](https://www.youtube.com/channel/UCmqo4KCZwX8R-H4SNkXfuSA/playlists) to watch the videos
+
+---
 # **Thank you!**
 .pull-left[
 <img src="img/inn-uni.png" width="40%"/>
