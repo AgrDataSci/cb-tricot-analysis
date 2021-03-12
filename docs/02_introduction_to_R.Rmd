@@ -1,5 +1,5 @@
 ---
-title: "Introduction to R"
+title: "A short introduction to R"
 author: "Kauê de Sousa"
 date: "`r format(Sys.Date())`"
 output:
@@ -376,6 +376,13 @@ Error and warning messages from native functions in R are often not so informati
 
 <center>
 <img src="img/climatrends-home.png" width="40%"/>
+</center>
+
+---
+R is a language with a steep learning curve. If you have no idea what you are doing, don't worry I also felt that way at the beginning. The tip is practice, practice and practice.  
+
+<center>
+<img src="img/no-idea.png" width="80%"/>
 </center>
 
 ---

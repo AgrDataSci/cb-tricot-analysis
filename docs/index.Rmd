@@ -1,0 +1,14 @@
+---
+title: "Analysis of ranking data from crowdsourced citizen-science with the tricot approach"
+author: "Kauê de Sousa, PhD"
+output: html_document
+---
+  
+\
+\
+
+Welcome to the course on data analysis 
+
+* [Course Overview](01_course_overview.html)
+* [Short introduction to R](02_introduction_to_R.html)
+  
