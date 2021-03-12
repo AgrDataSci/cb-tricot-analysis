@@ -7,8 +7,21 @@ output: html_document
 \
 \
 
-Welcome to the course on data analysis 
+Welcome to the course "Analysis of ranking data from crowdsourced citizen-science with the tricot approach". These are the topics that we are going to study. 
 
 * [Course Overview](01_course_overview.html)
 * [Short introduction to R](02_introduction_to_R.html)
-  
+* [Project-oriented workflow](03_project_oriented_workflow.html)
+* Introduction to the Plackett-Luce model
+* Get data from ClimMob into R
+* Turning *tricot* rankings into Plackett-Luce rankings
+* Visualization and summary
+* Plackett-Luce Trees (model with covariates)
+* Model selection 
+* Q&A (organize with teams)
+
+
+
+<center>
+<img src="img/logos.png" width="80%"/>
+</center>
