@@ -1,6 +1,8 @@
 ---
 title: "Analysis of ranking data from crowdsourced citizen-science with the tricot approach"
-author: "Kauê de Sousa, PhD"
+author:
+- name: Kauê de Sousa, PhD
+  affiliation: Department of Agricultural Sciences, Høgskolen i Innlandet, Norway <br> Digital Inclusion, Alliance of Bioversity International and CIAT, Italy
 output: html_document
 ---
   

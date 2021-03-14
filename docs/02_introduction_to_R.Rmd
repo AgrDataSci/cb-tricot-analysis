@@ -315,7 +315,7 @@ Currently, most R packages under development are deposited on [GitHub](https://g
 
 ```{r eval=FALSE, message=FALSE}
 install.packages("remotes")
-remotes::install_github("agrobioinfoservices/gosset")
+remotes::install_github("team-adds/gosset")
 ```
 
 ---
@@ -404,12 +404,9 @@ RStudio have a series of recorded webinars that can help you in learning more ab
 
 ---
 # **Thank you!**
+
 .pull-left[
-<img src="img/inn-uni.png" width="40%"/>
-
-<img src="img/bioversity.png" width="50%"/>
-
-<img src="img/climmob.png" width="40%"/>
+<img src="img/logos-v.png" width="50%"/>
 ]
 
 .pull-right[
@@ -418,4 +415,5 @@ RStudio have a series of recorded webinars that can help you in learning more ab
 
 <img src="https://img.icons8.com/ios-filled/50/000000/email-open.png" width = "10%">[k.desousa@cgiar.org](mailto:k.desousa@cgiar.org)
 ]
+
 
