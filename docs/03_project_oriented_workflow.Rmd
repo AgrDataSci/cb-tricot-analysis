@@ -122,6 +122,24 @@ Is a context for work on a specific project for data analysis
 
 (**E**) A stable *rpart* is used for further analysis
 
+---
+# R packages that we developed to support this workflow
+
+.pull-left[
+<img src="img/r-packages.png" width="80%"/>
+]
+
+.pull-right[
+[ClimMobTools](https://team-adds.github.io/ClimMobTools/) API Client for the ‘ClimMob’ platform in R
+
+[gosset](https://team-adds.github.io/gosset/) Toolkit and a workflow to analyse metadata and experimental citizen science data
+
+[PlackettLuce](https://hturner.github.io/PlackettLuce/) Functions to prepare rankings data and fit the Plackett-Luce model jointly attributed to Plackett (1975) and Luce (1959)
+
+[chirps](https://docs.ropensci.org/chirps/) API Client for Climate Hazards Group InfraRed Precipitation with Station Data (CHIRPS)
+
+[climatrends](https://team-adds.github.io/climatrends/) Methods to compute precipitation and temperature indices for climate models in ecology
+]
 
 ---
 # **Thank you!**

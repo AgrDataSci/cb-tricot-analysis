@@ -32,9 +32,9 @@ htmltools::tagList(
 
 * Short introduction to R 
 * Project-oriented workflow
-* Introduction to the Plackett-Luce model
-* Get data from ClimMob into R
+* Introduction to Plackett-Luce model
 * Turning *tricot* rankings into Plackett-Luce rankings
+* Get data from ClimMob into R
 * Visualization and summary
 * Plackett-Luce Trees (model with covariates)
 * Model selection 
