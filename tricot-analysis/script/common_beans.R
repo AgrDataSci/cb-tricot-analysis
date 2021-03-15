@@ -1,9 +1,10 @@
-library("climatrends")
-library("tidyverse")
+# library("remotes")
+# install_github("hturner/PlackettLuce", upgrade = "never")
+# install_github("agrdatasci/gosset", upgrade = "never")
+
+# Packages
 library("PlackettLuce")
-library("patchwork")
-library("qvcalc")
-library("ggparty")
+library("gosset")
 
 
 load("data/common_bean.rda")

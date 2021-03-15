@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Turning tricot rankings into Plackett-Luce rankings</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Kauê de Sousa" />
+    <meta name="date" content="2021-01-01" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+    <script src="libs/anchor-sections/anchor-sections.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"<i class=\"fa fa-clipboard\"><\/i>","success":"<i class=\"fa fa-check\" style=\"color: #90BE6D\"><\/i>","error":"<i class=\"fa fa-times-circle\" style=\"color: #F94144\"><\/i>"})</script>
+    <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Turning <em>tricot</em> rankings into Plackett-Luce rankings
+### Kauê de Sousa
+### 2021
+
+---
+
+
+
+
+
+# Content
+
+* Beans data 
+* Getting the ordering
+* Sparse matrix
+* Comparison with the local
+* rank_tricot() from gosset package
+
+---
+# Lecture
+
+The lecture on this topic is available [here]()
+
+---
+# Set up
+
+For this lecture we need to packages PlackettLuce and gosset. We install it from GitHub. You just need to run this command once.
+
+
+```r
+library("remotes")
+install_github("hturner/PlackettLuce", upgrade = "never")
+install_github("agrdatasci/gosset", upgrade = "never")
+```
+
+Then we load the packages with `library()`. We run this command every time we open a new R section 
+
+
+```r
+library("PlackettLuce")
+library("gosset")
+```
+
+---
+class: middle, inverse
+# Beans data
+---
+# Beans data
+
+Load beans data from PlackettLuce, a data frame with 842 entries and 14 variables
+
+
+```r
+data("beans", package = "PlackettLuce")
+str(beans)
+```
+
+```
+## 'data.frame':	842 obs. of  14 variables:
+##  $ variety_a    : chr  "BRT 103-182" "INTA Rojo" "INTA Ferroso" "INTA Centro Sur" ...
+##  $ variety_b    : chr  "SJC 730-79" "INTA Centro Sur" "INTA Matagalpa" "INTA Rojo" ...
+##  $ variety_c    : chr  "PM2 Don Rey" "INTA Sequia" "BRT 103-182" "ALS 0532-6" ...
+##  $ best         : chr  "C" "B" "A" "B" ...
+##  $ worst        : chr  "A" "A" "C" "C" ...
+##  $ var_a        : chr  "Worse" "Worse" "Better" "Better" ...
+##  $ var_b        : chr  "Worse" "Better" "Worse" "Better" ...
+##  $ var_c        : chr  "Better" "Better" "Worse" "Better" ...
+##  $ season       : Factor w/ 5 levels "Po - 15","Ap - 15",..: 2 2 2 2 2 2 2 2 2 2 ...
+##  $ year         : num  2015 2015 2015 2015 2015 ...
+##  $ maxTN        : num  19.4 18.9 18.4 18.9 18.9 ...
+##  $ lon          : num  -85.7 -85.4 -85.4 -85.4 -85.4 ...
+##  $ lat          : num  13.1 13.3 13.3 13.3 13.3 ...
+##  $ planting_date: Date, format: "2015-12-18" "2015-12-18" ...
+```
+
+---
+# A subset of the data
+
+Get the first three rows and only the columns important for this process
+
+
+```r
+beans2 &lt;- beans[1:3, c("variety_a", "variety_b", "variety_c", "best", "worst")]
+beans2
+```
+
+```
+##      variety_a       variety_b   variety_c best worst
+## 1  BRT 103-182      SJC 730-79 PM2 Don Rey    C     A
+## 2    INTA Rojo INTA Centro Sur INTA Sequia    B     A
+## 3 INTA Ferroso  INTA Matagalpa BRT 103-182    A     C
+```
+
+---
+# Getting the ordering
+
+This gives an ordering of the three varieties assigned to each farmer. The names of these varieties are stored in separate columns
+
+With the ordering we can run the function `as.rankings(..., input = "orderings")` from PlackettLuce
+
+
+
+
+```
+##      variety_a       variety_b   variety_c best worst
+## 1  BRT 103-182      SJC 730-79 PM2 Don Rey    C     A
+## 2    INTA Rojo INTA Centro Sur INTA Sequia    B     A
+## 3 INTA Ferroso  INTA Matagalpa BRT 103-182    A     C
+```
+
+```
+##              best         middle       worst
+## 1     PM2 Don Rey     SJC 730-79 BRT 103-182
+## 2 INTA Centro Sur    INTA Sequia   INTA Rojo
+## 3    INTA Ferroso INTA Matagalpa BRT 103-182
+```
+
+---
+# Sparse matrix
+
+Use these names to decode the orderings of the three varieties and create a [Sparse matrix](https://en.wikipedia.org/wiki/Sparse_matrix). Where each variety is a column, each row is the evaluation from a given farmer. Varieties not assigned by a given the farmer are set with 0.
+
+
+```
+##              best         middle       worst
+## 1     PM2 Don Rey     SJC 730-79 BRT 103-182
+## 2 INTA Centro Sur    INTA Sequia   INTA Rojo
+## 3    INTA Ferroso INTA Matagalpa BRT 103-182
+```
+
+```
+##   BRT 103-182 INTA Centro Sur INTA Ferroso INTA Matagalpa
+## 1           3               0            0              0
+## 2           0               1            0              0
+## 3           3               0            1              2
+```
+
+```
+##   INTA Rojo INTA Sequia PM2 Don Rey SJC 730-79
+## 1         0           0           1          2
+## 2         3           2           0          0
+## 3         0           0           0          0
+```
+
+---
+# PlackettLuce rankings
+PlackettLuce has a printing method to see these rankings
+
+
+```
+##                                             1 
+##      "PM2 Don Rey &gt; SJC 730-79 &gt; BRT 103-182" 
+##                                             2 
+##   "INTA Centro Sur &gt; INTA Sequia &gt; INTA Rojo" 
+##                                             3 
+## "INTA Ferroso &gt; INTA Matagalpa &gt; BRT 103-182"
+```
+
+---
+class: middle, inverse
+# Comparison with the local
+---
+# Comparison with the local
+
+Comparison with the local variety are organized as [paired comparisons](https://en.wikipedia.org/wiki/Pairwise_comparison) and added as additional rankings. We do this avoid the need to reorder the three varieties into the new ranking of four. 
+
+Lets subset the data again to see it better
+
+
+```r
+beans3 &lt;- beans[1:3, c("variety_a", "var_a")]
+beans3
+```
+
+```
+##      variety_a  var_a
+## 1  BRT 103-182  Worse
+## 2    INTA Rojo  Worse
+## 3 INTA Ferroso Better
+```
+
+Which brings us to this ordering
+
+
+```
+##      [,1]           [,2]         
+## [1,] "Local"        "BRT 103-182"
+## [2,] "Local"        "INTA Rojo"  
+## [3,] "INTA Ferroso" "Local"
+```
+
+---
+# Comparison with the local
+
+From this ordering 
+
+
+```
+##      [,1]           [,2]         
+## [1,] "Local"        "BRT 103-182"
+## [2,] "Local"        "INTA Rojo"  
+## [3,] "INTA Ferroso" "Local"
+```
+
+To the Sparse matrix
+
+
+```
+##      BRT 103-182 INTA Ferroso INTA Rojo Local
+## [1,]           2            0         0     1
+## [2,]           0            0         2     1
+## [3,]           0            1         0     2
+```
+
+---
+class: middle, inverse
+# rank_tricot()
+---
+# rank_tricot() from gosset
+
+The package gosset has the function `rank_tricot()` to handle this process. This returns an object of class "rankings" with 842 rows (one for each farmer) and 10 columns (one for each variety).
+
+
+```r
+R &lt;- rank_tricot(data = beans,
+                 items = c("variety_a", "variety_b", "variety_c"),
+                 input = c("best", "worst"))
+
+print(R[1:10], width = 100)
+```
+
+```
+##  [1] "PM2 Don Rey &gt; SJC 730-79 &gt; BRT 103-182"        
+##  [2] "INTA Centro Sur &gt; INTA Sequia &gt; INTA Rojo"     
+##  [3] "INTA Ferroso &gt; INTA Matagalpa &gt; BRT 103-182"   
+##  [4] "INTA Rojo &gt; INTA Centro Sur &gt; ALS 0532-6"      
+##  [5] "PM2 Don Rey &gt; INTA Sequia &gt; SJC 730-79"        
+##  [6] "ALS 0532-6 &gt; INTA Matagalpa &gt; INTA Rojo"       
+##  [7] "PM2 Don Rey &gt; INTA Sequia &gt; INTA Centro Sur"   
+##  [8] "INTA Ferroso &gt; INTA Precoz &gt; SJC 730-79"       
+##  [9] "INTA Rojo &gt; BRT 103-182 &gt; INTA Matagalpa"      
+## [10] "INTA Centro Sur &gt; INTA Sequia &gt; INTA Matagalpa"
+```
+
+---
+# Add comparison with local
+
+We pass the comparison with the local with the argument additional.rank which points to a subset of the data with the columns representing the evaluation with the local. This returns an object of class "rankings" with 3368 rows (nfarmers x 4) and 11 columns (10 tricot varieties + local).
+
+
+```r
+R &lt;- rank_tricot(data = beans,
+                 items = c("variety_a", "variety_b", "variety_c"),
+                 input = c("best", "worst"),
+                 additional.rank = beans[c("var_a", "var_b", "var_c")])
+
+print(R[c(1:3, 843:845)], width = 100)
+```
+
+```
+## [1] "PM2 Don Rey &gt; SJC 730-79 &gt; BRT 103-182"     
+## [2] "INTA Centro Sur &gt; INTA Sequia &gt; INTA Rojo"  
+## [3] "INTA Ferroso &gt; INTA Matagalpa &gt; BRT 103-182"
+## [4] "Local &gt; BRT 103-182"                        
+## [5] "Local &gt; INTA Rojo"                          
+## [6] "INTA Ferroso &gt; Local"
+```
+
+
+---
+# **Thank you!**
+
+.pull-left[
+&lt;img src="img/logos-v.png" width="50%"/&gt;
+]
+
+.pull-right[
+
+&lt;img src="https://img.icons8.com/color/64/000000/twitter.png" width = "10%"&gt;[@desousakaue](https://twitter.com/desousakaue)
+
+&lt;img src="https://img.icons8.com/ios-filled/50/000000/email-open.png" width = "10%"&gt;[k.desousa@cgiar.org](mailto:k.desousa@cgiar.org)
+]
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

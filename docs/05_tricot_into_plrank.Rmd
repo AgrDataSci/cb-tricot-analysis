@@ -1,0 +1,212 @@
+---
+title: "Turning *tricot* rankings into Plackett-Luce rankings"
+author: "Kauê de Sousa"
+date: 2021
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library("xaringanExtra")
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+
+library("PlackettLuce")
+library("gosset")
+```
+
+
+# Content
+
+* Beans data 
+* Getting the ordering
+* Sparse matrix
+* Comparison with the local
+* rank_tricot() from gosset package
+
+---
+# Lecture
+
+The lecture on this topic is available [here]()
+
+---
+# Set up
+
+For this lecture we need to packages PlackettLuce and gosset. We install it from GitHub. You just need to run this command once.
+
+```{r eval=FALSE, message=FALSE}
+library("remotes")
+install_github("hturner/PlackettLuce", upgrade = "never")
+install_github("agrdatasci/gosset", upgrade = "never")
+```
+
+Then we load the packages with `library()`. We run this command every time we open a new R section 
+
+```{r eval=FALSE, message=FALSE}
+library("PlackettLuce")
+library("gosset")
+```
+
+---
+class: middle, inverse
+# Beans data
+---
+# Beans data
+
+Load beans data from PlackettLuce, a data frame with 842 entries and 14 variables
+
+```{r}
+data("beans", package = "PlackettLuce")
+str(beans)
+```
+
+---
+# A subset of the data
+
+Get the first three rows and only the columns important for this process
+
+```{r}
+beans2 <- beans[1:3, c("variety_a", "variety_b", "variety_c", "best", "worst")]
+beans2
+```
+
+---
+# Getting the ordering
+
+This gives an ordering of the three varieties assigned to each farmer. The names of these varieties are stored in separate columns
+
+With the ordering we can run the function `as.rankings(..., input = "orderings")` from PlackettLuce
+
+
+
+```{r eval=TRUE, message=TRUE, echo=FALSE, include=TRUE}
+beans3 <- rank_tricot(data = beans2,
+                      items = c("variety_a", "variety_b", "variety_c"),
+                      input = c("best", "worst"), full.output = TRUE)$myrank
+beans3 <- as.data.frame(beans3)
+beans2
+beans3
+```
+
+---
+# Sparse matrix
+
+Use these names to decode the orderings of the three varieties and create a [Sparse matrix](https://en.wikipedia.org/wiki/Sparse_matrix). Where each variety is a column, each row is the evaluation from a given farmer. Varieties not assigned by a given the farmer are set with 0.
+
+```{r eval=TRUE, message=TRUE, echo=FALSE, include=TRUE}
+R <- rank_tricot(data = beans2,
+                 items = c("variety_a", "variety_b", "variety_c"),
+                 input = c("best", "worst"))
+beans2 <- R[1:length(R),, as.rankings = FALSE]
+beans3
+beans2[,1:4]
+beans2[,5:8]
+```
+
+---
+# PlackettLuce rankings
+PlackettLuce has a printing method to see these rankings
+
+```{r eval=TRUE, message=TRUE, echo=FALSE, include=TRUE}
+print(R, width = 100)
+```
+
+---
+class: middle, inverse
+# Comparison with the local
+---
+# Comparison with the local
+
+Comparison with the local variety are organized as [paired comparisons](https://en.wikipedia.org/wiki/Pairwise_comparison) and added as additional rankings. We do this avoid the need to reorder the three varieties into the new ranking of four. 
+
+Lets subset the data again to see it better
+
+```{r}
+beans3 <- beans[1:3, c("variety_a", "var_a")]
+beans3
+```
+
+Which brings us to this ordering
+
+```{r eval=TRUE, message=TRUE, echo=FALSE, include=TRUE}
+tvl <- cbind(ifelse(beans3$var_a == "Better", beans$variety_a, "Local"),
+             ifelse(beans3$var_a == "Worse", beans$variety_a, "Local"))
+tvl
+```
+
+---
+# Comparison with the local
+
+From this ordering 
+
+```{r eval=TRUE, message=TRUE, echo=FALSE, include=TRUE}
+tvl
+```
+
+To the Sparse matrix
+
+```{r eval=TRUE, message=TRUE, echo=FALSE, include=TRUE}
+R <- as.rankings(tvl, input = "orderings")
+
+R[1:length(R),, as.rankings=FALSE]
+```
+
+---
+class: middle, inverse
+# rank_tricot()
+---
+# rank_tricot() from gosset
+
+The package gosset has the function `rank_tricot()` to handle this process. This returns an object of class "rankings" with 842 rows (one for each farmer) and 10 columns (one for each variety).
+
+```{r}
+R <- rank_tricot(data = beans,
+                 items = c("variety_a", "variety_b", "variety_c"),
+                 input = c("best", "worst"))
+
+print(R[1:10], width = 100)
+```
+
+---
+# Add comparison with local
+
+We pass the comparison with the local with the argument additional.rank which points to a subset of the data with the columns representing the evaluation with the local. This returns an object of class "rankings" with 3368 rows (nfarmers x 4) and 11 columns (10 tricot varieties + local).
+
+```{r}
+R <- rank_tricot(data = beans,
+                 items = c("variety_a", "variety_b", "variety_c"),
+                 input = c("best", "worst"),
+                 additional.rank = beans[c("var_a", "var_b", "var_c")])
+
+print(R[c(1:3, 843:845)], width = 100)
+```
+
+
+---
+# **Thank you!**
+
+.pull-left[
+<img src="img/logos-v.png" width="50%"/>
+]
+
+.pull-right[
+
+<img src="https://img.icons8.com/color/64/000000/twitter.png" width = "10%">[@desousakaue](https://twitter.com/desousakaue)
+
+<img src="https://img.icons8.com/ios-filled/50/000000/email-open.png" width = "10%">[k.desousa@cgiar.org](mailto:k.desousa@cgiar.org)
+]
+
+
