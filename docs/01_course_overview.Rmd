@@ -15,6 +15,15 @@ output:
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
+library("xaringanExtra")
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
 ```
 
 
@@ -39,11 +48,25 @@ Learn the principles to analyse the tricot data and how to interpret the results
 ---
 # The tricot approach
 
-To know more about the triadic comparison of technologies (tricot) approach, read the working papers and watch the series of videos prepared by the ClimMob Team. 
+Stands for "triadic comparison of technologies". A citizen-science approach with a combination of standardized formats, incomplete block design, simple data retrieval, farmer participation and digital tools
 
-Click [here](https://hdl.handle.net/10568/109942) and [here](https://hdl.handle.net/10568/111044) to read about tricot
+<center>
+<img src="img/tricot-scheme.png" width="75%"/>
+</center>
 
-Click [here](https://www.youtube.com/channel/UCmqo4KCZwX8R-H4SNkXfuSA/playlists) to watch the videos
+---
+# The tricot approach
+
+To know more, read the tricot short guide and watch our videos.
+
+.pull-left[
+<img src="img/tricot-guide.png" width="48%"/><br>[Click here](https://hdl.handle.net/10568/109942) 
+]
+
+.pull-right[
+<img src="img/climmob-channel.jpeg" width="80%"><br>[Click here](https://www.youtube.com/channel/UCmqo4KCZwX8R-H4SNkXfuSA/playlists)
+]
+
 
 ---
 # **Thank you!**

@@ -1,0 +1,89 @@
+---
+title: "Introduction to Plackett-Luce model"
+author: "Kauê de Sousa and Heather Turner"
+date: 2021
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library("xaringanExtra")
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+```
+
+
+# Content
+
+* Rank-based models 
+* Plackett-Luce model
+* Example 1: Netflix Data
+* Fit the Plackett-Luce Model
+* Generalized model
+* Ranking networks
+* Example 2: Beans
+* Plackett-Luce Trees
+
+---
+# Lecture
+
+The lecture on this topic is given by Dr. Heather Turner as part of the eRum 2018 in Budapest. 
+
+[Click here to watch the lecture]()
+
+---
+class: middle, inverse
+# Rank-based model
+---
+
+# Rank-based models
+
+Rankings data arise in a range of applications, such as sport tournaments and consumer studies. In rankings data, each observation is an ordering of a set of items.
+
+Classic models are Bradley-Terry and Plackett-Luce
+
+The first works with pairwise comparisons and the last with rankings with > 3 items. It measures the odds that one option is chosen over a set of options
+
+Click [here](https://github.com/hturner/PlackettLuce/issues/45) to know the difference between Bradley-Terry and Plackett-Luce
+
+---
+class: middle, inverse
+# Plackett-Luce model 
+---
+# Plackett-Luce model
+
+Is a classic model for rank data. This model depends on Luce’s axiom of choice (Luce 1959, 1977) which states that the odds of choosing an item over another do not depend on the set of items from which the choice is made.
+
+Click [here](https://hturner.github.io/PlackettLuce/articles/Overview.html) to read more about the Plackett-Luce model
+
+Click [here](https://doi.org/10.1007/s00180-020-00959-3) to read the paper by Turner et al (2020)
+
+
+---
+# **Thank you!**
+
+.pull-left[
+<img src="img/logos-v.png" width="50%"/>
+]
+
+.pull-right[
+
+<img src="https://img.icons8.com/color/64/000000/twitter.png" width = "10%">[@desousakaue](https://twitter.com/desousakaue)
+
+<img src="https://img.icons8.com/ios-filled/50/000000/email-open.png" width = "10%">[k.desousa@cgiar.org](mailto:k.desousa@cgiar.org)
+]
+
+

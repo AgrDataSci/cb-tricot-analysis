@@ -11,10 +11,16 @@ output: html_document
 
 Welcome to the course "Analysis of ranking data from crowdsourced citizen-science with the tricot approach". These are the topics that we are going to study. 
 
-* [Course Overview](01_course_overview.html)
-* [Short introduction to R](02_introduction_to_R.html)
-* [Project-oriented workflow](03_project_oriented_workflow.html)
-* Introduction to the Plackett-Luce model
+| Topic      | Slides | Lecture |
+| ----------- | ----------- | ---- |
+| Header      | Title       | ---- |
+| Paragraph   | Text        | ---- |
+
+
+* [Course Overview](01_course_overview.html), watch the lecture [here]()
+* [Short introduction to R](02_introduction_to_R.html), watch the lecture [here]()
+* [Project-oriented workflow](03_project_oriented_workflow.html), watch the lecture [here]()
+* [Introduction to Plackett-Luce model](04_introduction_plmodel.html), watch the lecture [here]()
 * Get data from ClimMob into R
 * Turning *tricot* rankings into Plackett-Luce rankings
 * Visualization and summary
