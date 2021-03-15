@@ -2,6 +2,7 @@
 title: "A short introduction to R"
 author: "Kauê de Sousa"
 date: 2021
+#output: html_document
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -34,6 +35,11 @@ htmltools::tagList(
 * R packages
 * Error and Warning messages
 * Further reading and learning
+
+---
+# Lecture
+
+The lecture on this topic is available [here]()
 
 ---
 class: middle, inverse

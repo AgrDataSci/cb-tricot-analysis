@@ -36,9 +36,7 @@ htmltools::tagList(
 ---
 # Lecture
 
-The lecture on this topic is given by Dr. Heather Turner as part of the eRum 2018 in Budapest. 
-
-[Click here to watch the lecture]()
+The lecture on this topic is available [here]()
 
 ---
 # Set up
