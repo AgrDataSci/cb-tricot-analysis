@@ -243,26 +243,26 @@ class: middle, inverse
 
 The package gosset has the function `rank_tricot()` to handle this process. This returns an object of class "rankings" with 842 rows (one for each farmer) and 10 columns (one for each variety).
 
+* data, the name of the data frame
+* items, the column names with the varieties concatenated with `c()`
+* input, the column names with the tricot rankings concatenated with `c()`
+
 
 ```r
 R &lt;- rank_tricot(data = beans,
                  items = c("variety_a", "variety_b", "variety_c"),
                  input = c("best", "worst"))
 
-print(R[1:10], width = 100)
+print(R[1:6], width = 100)
 ```
 
 ```
-##  [1] "PM2 Don Rey &gt; SJC 730-79 &gt; BRT 103-182"        
-##  [2] "INTA Centro Sur &gt; INTA Sequia &gt; INTA Rojo"     
-##  [3] "INTA Ferroso &gt; INTA Matagalpa &gt; BRT 103-182"   
-##  [4] "INTA Rojo &gt; INTA Centro Sur &gt; ALS 0532-6"      
-##  [5] "PM2 Don Rey &gt; INTA Sequia &gt; SJC 730-79"        
-##  [6] "ALS 0532-6 &gt; INTA Matagalpa &gt; INTA Rojo"       
-##  [7] "PM2 Don Rey &gt; INTA Sequia &gt; INTA Centro Sur"   
-##  [8] "INTA Ferroso &gt; INTA Precoz &gt; SJC 730-79"       
-##  [9] "INTA Rojo &gt; BRT 103-182 &gt; INTA Matagalpa"      
-## [10] "INTA Centro Sur &gt; INTA Sequia &gt; INTA Matagalpa"
+## [1] "PM2 Don Rey &gt; SJC 730-79 &gt; BRT 103-182"     
+## [2] "INTA Centro Sur &gt; INTA Sequia &gt; INTA Rojo"  
+## [3] "INTA Ferroso &gt; INTA Matagalpa &gt; BRT 103-182"
+## [4] "INTA Rojo &gt; INTA Centro Sur &gt; ALS 0532-6"   
+## [5] "PM2 Don Rey &gt; INTA Sequia &gt; SJC 730-79"     
+## [6] "ALS 0532-6 &gt; INTA Matagalpa &gt; INTA Rojo"
 ```
 
 ---

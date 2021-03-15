@@ -22,7 +22,7 @@ These are the topics that we are going to study.
 * [Project-oriented workflow](03_project_oriented_workflow.html)
 * [Introduction to Plackett-Luce model](04_introduction_plmodel.html)
 * [*tricot* rankings into Plackett-Luce rankings](05_tricot_into_plrank.html)
-* Get data from ClimMob into R
+* [Get data from ClimMob to R](06_climmob_into_r.Rmd)
 * Visualization and summary
 * Plackett-Luce Trees (model with covariates)
 * Model selection 

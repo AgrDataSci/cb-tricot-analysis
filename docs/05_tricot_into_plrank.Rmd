@@ -93,8 +93,8 @@ With the ordering we can run the function `as.rankings(..., input = "orderings")
 
 
 ```{r eval=TRUE, message=TRUE, echo=FALSE, include=TRUE}
-beans3 <- rank_tricot(data = beans2,
-                      items = c("variety_a", "variety_b", "variety_c"),
+beans3 <- rank_tricot(data = beans2, 
+                      items = c("variety_a", "variety_b", "variety_c"), 
                       input = c("best", "worst"), full.output = TRUE)$myrank
 beans3 <- as.data.frame(beans3)
 beans2
@@ -172,12 +172,16 @@ class: middle, inverse
 
 The package gosset has the function `rank_tricot()` to handle this process. This returns an object of class "rankings" with 842 rows (one for each farmer) and 10 columns (one for each variety).
 
+* data, the name of the data frame
+* items, the column names with the varieties concatenated with `c()`
+* input, the column names with the tricot rankings concatenated with `c()`
+
 ```{r}
 R <- rank_tricot(data = beans,
                  items = c("variety_a", "variety_b", "variety_c"),
                  input = c("best", "worst"))
 
-print(R[1:10], width = 100)
+print(R[1:6], width = 100)
 ```
 
 ---

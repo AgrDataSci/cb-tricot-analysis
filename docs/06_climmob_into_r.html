@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Analysis of tricot data</title>
+    <title>Get data from ClimMob to R</title>
     <meta charset="utf-8" />
     <meta name="author" content="Kauê de Sousa" />
     <meta name="date" content="2021-01-01" />
@@ -21,8 +21,7 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Analysis of <em>tricot</em> data
-## Course overview
+# Get data from ClimMob to R
 ### Kauê de Sousa
 ### 2021
 
@@ -34,43 +33,162 @@ class: center, middle, inverse, title-slide
 
 # Content
 
-
-* Short introduction to R 
-* Project-oriented workflow
-* Introduction to Plackett-Luce model
-* Turning *tricot* rankings into Plackett-Luce rankings
-* Get data from ClimMob to R
-* Visualization and summary
-* Plackett-Luce Trees (model with covariates)
-* Model selection 
-* Q&amp;A (organize with teams)
+* API key
+* Project data
+* Trial data
 
 ---
-# Aim
+# Lecture
 
-Learn the principles to analyse the tricot data and how to interpret the results
+The lecture on this topic is given by Dr. Heather Turner as part of the eRum 2018 in Budapest. 
+
+[Click here to watch the lecture]()
 
 ---
-# The tricot approach
+# Set up
 
-Stands for "triadic comparison of technologies". A citizen-science approach with a combination of standardized formats, incomplete block design, simple data retrieval, farmer participation and digital tools
+For this lecture we need to package ClimMobTools. We install it from GitHub. You just need to run this command once.
+
+
+```r
+library("remotes")
+install_github("agrdatasci/ClimMobTools", upgrade = "never")
+```
+
+Then we load the packages with `library()`. We run this command every time we open a new R section 
+
+
+```r
+library("ClimMobTools")
+```
+
+---
+class: middle, inverse
+# API key
+---
+# API key
+
+Log-in into your ClimMob account at https://climmob.net/climmob3/login
 
 &lt;center&gt;
-&lt;img src="img/tricot-scheme.png" width="75%"/&gt;
+&lt;img src="img/log-in.png" width="80%"/&gt;
 &lt;/center&gt;
 
 ---
-# The tricot approach
+# API key
 
-To know more, read the tricot short guide and watch our videos.
+Click on "Actions" and then "Profile" 
 
-.pull-left[
-&lt;img src="img/tricot-guide.png" width="48%"/&gt;&lt;br&gt;[Click here](https://hdl.handle.net/10568/109942) 
+&lt;center&gt;
+&lt;img src="img/api-key1.png" width="80%"/&gt;
+&lt;/center&gt;
+
+---
+# API key
+
+The API key is on the bottom of your profile information 
+
+&lt;center&gt;
+&lt;img src="img/api-key2.png" width="80%"/&gt;
+&lt;/center&gt;
+
+---
+class: middle, inverse
+# Project data
+---
+# Project data 
+
+To access the information about your tricot projects we use the function `getProjectsCM()` from ClimMobTools, the main input is your API key
+
+
+```r
+key &lt;- "d39a3c66-5822-4930-a9d4-50e7da041e77"
+
+projects &lt;- getProjectsCM(key)
+
+projects[8:10, ]
+```
+
+```
+##     project_id                 name    status creation_date
+##          &lt;chr&gt;                &lt;chr&gt;     &lt;chr&gt;        &lt;date&gt;
+## 8:     flowers   Flowers wageningen concluded    2019-04-17
+## 9:  chocolates Chocolate Wageningen concluded    2019-04-14
+## 10: breadwheat           Breadwheat concluded    2019-03-27
+##     intended_participants registration_progress last_registration_activity
+##                     &lt;int&gt;                 &lt;dbl&gt;                      &lt;chr&gt;
+## 8:                      7                100.00                 1 year ago
+## 9:                     30                100.00                 1 year ago
+## 10:                   493                100.00                 1 year ago
+```
+
+---
+# Project data 
+
+If you are a client from an alternative ClimMob server, you may need the argument "server"
+
+
+```r
+key &lt;- "your-key"
+servername &lt;- "server-name"
+
+projects &lt;- getProjectsCM(key, server  = servername)
+```
+
+---
+class: middle, inverse
+# Trial data
+---
+# Trial data
+
+The trial data is retrieved with the function `getDataCM()`. We need the API key and the project id. Lets retrieve the data from the project "breadwheat"
+
+This returns the data frame in a "tidy" format.
+
+
+```r
+dt &lt;- getDataCM(key, project = "breadwheat")
+
+dt[1:6, ]
+```
+
+```
+##       id       moment         variable                                value
+##    &lt;int&gt;        &lt;fct&gt;            &lt;chr&gt;                                &lt;chr&gt;
+## 1:     1      package participant_name                    Participant Name1
+## 2:     1      package           item_A                                CSW18
+## 3:     1      package           item_B                               PBW502
+## 4:     1      package           item_C                               HW2045
+## 5:     1      package     project_name                           breadwheat
+## 6:     1 registration         surveyid 14c7cfd6-51c3-11e9-a394-0686a00ebfc0
+```
+
+.footnote[
+[1] [Read more about tidy data](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html)
 ]
 
-.pull-right[
-&lt;img src="img/climmob-channel.jpeg" width="80%"&gt;&lt;br&gt;[Click here](https://www.youtube.com/channel/UCmqo4KCZwX8R-H4SNkXfuSA/playlists)
-]
+---
+# Trial data
+
+To return the data in the wider format, we use the argument `pivot.wider = TRUE`
+
+
+```r
+dt &lt;- getDataCM(key, project = "breadwheat", pivot.wider = TRUE)
+
+dt[1:6, 1:5]
+```
+
+```
+##       id package_participant_name package_item_A package_item_B package_item_C
+##    &lt;chr&gt;                    &lt;chr&gt;          &lt;chr&gt;          &lt;chr&gt;          &lt;chr&gt;
+## 1:     1        Participant Name1          CSW18         PBW502         HW2045
+## 2:     2        Participant Name2          WR544         HD2985         PBW550
+## 3:     3        Participant Name3         PBW343         HD2932        RAJ4120
+## 4:     4        Participant Name4         HP1633          DBW17          CSW18
+## 5:     5        Participant Name5          CSW18          DBW17         HD2932
+## 6:     6        Participant Name6         HP1633         HW2045          CSW18
+```
 
 
 ---
