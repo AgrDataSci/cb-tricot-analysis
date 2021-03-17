@@ -43,7 +43,7 @@ htmltools::tagList(
 ---
 # Lecture
 
-The lecture on this topic is available [here]()
+The lecture on this topic will be available on Wednesday 18 of March
 
 
 ---
