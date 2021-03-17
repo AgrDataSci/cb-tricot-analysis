@@ -34,6 +34,7 @@ R <- rank_tricot(data = beans2,
 R[1:length(R),, as.rankings = FALSE]
 
 
+
 R <- rank_tricot(data = beans,
                  items = c("variety_a", "variety_b", "variety_c"),
                  input = c("best", "worst"),

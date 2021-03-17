@@ -66,7 +66,7 @@ class: middle, inverse
 ---
 # Beans data
 
-Load beans data from PlackettLuce, a data frame with 842 entries and 14 variables
+Load the `beans` data from PlackettLuce, a data frame with 842 entries and 14 variables
 
 ```{r}
 data("beans", package = "PlackettLuce")
@@ -88,9 +88,6 @@ beans2
 
 This gives an ordering of the three varieties assigned to each farmer. The names of these varieties are stored in separate columns
 
-With the ordering we can run the function `as.rankings(..., input = "orderings")` from PlackettLuce
-
-
 
 ```{r eval=TRUE, message=TRUE, echo=FALSE, include=TRUE}
 beans3 <- rank_tricot(data = beans2, 
@@ -98,13 +95,19 @@ beans3 <- rank_tricot(data = beans2,
                       input = c("best", "worst"), full.output = TRUE)$myrank
 beans3 <- as.data.frame(beans3)
 beans2
+```
+
+With this ordering we can run the function `as.rankings(..., input = "orderings")` from PlackettLuce and get the rankings
+
+```{r eval=TRUE, message=TRUE, echo=FALSE, include=TRUE}
 beans3
 ```
+
 
 ---
 # Sparse matrix
 
-Use these names to decode the orderings of the three varieties and create a [Sparse matrix](https://en.wikipedia.org/wiki/Sparse_matrix). Where each variety is a column, each row is the evaluation from a given farmer. Varieties not assigned by a given the farmer are set with 0.
+Internaly what it does is decode the orderings and create a [Sparse matrix](https://en.wikipedia.org/wiki/Sparse_matrix). 
 
 ```{r eval=TRUE, message=TRUE, echo=FALSE, include=TRUE}
 R <- rank_tricot(data = beans2,
@@ -112,8 +115,15 @@ R <- rank_tricot(data = beans2,
                  input = c("best", "worst"))
 beans2 <- R[1:length(R),, as.rankings = FALSE]
 beans3
-beans2[,1:4]
-beans2[,5:8]
+```
+
+Here each variety is a column, each row is the evaluation from a given farmer. 
+
+Varieties not assigned to a given farmer are set with 0.
+
+```{r eval=TRUE, message=TRUE, echo=FALSE, include=TRUE}
+colnames(beans2) <- abbreviate(colnames(beans2), 8)
+beans2
 ```
 
 ---

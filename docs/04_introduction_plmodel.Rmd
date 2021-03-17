@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Plackett-Luce model"
-author: "Kauê de Sousa and Heather Turner"
+author: "Kauê de Sousa"
 date: 2021
 output:
   xaringan::moon_reader:
@@ -42,7 +42,7 @@ htmltools::tagList(
 
 The lecture on this topic is given by Dr. Heather Turner as part of the eRum 2018 in Budapest. 
 
-[Click here to watch the lecture]()
+[Click here to watch the lecture](https://www.youtube.com/watch?v=ztVriQvrrxY)
 
 ---
 class: middle, inverse
@@ -53,11 +53,18 @@ class: middle, inverse
 
 Rankings data arise in a range of applications, such as sport tournaments and consumer studies. In rankings data, each observation is an ordering of a set of items.
 
-Classic models are Bradley-Terry and Plackett-Luce
+Classic models are Bradley-Terry (BT) and Plackett-Luce (PL). Both models depend on the Luce's axiom of choice (Luce 1959, 1977) which states that the probability that one item beats another is independent from the presence or absence of any other items in the set.
 
-The first works with pairwise comparisons and the last with rankings with > 3 items. It measures the odds that one option is chosen over a set of options
+$$P (i \succ j) = \frac{p_i}{p_i + p_j}$$
 
-Click [here](https://github.com/hturner/PlackettLuce/issues/45) to know the difference between Bradley-Terry and Plackett-Luce
+where $p_i$ is a positive real-valued score assigned to individual $i$. The comparison $i \succ j$ can be read as $i$ is preferred over $j$
+
+---
+# Difference between BT and PL
+
+While the BT model is used for pairwise comparisons, the PL model is used for rankings of three or more items. 
+
+This makes possible to compare items across the entire rank permutation whereas BT model breaks the comparison into pairs. 
 
 ---
 class: middle, inverse
@@ -65,12 +72,17 @@ class: middle, inverse
 ---
 # Plackett-Luce model
 
-Is a classic model for rank data. This model depends on Luce’s axiom of choice (Luce 1959, 1977) which states that the odds of choosing an item over another do not depend on the set of items from which the choice is made.
+The PL model determines the values of positive-valued parameters $\alpha_i$ (*worth*) associated with each item $i$. 
 
-Click [here](https://hturner.github.io/PlackettLuce/articles/Overview.html) to read more about the Plackett-Luce model
+These parameters $\alpha$ are related to the probability $P$ that item $i$ wins against all other $n$ items. A non-logarithm *worth* values should sum to one. This makes each *worth* value $\alpha_i$ equal to the probability of item $i$ outperforming all other items:
 
-Click [here](https://doi.org/10.1007/s00180-020-00959-3) to read the paper by Turner et al (2020)
+$$P(i \succ \{j, ..., n\}) = \frac{a_i}{a_1 + ... + a_n} = \frac{a_i}{1} = a_i$$
 
+
+.footnote[
+[1] Click [here](https://hturner.github.io/PlackettLuce/articles/Overview.html) to read more about the Plackett-Luce model    
+[2] Click [here](https://doi.org/10.1007/s00180-020-00959-3) to read the paper by Turner et al (2020)
+]
 
 ---
 # **Thank you!**
