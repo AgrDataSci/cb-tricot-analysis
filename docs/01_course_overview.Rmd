@@ -1,5 +1,5 @@
 ---
-title: "Analysis of *tricot* data"
+title: "Analysis of ranking data from crowdsourcing citizen-science"
 subtitle: "Course overview"
 author: "Kauê de Sousa"
 date: 2021
@@ -49,7 +49,7 @@ The lecture on this topic will be available on Wednesday 18 of March
 ---
 # Aim
 
-Learn the principles to analyse the tricot data and how to interpret the results
+Learn the principles to analyse the ranking data generated through the triadic comparison of technologies (tricot) approach data.  
 
 ---
 # The tricot approach
