@@ -1,4 +1,4 @@
-# Here is the excercise from the 
+# Here is the exercise from the 
 # Introduction to R
 
 # ................................

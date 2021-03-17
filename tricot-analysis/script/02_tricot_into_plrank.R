@@ -1,8 +1,18 @@
+# ................................
+# ................................
+# tricot rankings into PlackettLuce rankings
+
+
+# If not yet installed, please unlock these lines and 
+# install PlackettLuce and gosset
 # library("remotes")
 # install_github("hturner/PlackettLuce", upgrade = "never")
 # install_github("agrdatasci/gosset", upgrade = "never")
 
-# Packages
+# ................................
+# ................................
+# ................................
+# Packages ####
 library("PlackettLuce")
 library("gosset")
 
@@ -24,31 +34,40 @@ head(beans)
 tail(beans)
 
 # get the first five lines to understand the process
+sel <- c("variety_a", "variety_b", "variety_c", "best", "worst", "var_a", "var_b", "var_c")
 
-beans2 <- beans[1:3, c("variety_a", "variety_b", "variety_c", "best", "worst", "var_a", "var_b", "var_c")]
+sel %in% colnames(beans)
 
+all(sel %in% colnames(beans))
+
+# subset the data frame
+beans2 <- beans[1:3, sel]
+
+# write it as a csv file and show
+# how this works 
+write.csv(beans2, file = "data/beans_subset.csv", row.names = FALSE)
+
+
+
+# gosset wrapped this process into a function called 
+# rank_tricot()
 R <- rank_tricot(data = beans2,
                  items = c("variety_a", "variety_b", "variety_c"),
                  input = c("best", "worst"))
 
+R
+
 R[1:length(R),, as.rankings = FALSE]
 
 
-
-R <- rank_tricot(data = beans,
+# add the local
+R <- rank_tricot(data = beans2,
                  items = c("variety_a", "variety_b", "variety_c"),
                  input = c("best", "worst"),
-                 additional.rank = beans[c("var_a", "var_b", "var_c")],
-                 full.output = TRUE)
+                 additional.rank = beans2[c("var_a", "var_b", "var_c")])
 
-print(R[c(1:3, 843:845)], width = 100)
-
-beans3 <- beans[1:3, c("variety_a", "var_a")]
-beans3
-
-tvl <- cbind(ifelse(beans3$var_a == "Better", beans$variety_a, "Local"),
-             ifelse(beans3$var_a == "Worse", beans$variety_a, "Local"))
-
-R <- as.rankings(tvl, input = "orderings")
+R
 
 R[1:length(R),, as.rankings=FALSE]
+
+

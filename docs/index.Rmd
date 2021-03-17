@@ -25,7 +25,7 @@ These are the topics that we are going to study.
 7. Visualization and summary
 8. Plackett-Luce Trees
 9. Model selection 
-11. Q&A (organize with teams)
+10. Q&A (organize with teams)
 
 
 ## How this course works

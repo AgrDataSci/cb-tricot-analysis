@@ -25,3 +25,4 @@ output/
 slides/rmd/
 *.DS_Store
 tricot-analysis/script/dev
+tricot-analysis/data/beans_subset.csv
