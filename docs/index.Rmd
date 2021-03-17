@@ -40,7 +40,11 @@ Watch the lectures from the above topics here
 
 ## Classroom materials
 
-Click [here]() to download the classroom materials
+Click [here](https://github.com/AgrDataSci/cb-tricot-analysis/blob/master/tricot-analysis.zip) to download the classroom materials. This is a .zip file with the project data inside it. Unzip the file and put it in the directory of your preference.
+
+## Comments and questions 
+
+Please send me your comments and questions to my email k(dot)desousa(at)cgiar(dot)org or preferably via an issue in the GitHub repository [here](https://github.com/AgrDataSci/cb-tricot-analysis/issues).
 
 -----
 
