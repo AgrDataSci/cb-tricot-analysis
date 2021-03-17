@@ -23,9 +23,9 @@ Good luck!
 
 These are the topics that we are going to study 
 
-1. [Course Overview](01_course_overview.html) (Lecture available on Wednesday 18 of March)
-2. [Short introduction to R](02_introduction_to_R.html) (Lecture available on Wednesday 18 of March)
-3. [Project-oriented workflow](03_project_oriented_workflow.html) (Lecture available on Wednesday 18 of March)
+1. [Course Overview](01_course_overview.html) (Lecture available on Thursday 18 of March)
+2. [Short introduction to R](02_introduction_to_R.html) (Lecture available on Thursday 18 of March)
+3. [Project-oriented workflow](03_project_oriented_workflow.html) (Lecture available on Thursday 18 of March)
 4. [Introduction to Plackett-Luce model](04_introduction_plmodel.html)
 5. [*tricot* rankings into Plackett-Luce rankings](05_tricot_into_plrank.html) (Lecture available on Wednesday 24 of March)
 6. [Get data from ClimMob to R](06_climmob_in_r.html) (Lecture available on Wednesday 24 of March)
