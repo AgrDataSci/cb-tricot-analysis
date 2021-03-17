@@ -29,7 +29,7 @@ These are the topics that we are going to study
 4. [Introduction to Plackett-Luce model](04_introduction_plmodel.html)
 5. [*tricot* rankings into Plackett-Luce rankings](05_tricot_into_plrank.html) (Lecture available on Wednesday 24 of March)
 6. [Get data from ClimMob to R](06_climmob_in_r.html) (Lecture available on Wednesday 24 of March)
-7. Visualization and summary (Lecture available on Wednesday 24 of March)
+7. [Visualization and summary](07_visualization_and_summary.html) (Lecture available on Wednesday 24 of March)
 8. Plackett-Luce Trees (Lecture available on Tuesday 30 of March)
 9. Model selection (Lecture available on Tuesday 30 of March)
 10. Q&A (organize with teams)

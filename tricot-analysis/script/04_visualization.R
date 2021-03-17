@@ -1,60 +1,112 @@
-library("climatrends")
-library("tidyverse")
+# ................................
+# ................................
+# Visualization and summary
 library("PlackettLuce")
-library("patchwork")
-library("qvcalc")
-library("ggparty")
+library("ggplot2")
 library("gosset")
 library("igraph")
-source("https://raw.githubusercontent.com/agrobioinfoservices/ClimMob-analysis/master/R/functions.R")
+library("leaflet")
+source("https://raw.githubusercontent.com/AgrDataSci/ClimMob-analysis/master/R/functions.R")
 
-# read the data of beans tricot trials
-dt <- read.csv("data/common_bean.csv")
+# ................................
+# ................................
+# Example 1: Beans data
+# load the data of beans tricot trials
+data("beans", package = "PlackettLuce")
 
-dim(dt)
-class(dt)
-str(dt)
-names(dt)
-head(dt)
-tail(dt)
 
-# convert the beans data into a PlackettLuce rankings
-R <- rank_tricot(data = dt, items = c("variety_a","variety_b","variety_c"),input = c("best","worst"))
+# ................................
+# ................................
+# Some summaries
+str(beans)
+
+summary(beans$season)
+
+items <- unlist(beans[,c("variety_a", "variety_b", "variety_c")])
+
+items <- table(items)
+
+hist(beans$maxTN)
+
+boxplot(beans$maxTN)
+
+plot(beans[,c("lon", "lat")])
+
+summary(beans[,c("lon", "lat")])
+
+# ................................
+# ................................
+# Plot map
+# function from ClimMob workflow
+plot_map(beans, c("lon", "lat"))
+
+
+# tricot into a PlackettLuce rankings
+R <- rank_tricot(data = beans,
+                 items = c("variety_a","variety_b","variety_c"),
+                 input = c("best","worst"))
 
 class(R)
 dim(R)
 head(R)
 
-# convert the PlackettLuce rankings into a matrix
-R2 <- unclass(R)
+# PlackettLuce rankings into a Sparse matrix
+unclass(R)
 
-
-#----------------
-# Start explanatory analysis ####
-
-# view the network 
+# ................................
+# ................................
+# View the network 
 a <- adjacency(R)
 
+a
+
+# function from ClimMob workflow
 a <- network(a)
 
 plot(a)
 
-# now look for the favourability
-f <- summarise_favourite(R)
+# ................................
+# ................................
+# Favourability score
+?summarise_favourite
+fav <- summarise_favourite(R)
 
-plot(f) + 
+fav
+
+plot(fav) + 
   theme_bw() +
   theme(panel.grid = element_blank())
 
 
-# now loof for the dominance
-d <- summarise_dominance(R)
-plot(d)
+# ................................
+# ................................
+# Dominance
+dom <- summarise_dominance(R)
+
+head(dom)
+
+plot(dom) + 
+  theme_bw() +
+  theme(panel.grid = element_blank())
+
+# ................................
+# ................................
+# Contests
+vic <- summarise_victories(R)
+
+head(vic)
+
+plot(vic) +
+  theme_bw()
 
 
+# ................................
+# ................................
+# Example 2: Sweetpotato data
+dt <- read.csv("https://raw.githubusercontent.com/AgrDataSci/sweetpotato-cip-tricot/master/data/spotato_data.csv")
 
+head(dt)
 
-
-
+str(dt)
 
 
