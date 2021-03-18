@@ -29,9 +29,8 @@ htmltools::tagList(
 
 # Content
 
-
-* Short introduction to R 
 * Project-oriented workflow
+* Short introduction to R 
 * Introduction to Plackett-Luce model
 * Turning *tricot* rankings into Plackett-Luce rankings
 * Get data from ClimMob to R
@@ -39,12 +38,6 @@ htmltools::tagList(
 * Plackett-Luce Trees (model with covariates)
 * Model selection 
 * Q&A (organize with teams)
-
----
-# Lecture
-
-The lecture on this topic will be available on Wednesday 18 of March
-
 
 ---
 # Aim
@@ -71,6 +64,19 @@ To know more, read the tricot short guide and watch our videos.
 
 .pull-right[
 <img src="img/climmob-channel.jpeg" width="80%"><br>[Click here](https://www.youtube.com/channel/UCmqo4KCZwX8R-H4SNkXfuSA/playlists)
+]
+
+---
+# Required software
+
+For this course you need to install R and RStudio. If you already have it in you computer, please check that you have the latest version of both softwares.
+
+.pull-left[
+<img src="img/r-logo.png" width="45%"/><br>[Click here to download R](https://cran.r-project.org/) 
+]
+
+.pull-right[
+<img src="img/rstudio-logo.png" width="60%"><br>[Click here to download RStudio](https://rstudio.com/products/rstudio/download/)
 ]
 
 

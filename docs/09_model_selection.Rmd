@@ -1,5 +1,5 @@
 ---
-title: "Visualization and summary"
+title: "Model selection"
 author: "Kauê de Sousa"
 date: 2021
 output: html_document

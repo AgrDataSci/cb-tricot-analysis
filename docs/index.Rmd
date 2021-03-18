@@ -12,7 +12,7 @@ Welcome to the course "Analysis of ranking data from crowdsourcing citizen-scien
 
 ## How this course works
 
-The course starts from the understanding that you have a notion on the [R](https://www.r-project.org/) programming language. If you are new in R or never used it, I recommend that you take (and re-take as many times as needed) the "[Short introduction to R](02_introduction_to_R.html)". There you will find the elements that you need to learn for this course and some extra reading to make you ready.
+The course starts from the understanding that you have a notion on the [R](https://www.r-project.org/) programming language. If you are new in R or never used it, I recommend that you take (and re-take as many times as needed) the "[Short introduction to R](03_introduction_to_R.html)". There you will find the elements that you need to learn for this course and some extra reading to make you ready.
 
 You read the materials and watch the lectures in your own time. Your team leader (or contact point) will probably set a deadline for your group to complete the training. After that the team leader will organize with me a Q&A section where all the group participants will meet (on-line). In this Q&A we will work with your own tricot data (if any) and talk about your questions.
 
@@ -23,20 +23,20 @@ Good luck!
 
 These are the topics that we are going to study 
 
-1. [Course Overview](01_course_overview.html) (Lecture available on Thursday 18 of March)
-2. [Short introduction to R](02_introduction_to_R.html) (Lecture available on Thursday 18 of March)
-3. [Project-oriented workflow](03_project_oriented_workflow.html) (Lecture available on Thursday 18 of March)
+1. [Course Overview](01_course_overview.html) 
+2. [Project-oriented workflow](02_project_oriented_workflow.html) 
+3. [Short introduction to R](03_introduction_to_R.html) 
 4. [Introduction to Plackett-Luce model](04_introduction_plmodel.html)
-5. [*tricot* rankings into Plackett-Luce rankings](05_tricot_into_plrank.html) (Lecture available on Wednesday 24 of March)
-6. [Get data from ClimMob to R](06_climmob_in_r.html) (Lecture available on Wednesday 24 of March)
-7. [Visualization and summary](07_visualization_and_summary.html) (Lecture available on Wednesday 24 of March)
-8. Plackett-Luce Trees (Lecture available on Tuesday 30 of March)
-9. Model selection (Lecture available on Tuesday 30 of March)
+5. [*tricot* rankings into Plackett-Luce rankings](05_tricot_into_plrank.html) 
+6. [Get data from ClimMob to R](06_climmob_in_r.html) 
+7. [Visualization and summary](07_visualization_and_summary.html) 
+8. [Plackett-Luce Trees](08_pl_trees.html) 
+9. [Model selection](09_model_selection.html) 
 10. Q&A (organize with teams)
 
 ## Lectures
 
-Watch the lectures from the above topics here
+Watch the lectures from the above topics [here]()
 
 ## Classroom materials
 

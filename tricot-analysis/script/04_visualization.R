@@ -38,7 +38,8 @@ summary(beans[,c("lon", "lat")])
 # ................................
 # Plot map
 # function from ClimMob workflow
-plot_map(beans, c("lon", "lat"))
+# check map providers here https://leaflet-extras.github.io/leaflet-providers/preview/
+plot_map(beans, c("lon", "lat"), map_provider = "OpenStreetMap.Mapnik")
 
 
 # tricot into a PlackettLuce rankings
@@ -103,7 +104,7 @@ plot(vic) +
 # ................................
 # ................................
 # Example 2: Sweetpotato data
-dt <- read.csv("https://raw.githubusercontent.com/AgrDataSci/sweetpotato-cip-tricot/master/data/spotato_data.csv")
+dt <- read.csv("data/sweet_potato.csv")
 
 head(dt)
 

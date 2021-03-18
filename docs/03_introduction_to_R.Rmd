@@ -1,34 +1,30 @@
-<!DOCTYPE html>
-<html lang="" xml:lang="">
-  <head>
-    <title>A short introduction to R</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="Kauê de Sousa" />
-    <meta name="date" content="2021-01-01" />
-    <script src="libs/header-attrs/header-attrs.js"></script>
-    <link href="libs/remark-css/default.css" rel="stylesheet" />
-    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
-    <link href="libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
-    <script src="libs/anchor-sections/anchor-sections.js"></script>
-    <script src="libs/clipboard/clipboard.min.js"></script>
-    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
-    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
-    <script>window.xaringanExtraClipboard(null, {"button":"<i class=\"fa fa-clipboard\"><\/i>","success":"<i class=\"fa fa-check\" style=\"color: #90BE6D\"><\/i>","error":"<i class=\"fa fa-times-circle\" style=\"color: #F94144\"><\/i>"})</script>
-    <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
-    <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
-  </head>
-  <body>
-    <textarea id="source">
-class: center, middle, inverse, title-slide
-
-# A short introduction to R
-### Kauê de Sousa
-### 2021
-
+---
+title: "A short introduction to R"
+author: "Kauê de Sousa"
+date: 2021
+#output: html_document
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
 ---
 
-
-
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library("xaringanExtra")
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+```
 
 # Content
 
@@ -39,11 +35,6 @@ class: center, middle, inverse, title-slide
 * R packages
 * Error and Warning messages
 * Further reading and learning
-
----
-# Lecture
-
-The lecture on this topic will be available on Wednesday 18 of March
 
 ---
 class: middle, inverse
@@ -75,12 +66,11 @@ A programming language, so we can
 
 We can type commands directly into the R console
 
-
-```r
+```{r eval=FALSE, message=FALSE}
 3 + 4
 ?"+" #look up help for "+"
-x &lt;- 3 + 4
-y &lt;- log(x)
+x <- 3 + 4
+y <- log(x)
 ls() # list of objects in the current workspace
 data() # find out what standard data sets there are
 plot(iris) # plot Fisher's iris data
@@ -91,9 +81,9 @@ plot(iris) # plot Fisher's iris data
 
 An integrated development environment for R
 
-&lt;center&gt;
-&lt;img src="img/R-ui.png" width="60%"/&gt;
-&lt;/center&gt;
+<center>
+<img src="img/R-ui.png" width="60%"/>
+</center>
 
 .footnote[
 [1] [Click here to download RStudio](https://rstudio.com/products/rstudio/download/)]
@@ -122,8 +112,7 @@ A single number is a special case of a numeric vector. Vectors of length greater
 
 The elements of the vector must be of the same type, common types are integer, numeric, character, factor and logical
 
-
-```r
+```{r eval=FALSE, message=FALSE}
 c(1, 2, 3) # an integer
 
 c("red", "yellow", "green") # a vector with characters (strings)
@@ -138,15 +127,13 @@ R is a case sensitive language, for example, TRUE is different than true or True
 
 Elements of a vector are separated to each other with a comma 
 
-
-```r
+```{r eval=FALSE, message=FALSE}
 c(1, 4, 8)
 ```
 
 Numbers are native elements and are recognised by R without the need of quotation mark " ". To assign strings (characters) to a vector you need to wrap each element with a quotation mark.
 
-
-```r
+```{r eval=FALSE, message=FALSE}
 c("apple", "banana", "orange", 1, 2)
 ```
 
@@ -155,28 +142,16 @@ c("apple", "banana", "orange", 1, 2)
 
 Missing values (of any type) are represented by logical constant `NA`.
 
-
-```r
+```{r eval=FALSE, message=FALSE}
 c("apple", "banana", "orange", NA)
 ```
 
 The first vector below is different from the second vector because the first have a length 3 (three elements inside the vector), while the last has a length 4 (four elements), even though the last element is non-available. We can check the length of a vector with the function `length()`
 
-
-```r
+```{r}
 length(c("apple", "banana", "orange"))
-```
 
-```
-## [1] 3
-```
-
-```r
 length(c("apple", "banana", "orange", NA))
-```
-
-```
-## [1] 4
 ```
 
 ---
@@ -184,13 +159,8 @@ length(c("apple", "banana", "orange", NA))
 
 The function `is.na()` helps in finding the `NA`s in a vector. The function returns a logical vector where `TRUE` indicates the `NA`s and `FALSE` the available element.
 
-
-```r
+```{r}
 is.na(c("apple", NA, "banana", "orange", NA))
-```
-
-```
-## [1] FALSE  TRUE FALSE FALSE  TRUE
 ```
 
 
@@ -203,22 +173,10 @@ Each vector larger than 1 is concatenated with the function `c()`
 
 Each element in the list is separated to each other with a comma `,` 
 
-
-```r
+```{r}
 list(c(1, 2, 3, 4, 5),
      c("A", "B", "C", NA, "S"),
      TRUE)
-```
-
-```
-## [[1]]
-## [1] 1 2 3 4 5
-## 
-## [[2]]
-## [1] "A" "B" "C" NA  "S"
-## 
-## [[3]]
-## [1] TRUE
 ```
 
 ---
@@ -226,18 +184,8 @@ list(c(1, 2, 3, 4, 5),
 
 A data frame is the most common way of storing data in R and, generally, is the data structure most often used for data analyses. In other words, a data frame is a list of equal-length vectors and can be created with the function `data.frame()`
 
-
-```r
+```{r eval=TRUE, message=TRUE, echo=TRUE}
 str(iris)
-```
-
-```
-## 'data.frame':	150 obs. of  5 variables:
-##  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
-##  $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
-##  $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
-##  $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
-##  $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
 ```
 
 Here Species is a factor, a special data structure for categorical variables. 
@@ -247,19 +195,11 @@ Click [here](https://r4ds.had.co.nz/factors.html) to read more about factors.
 ---
 # Creating a data frame
 
-
-```r
+```{r eval=TRUE, message=TRUE, echo=TRUE}
 data.frame(x = c(1:3),
            y = c(3:5),
            z = c("red", "blue", "black"),
            w = c(TRUE, FALSE, TRUE))
-```
-
-```
-##   x y     z     w
-## 1 1 3   red  TRUE
-## 2 2 4  blue FALSE
-## 3 3 5 black  TRUE
 ```
 
 ---
@@ -269,23 +209,15 @@ class: middle, inverse
 ---
 # Creating objects and assigning values
 
-Objects are assigned using `&lt;-` , an arrow to the left formed out of `&lt;` and `-`. An equal sign `=` can also be used. Creating objects is helpful because R keeps then in the "Global Environment" for subsequent utilization. 
+Objects are assigned using `<-` , an arrow to the left formed out of `<` and `-`. An equal sign `=` can also be used. Creating objects is helpful because R keeps then in the "Global Environment" for subsequent utilization. 
 
-
-```r
-mydf &lt;- data.frame(x = c(1:3),
+```{r eval=TRUE, message=TRUE, echo=TRUE}
+mydf <- data.frame(x = c(1:3),
                    y = c(3:5),
                    z = c("red", "blue", "black"),
                    w = c(TRUE, FALSE, TRUE))
 
 mydf
-```
-
-```
-##   x y     z     w
-## 1 1 3   red  TRUE
-## 2 2 4  blue FALSE
-## 3 3 5 black  TRUE
 ```
 
 ---
@@ -294,11 +226,10 @@ mydf
 * Try to be objective and name your object clearly
 * Don't use dots "." to separate name, as dots are used to parse [methods](http://adv-r.had.co.nz/S3.html) (which is an advanced topic)
 
+```{r eval=FALSE, message=FALSE}
+my_vector <- c("a", "y", "z") # good name
 
-```r
-my_vector &lt;- c("a", "y", "z") # good name
-
-my.vector &lt;- c("a", "y", "z") # not a good name
+my.vector <- c("a", "y", "z") # not a good name
 ```
 
 * Certain names should not be used to name objects (e.g. c, t, df, matrix, data), because these are names of functions in R. Type these on the Console and see what happens. Instead use, my_matrix, my_data, my_list or something similar.
@@ -312,31 +243,14 @@ class: middle, inverse
 
 Indexing is a way to access the element(s) in an R object using its position in the vector. Indices in R starts with 1 (the first element in the vector) and goes until the value that represents the length of the vector.
 
-
-```r
-x &lt;- c(3, 5, 6, 9, 10)
+```{r eval=TRUE, message=TRUE, echo=TRUE}
+x <- c(3, 5, 6, 9, 10)
 
 x[1] # access the element of position one
-```
 
-```
-## [1] 3
-```
-
-```r
 x[4:5] # access the elements four and five of the vector
-```
 
-```
-## [1]  9 10
-```
-
-```r
 x[c(2,4)] # access the elements two and four of the vector
-```
-
-```
-## [1] 5 9
 ```
 
 Indexing can also be done with `match()`, `which()` and `%in%`, but this is a bit more advanced. Click [here](https://rafalab.github.io/dsbook/r-basics.html#indexing) to read more about it.
@@ -346,35 +260,13 @@ Indexing can also be done with `match()`, `which()` and `%in%`, but this is a bi
 
 Data frames are objects with two dimensions. The first represents the rows and the second represents the columns.
 
-
-```r
+```{r eval=TRUE, message=TRUE, echo=TRUE}
 mydf[1] # take all the elements from the first column
-```
 
-```
-##   x
-## 1 1
-## 2 2
-## 3 3
-```
-
-```r
 mydf[1,] # take all the elements from the fist row
-```
 
-```
-##   x y   z    w
-## 1 1 3 red TRUE
-```
-
-```r
 mydf[c(1,3), 3:4] # take the elements from rows one and three, and columns three and four
-```
 
-```
-##       z    w
-## 1   red TRUE
-## 3 black TRUE
 ```
 
 ---
@@ -382,28 +274,15 @@ mydf[c(1,3), 3:4] # take the elements from rows one and three, and columns three
 
 An element of a data frame can be also indexed using its column name (the safer choice!)
 
-
-```r
+```{r eval=TRUE, message=TRUE, echo=TRUE}
 # access column named x in mydf
 # this returns a data frame with one column
 mydf["x"] 
-```
 
-```
-##   x
-## 1 1
-## 2 2
-## 3 3
-```
-
-```r
 # dollar sign $ can be used to access elements inside a data frame or a list
 # this returns a vector
 mydf$x 
-```
 
-```
-## [1] 1 2 3
 ```
 
 ---
@@ -411,16 +290,10 @@ mydf$x
 
 An element of a data frame can be also indexed using its column name (the safer choice!)
 
-
-```r
+```{r eval=TRUE, message=TRUE, echo=TRUE}
 # access lines one and two, and columns x and z in mydf
 mydf[1:2, c("x", "z")] 
-```
 
-```
-##   x    z
-## 1 1  red
-## 2 2 blue
 ```
 
 ---
@@ -438,8 +311,7 @@ The Comprehensive R Archive Network [(CRAN)](https://cran.r-project.org/) is whe
 
 To install a package from CRAN we use the function `install.packages()`
 
-
-```r
+```{r eval=FALSE, message=FALSE}
 install.packages("ggplot2")
 ```
 
@@ -450,8 +322,7 @@ Develop a R package is often an ongoing project. Once a package's version is sta
 
 Currently, most R packages under development are deposited on [GitHub](https://github.com/). To install a developing version from GitHub we use the function `install_github()` from the R package "remotes"
 
-
-```r
+```{r eval=FALSE, message=FALSE}
 install.packages("remotes")
 remotes::install_github("agrdatasci/gosset")
 ```
@@ -463,8 +334,7 @@ You just need to install a R package once. Unless you change the R version or ch
 
 To call a package we use the function `library()`. This should be done every time that you start a new R section. Packages names can be wrapped with quotation marks or not. The [best practice](http://adv-r.had.co.nz/Computing-on-the-language.html#nse-downsides) is to use quotation marks.
 
-
-```r
+```{r eval=FALSE, message=FALSE}
 library("ggplot2")
 library(gosset)
 ```
@@ -478,13 +348,12 @@ class: middle, inverse
 
 An error occurs when we try to run a function but provide (in some way) the wrong input(s). By consenquence the object that we try to create is not generated and R returns an "error message".
 
-
-```r
+```{r eval=FALSE, message=FALSE}
 cbind(iris, airquality)
 ```
-&lt;center&gt;
-&lt;img src="img/error-message.png" width="50%"/&gt;
-&lt;/center&gt;
+<center>
+<img src="img/error-message.png" width="50%"/>
+</center>
 
 This error occurred because we tried to combine the data frames "iris" and "airquality" into a single object. But they have different dimensions (number of rows).
 
@@ -493,14 +362,13 @@ This error occurred because we tried to combine the data frames "iris" and "airq
 
 R returns a warning message to keep you aware of an unexpected outcome of the function that can affect the object that is created.
 
-
-```r
+```{r eval=FALSE, message=FALSE}
 cbind(c(1:4), c(5:10))
 ```
 
-&lt;center&gt;
-&lt;img src="img/warning-message.png" width="50%"/&gt;
-&lt;/center&gt;
+<center>
+<img src="img/warning-message.png" width="50%"/>
+</center>
 
 This message warns us that we are combining two vectors with different lengths. The first has a length of four and the second a length of six. R runs the command, repeats the elements of index 1 and 2 from the first vector, and returns the matrix with a warnings message.
 
@@ -512,19 +380,19 @@ Error and warning messages from native functions in R are often not so informati
 * Don't panic and read carefully the error/warning message
 * Copy the message and search for it on Google. Is very likely that you will find someone that went through the same error.
 * [Stack Overflow](https://stackoverflow.com/) is where most of the errors are solved.
-* On Twitter, look for help using the hashtag [#Rstats](https://twitter.com/search?q=%23Rstats&amp;src=typed_query)
+* On Twitter, look for help using the hashtag [#Rstats](https://twitter.com/search?q=%23Rstats&src=typed_query)
 * Lastly, try to contact the package's developer through the channel informed in the package's home page on CRAN (BugReports).
 
-&lt;center&gt;
-&lt;img src="img/climatrends-home.png" width="40%"/&gt;
-&lt;/center&gt;
+<center>
+<img src="img/climatrends-home.png" width="40%"/>
+</center>
 
 ---
 R is a language with a steep learning curve. If you have no idea what you are doing, don't worry I also felt that way at the beginning. The tip is practice and look for help in the web forums.  
 
-&lt;center&gt;
-&lt;img src="img/no-idea.png" width="80%"/&gt;
-&lt;/center&gt;
+<center>
+<img src="img/no-idea.png" width="80%"/>
+</center>
 
 ---
 # Further reading and learning
@@ -547,138 +415,14 @@ RStudio have a series of recorded webinars that can help you in learning more ab
 # **Thank you!**
 
 .pull-left[
-&lt;img src="img/logos-v.png" width="50%"/&gt;
+<img src="img/logos-v.png" width="50%"/>
 ]
 
 .pull-right[
 
-&lt;img src="https://img.icons8.com/color/64/000000/twitter.png" width = "10%"&gt;[@desousakaue](https://twitter.com/desousakaue)
+<img src="https://img.icons8.com/color/64/000000/twitter.png" width = "10%">[@desousakaue](https://twitter.com/desousakaue)
 
-&lt;img src="https://img.icons8.com/ios-filled/50/000000/email-open.png" width = "10%"&gt;[k.desousa@cgiar.org](mailto:k.desousa@cgiar.org)
+<img src="https://img.icons8.com/ios-filled/50/000000/email-open.png" width = "10%">[k.desousa@cgiar.org](mailto:k.desousa@cgiar.org)
 ]
 
 
-    </textarea>
-<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create({
-"highlightStyle": "github",
-"highlightLines": true,
-"countIncrementalSlides": false,
-"ratio": "16:9"
-});
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})(document);
-
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);
-// delete the temporary CSS (for displaying all slides initially) when the user
-// starts to view slides
-(function() {
-  var deleted = false;
-  slideshow.on('beforeShowSlide', function(slide) {
-    if (deleted) return;
-    var sheets = document.styleSheets, node;
-    for (var i = 0; i < sheets.length; i++) {
-      node = sheets[i].ownerNode;
-      if (node.dataset["target"] !== "print-only") continue;
-      node.parentNode.removeChild(node);
-    }
-    deleted = true;
-  });
-})();
-(function() {
-  "use strict"
-  // Replace <script> tags in slides area to make them executable
-  var scripts = document.querySelectorAll(
-    '.remark-slides-area .remark-slide-container script'
-  );
-  if (!scripts.length) return;
-  for (var i = 0; i < scripts.length; i++) {
-    var s = document.createElement('script');
-    var code = document.createTextNode(scripts[i].textContent);
-    s.appendChild(code);
-    var scriptAttrs = scripts[i].attributes;
-    for (var j = 0; j < scriptAttrs.length; j++) {
-      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
-    }
-    scripts[i].parentElement.replaceChild(s, scripts[i]);
-  }
-})();
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
-
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
-  }
-};
-slideshow._releaseMath(document);
-</script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
-</html>
