@@ -18,9 +18,11 @@ library("gosset")
 
 # Load the bean data from PlackettLuce
 # here we can read some information about the data set
+data("beans", package = "PlackettLuce")
+
 ?beans
 
-data("beans", package = "PlackettLuce")
+
 
 # a data frame with 842 entries and 14 variables
 str(beans)
@@ -42,6 +44,8 @@ all(sel %in% colnames(beans))
 
 # subset the data frame
 beans2 <- beans[1:3, sel]
+
+beans2
 
 # write it as a csv file and show
 # how this works 

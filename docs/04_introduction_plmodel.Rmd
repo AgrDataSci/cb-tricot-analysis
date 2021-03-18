@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Plackett-Luce model"
+title: "Introduction to PlackettLuce"
 author: "Kauê de Sousa"
 date: 2021
 output:
@@ -29,20 +29,8 @@ htmltools::tagList(
 # Content
 
 * Rank-based models 
+* Difference between BT and PL
 * Plackett-Luce model
-* Example 1: Netflix Data
-* Fit the Plackett-Luce Model
-* Generalized model
-* Ranking networks
-* Example 2: Beans
-* Plackett-Luce Trees
-
----
-# Lecture
-
-The lecture on this topic is given by Dr. Heather Turner as part of the eRum 2018 in Budapest. 
-
-[Click here to watch the lecture](https://www.youtube.com/watch?v=ztVriQvrrxY)
 
 ---
 class: middle, inverse
