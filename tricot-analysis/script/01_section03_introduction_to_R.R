@@ -147,4 +147,4 @@ mydf[1:2, c("x", "z")]
 # install.packages("ggplot2")
 
 # install.packages("remotes")
-# remotes::install_github("agrdatasci/gosset")
+# remotes::install_github("agrdatasci/gosset", upgrade = "never")
