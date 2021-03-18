@@ -40,11 +40,6 @@ class: center, middle, inverse, title-slide
 * rank_tricot() from gosset package
 
 ---
-# Lecture
-
-The lecture on this topic will be available on Wednesday 24 of March
-
----
 # Set up
 
 For this lecture we need to packages PlackettLuce and gosset. We install it from GitHub. You just need to run this command once.
@@ -158,10 +153,10 @@ Varieties not assigned to a given farmer are set with 0.
 
 
 ```
-##      BRT103-1 INTARojo INTAFrrs SJC730-7 INTACntS INTAMtgl PM2DonRy INTASequ
-## [1,]        3        0        0        2        0        0        1        0
-## [2,]        0        3        0        0        1        0        0        2
-## [3,]        3        0        1        0        0        2        0        0
+##   BRT103-1 INTACntS INTAFrrs INTAMtgl INTARojo INTASequ PM2DonRy SJC730-7
+## 1        3        0        0        0        0        0        1        2
+## 2        0        1        0        0        3        2        0        0
+## 3        3        0        1        2        0        0        0        0
 ```
 
 ---
@@ -170,9 +165,12 @@ PlackettLuce has a printing method to see these rankings
 
 
 ```
-## [1] "PM2 Don Rey &gt; SJC 730-79 &gt; BRT 103-182"     
-## [2] "INTA Centro Sur &gt; INTA Sequia &gt; INTA Rojo"  
-## [3] "INTA Ferroso &gt; INTA Matagalpa &gt; BRT 103-182"
+##                                             1 
+##      "PM2 Don Rey &gt; SJC 730-79 &gt; BRT 103-182" 
+##                                             2 
+##   "INTA Centro Sur &gt; INTA Sequia &gt; INTA Rojo" 
+##                                             3 
+## "INTA Ferroso &gt; INTA Matagalpa &gt; BRT 103-182"
 ```
 
 ---

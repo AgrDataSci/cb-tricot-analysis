@@ -38,11 +38,6 @@ library("gosset")
 * rank_tricot() from gosset package
 
 ---
-# Lecture
-
-The lecture on this topic will be available on Wednesday 24 of March
-
----
 # Set up
 
 For this lecture we need to packages PlackettLuce and gosset. We install it from GitHub. You just need to run this command once.
