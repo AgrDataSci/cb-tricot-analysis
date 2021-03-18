@@ -34,11 +34,6 @@ htmltools::tagList(
 * Trial data
 
 ---
-# Lecture
-
-The lecture on this topic will be available on Wednesday 24 of March
-
----
 # Set up
 
 For this lecture we need to package ClimMobTools. We install it from GitHub. You just need to run this command once.
