@@ -1,8 +1,6 @@
 # ................................
 # ................................
 # tricot rankings into PlackettLuce rankings
-
-
 # If not yet installed, please unlock these lines and 
 # install PlackettLuce and gosset
 # library("remotes")
@@ -51,19 +49,6 @@ beans2
 # how this works 
 write.csv(beans2, file = "data/beans_subset.csv", row.names = FALSE)
 
-
-
-# gosset wrapped this process into a function called 
-# rank_tricot()
-R <- rank_tricot(data = beans2,
-                 items = c("variety_a", "variety_b", "variety_c"),
-                 input = c("best", "worst"))
-
-R
-
-R[1:length(R),, as.rankings = FALSE]
-
-
 # add the local
 R <- rank_tricot(data = beans2,
                  items = c("variety_a", "variety_b", "variety_c"),
@@ -72,6 +57,24 @@ R <- rank_tricot(data = beans2,
 
 R
 
-R[1:length(R),, as.rankings=FALSE]
+unclass(R)
 
 
+
+R <- rank_tricot(data = beans,
+                 items = c("variety_a", "variety_b", "variety_c"),
+                 input = c("best", "worst"),
+                 additional.rank = beans[c("var_a", "var_b", "var_c")])
+
+
+class(R)
+
+
+G <- rank_tricot(data = beans,
+                 items = c("variety_a", "variety_b", "variety_c"),
+                 input = c("best", "worst"),
+                 additional.rank = beans[c("var_a", "var_b", "var_c")],
+                 group = TRUE)
+
+head(R)
+head(G)

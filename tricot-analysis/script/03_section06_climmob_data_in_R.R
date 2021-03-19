@@ -19,8 +19,10 @@ key <- "d39a3c66-5822-4930-a9d4-50e7da041e77"
 
 projects <- getProjectsCM(key)
 
-projects
+View(projects)
 
+
+?getDataCM
 
 # as a tidy data frame 
 bread <- getDataCM(key, project = "breadwheat")
@@ -28,12 +30,19 @@ bread <- getDataCM(key, project = "breadwheat")
 bread
 
 # as a wider data frame 
-bread <- getDataCM(key, project = "breadwheat", pivot.wider = TRUE)
+bread <- getDataCM(key, "breadwheat", pivot.wider = TRUE)
 
 bread
+
+str(bread)
+
+dim(bread)
 
 # as a list
 bread <- getDataCM(key, project = "breadwheat", as.data.frame = FALSE)
 
 bread
+
+length(bread)
+
 
