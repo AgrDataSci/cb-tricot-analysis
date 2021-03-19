@@ -23,7 +23,7 @@ Good luck!
 
 These are the topics that we are going to study 
 
-1. [Course Overview](01_course_overview.html) 
+1. [Course overview](01_course_overview.html) 
 2. [Project-oriented workflow](02_project_oriented_workflow.html) 
 3. [Short introduction to R](03_introduction_to_R.html) 
 4. [Introduction to Plackett-Luce model](04_introduction_plmodel.html)
@@ -44,7 +44,7 @@ Click [here](https://github.com/AgrDataSci/cb-tricot-analysis/blob/master/tricot
 
 ## Comments and questions 
 
-Please send your comments and/or questions to my email <k.desousa@cgiar.org> or preferably via an issue in the GitHub repository [here](https://github.com/AgrDataSci/cb-tricot-analysis/issues).
+Please send your comments and/or questions via an issue in the GitHub repository [here](https://github.com/AgrDataSci/cb-tricot-analysis/issues) (preferably) or alternatively to my email <k.desousa@cgiar.org>.
 
 -----
 
