@@ -44,12 +44,11 @@ This lecture is available on [Youtube](https://www.youtube.com/playlist?list=PLp
 ---
 # Set up
 
-For this lecture we need to package ClimMobTools. We install it from GitHub. You just need to run this command once.
+For this lecture we need to package ClimMobTools. We install it from CRAN.
 
 
 ```r
-library("remotes")
-install_github("agrdatasci/ClimMobTools", upgrade = "never")
+install.packages("ClimMobTools")
 ```
 
 Then we load the packages with `library()`. We run this command every time we open a new R section 
@@ -107,16 +106,16 @@ projects[8:10, ]
 ```
 
 ```
-##     project_id                 name    status creation_date
-##          &lt;chr&gt;                &lt;chr&gt;     &lt;chr&gt;        &lt;date&gt;
-## 8:     flowers   Flowers wageningen concluded    2019-04-17
-## 9:  chocolates Chocolate Wageningen concluded    2019-04-14
-## 10: breadwheat           Breadwheat concluded    2019-03-27
+##          project_id               name    status creation_date
+##               &lt;chr&gt;              &lt;chr&gt;     &lt;chr&gt;        &lt;date&gt;
+## 8:             test      Registry-only concluded    2019-11-08
+## 9:  chocolatesnepal   Chocolates Nepal concluded    2019-10-27
+## 10:         flowers Flowers wageningen concluded    2019-04-17
 ##     intended_participants registration_progress last_registration_activity
 ##                     &lt;int&gt;                 &lt;dbl&gt;                      &lt;chr&gt;
-## 8:                      7                100.00                 1 year ago
-## 9:                     30                100.00                 1 year ago
-## 10:                   493                100.00                 1 year ago
+## 8:                     30                 13.33                 1 year ago
+## 9:                     26                 84.62                 1 year ago
+## 10:                     7                100.00                 1 year ago
 ```
 
 ---

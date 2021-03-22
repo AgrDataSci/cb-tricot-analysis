@@ -40,11 +40,10 @@ This lecture is available on [Youtube](https://www.youtube.com/playlist?list=PLp
 ---
 # Set up
 
-For this lecture we need to package ClimMobTools. We install it from GitHub. You just need to run this command once.
+For this lecture we need to package ClimMobTools. We install it from CRAN.
 
 ```{r eval=FALSE, message=FALSE}
-library("remotes")
-install_github("agrdatasci/ClimMobTools", upgrade = "never")
+install.packages("ClimMobTools")
 ```
 
 Then we load the packages with `library()`. We run this command every time we open a new R section 

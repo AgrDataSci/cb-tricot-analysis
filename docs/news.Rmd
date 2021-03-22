@@ -1,0 +1,17 @@
+---
+output: html_document
+---
+
+# News 
+
+## 22 March 2021
+
+* pdf files of the slides are added to the classroom materials tricot-analysis/slides. If you downloaded the zip file before the data indicated above, please do it again.
+
+----
+
+# Troubleshooting
+
+* Some participants reported an issue in installing ClimMobTools using the function `remotes::install_github()`, which seems to be a known issue for Windows users, read more [here](https://github.com/r-lib/remotes/issues/130). If you face the same issue, use the command `install.packages("ClimMobTools")` instead.
+
+

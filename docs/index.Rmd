@@ -46,6 +46,8 @@ Click [here](https://github.com/AgrDataSci/cb-tricot-analysis/blob/master/tricot
 
 Please send your comments and/or questions via an issue in the GitHub repository [here](https://github.com/AgrDataSci/cb-tricot-analysis/issues) (preferably) or alternatively to my email <k.desousa@cgiar.org>.
 
+Check the News on this course and troubleshooting [here](news.html).
+
 -----
 
 <center>
