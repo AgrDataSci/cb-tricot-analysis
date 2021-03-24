@@ -15,7 +15,7 @@ library("gosset")
 
 # Content
 
-This lecture will be available on Wednesday 24 of March 2021
+This lecture will be available on Wednesday 31 of March 2021
 
 # Set up
 
