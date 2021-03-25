@@ -11,9 +11,9 @@ source("https://raw.githubusercontent.com/AgrDataSci/ClimMob-analysis/master/R/f
 # ................................
 # ................................
 # Example 1: Beans data
-# load the data of beans tricot trials
+# load the data of beans tricot trials 
+# from the package PlackettLuce 
 data("beans", package = "PlackettLuce")
-
 
 # ................................
 # ................................
@@ -26,22 +26,27 @@ items <- unlist(beans[,c("variety_a", "variety_b", "variety_c")])
 
 items <- table(items)
 
-hist(beans$maxTN)
+plot(density(beans$maxTN))
 
 boxplot(beans$maxTN)
 
-plot(beans[,c("lon", "lat")])
-
 summary(beans[,c("lon", "lat")])
+
+plot(beans[,c("lon", "lat")])
 
 # ................................
 # ................................
 # Plot map
 # function from ClimMob workflow
 # check map providers here https://leaflet-extras.github.io/leaflet-providers/preview/
+plot_map(beans, c("lon", "lat"))
+
 plot_map(beans, c("lon", "lat"), map_provider = "OpenStreetMap.Mapnik")
 
 
+# ................................
+# ................................
+# Visualize the rankings
 # tricot into a PlackettLuce rankings
 R <- rank_tricot(data = beans,
                  items = c("variety_a","variety_b","variety_c"),
@@ -109,5 +114,41 @@ dt <- read.csv("data/sweet_potato.csv")
 head(dt)
 
 str(dt)
+
+colnames(dt)
+
+# ..........................................
+# ..........................................
+# compare rankings from the three traits using OA as baseline
+# take Kendall tau and the agreement of being best and worst among the traits
+
+# first, subset the main dataset to retain only the Uganda data
+dt <- dt[dt$country == "Uganda", ]
+
+names(dt)
+
+# now isolate the strings for the traits assessed in Uganda
+traits <- c("overall","taste","color")
+
+sel <- paste0(rep(c("best_","worst_"), each = 3), traits)
+
+
+# now create the rankings for each trait
+# run over the traits
+R <- list()
+for(i in seq_along(traits)){
+  R[[i]] <- rank_tricot(dt, 
+                        items = c("item_A", "item_B", "item_C"),
+                        input = paste0(c("best_","worst_"), traits[[i]]))
+}
+
+# compare rankings
+a <- summarise_agreement(R[[1]],
+                         compare.to = R[-1],
+                         labels = c("Taste","Colour"))
+
+plot(a) + 
+  theme_bw()
+
 
 
