@@ -19,19 +19,21 @@ This lecture will be available on Wednesday 31 of March 2021
 
 # Set up
 
-For this lecture we need to packages PlackettLuce, ggplot2, gosset and igraph. We load the packages with `library()`. We also load some extra functions from the workflow employed in the ClimMob platform.
+For this lecture we need to packages PlackettLuce, ggplot2, gosset, igraph and leaflet. We load the packages with `library()`. Additionally, we load some extra functions from the workflow employed in the [ClimMob platform](https://doi.org/10.5281/zenodo.3976631).
 
 ```{r eval=FALSE, message=FALSE}
 library("PlackettLuce")
 library("ggplot2")
 library("gosset")
 library("igraph")
+library("leaflet")
 source("https://raw.githubusercontent.com/AgrDataSci/ClimMob-analysis/master/R/functions.R")
 ```
 
-
-
 # Example 1: Beans data
+
+
+
 
 
 # Example 2: Sweetpotato data

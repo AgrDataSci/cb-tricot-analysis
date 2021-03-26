@@ -24,7 +24,9 @@ summary(beans$season)
 
 items <- unlist(beans[,c("variety_a", "variety_b", "variety_c")])
 
-items <- table(items)
+table(items)
+
+table(items, rep(beans$season, 3))
 
 plot(density(beans$maxTN))
 
@@ -130,7 +132,7 @@ names(dt)
 # now isolate the strings for the traits assessed in Uganda
 traits <- c("overall","taste","color")
 
-sel <- paste0(rep(c("best_","worst_"), each = 3), traits)
+sel <- paste0(c("best_","worst_"), rep(traits, each = 2))
 
 
 # now create the rankings for each trait

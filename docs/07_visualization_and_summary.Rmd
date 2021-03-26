@@ -8,14 +8,20 @@ output: html_document
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 library("PlackettLuce")
+library("ggplot2")
 library("gosset")
+library("igraph")
+source("https://raw.githubusercontent.com/AgrDataSci/ClimMob-analysis/master/R/functions.R")
 ```
 
 ----
 
 # Content
 
-This lecture will be available on Wednesday 31 of March 2021
+* Example 1: Bean trial 
+
+
+* Example 2: Sweet potato trial
 
 # Set up
 
@@ -30,11 +36,202 @@ source("https://raw.githubusercontent.com/AgrDataSci/ClimMob-analysis/master/R/f
 ```
 
 
-
 # Example 1: Beans data
 
+Load the data of beans tricot trials from the package PlackettLuce 
+
+```{r}
+data("beans", package = "PlackettLuce")
+str(beans)
+```
+
+
+## Contingency table
+
+The function `table()` builds a contingency table of the counts at each combination of characters or factor levels. Let's see the number of points in the beans data per season.
+
+```{r}
+table(beans$season)
+```
+
+
+Now number of varieties that were tested in the project. For this we use the function `unlist()` to coerce the three columns with the variety names into a vector of length 2526 (nrow(beans) x 3)
+
+```{r}
+items <- unlist(beans[,c("variety_a", "variety_b", "variety_c")])
+
+table(items)
+
+```
+
+And now we see how these varieties were tested across each season. For this, we pass the vector items as first argument and repeat the vector beans$season three times to match the length of the items using the function `rep()`.
+
+```{r}
+table(items, rep(beans$season, 3))
+```
+
+## Plot methods 
+
+We can use the function `density()` to compute a kernel density estimate of the maximum night temperature registed in the locations where the on-farm trials were stablished. To visualize this density, we use the function `plot()`.
+
+```{r, fig.align='center'}
+plot(density(beans$maxTN), 
+     main = "Kernel density of maximun night temperature")
+```
+
+We can visualize this variable through their quartiles and check for any outlier with `boxplot()` for visualization and `boxplot.stats()` to get the statistics of the box plot.
+
+```{r, fig.align='center'}
+boxplot(beans$maxTN)
+```
+
+With the function `plot()` we can also plot the coordinates of each on-farm trial registered in the bean trial. 
+
+```{r, fig.align='center'}
+plot(beans[,c("lon", "lat")])
+```
+
+The output is not so informative as it is simply a scatterplot where the axys Y is the latitude and X is the longitude. We can improve this visualization by applying a layer of geographic coverage to get an idea where these trials were set. We use an internal function of the ClimMob workflow powered by the package leaflet.
+
+```{r, fig.align='center'}
+plot_map(beans, c("lon", "lat"), map_provider = "OpenStreetMap.Mapnik")
+```
+
+
+## Rank visualization
+
+First we coerce the tricot rankings into a PlackettLuce rankings 
+
+```{r}
+R <- rank_tricot(data = beans,
+                 items = c("variety_a","variety_b","variety_c"),
+                 input = c("best","worst"))
+head(R)
+```
+
+
+We can see the network (how these varieties are connected) of this trial by computing the adjacency of rankings with the function `adjacency()` from PlackettLuce and the function `network()` from the ClimMob workflow.
+
+```{r, message=FALSE, fig.align='center'}
+a <- adjacency(R)
+
+a <- network(a)
+
+plot(a)
+```
+
+###  Favourability score
+
+The function `summarise_favourite()` computes the favourability score from permutations contests. The favourability score is the difference between the wins and losses of a given item in a paired comparison.
+
+```{r, fig.align='center'}
+fav <- summarise_favourite(R)
+
+fav
+```
+
+It has a plot method powered by the package [ggplot2](https://ggplot2.tidyverse.org/) which offer many options to change its layout. 
+
+```{r, fig.align='center', out.width = '70%', dpi = 600}
+plot(fav) + 
+  theme_bw() +
+  theme(panel.grid = element_blank())
+```
+
+### Victories
+
+The function `summarise_victories()` summarises the relative number of times a "player1" wins against a "player2" in a paired comparison. 
+
+```{r}
+vic <- summarise_victories(R)
+
+head(vic)
+```
+
+Also with a plot method that passes ggplot2 arguments 
+
+```{r, fig.align='center'}
+plot(vic) +
+  theme_bw() +
+  theme(panel.grid = element_blank())
+```
 
 # Example 2: Sweetpotato data
+
+This is the data from [Moyo et al (2021)](https://doi.org/10.3389/fsufs.2021.620363) who tested the consumers' preference on sweetpotato materials (varieties and genotypes) in Ghana and Uganda. The data is available [here](https://doi.org/10.5281/zenodo.4012057) and also in the classroom materials in the "data/" folder.
+
+We first read the .csv file with the function `read.csv()`
+
+```{r eval=TRUE, message=TRUE, echo=FALSE, include=TRUE}
+dt <- read.csv("../data/sweet_potato.csv")
+```
+
+```{r, eval=FALSE}
+dt <- read.csv("data/sweet_potato.csv")
+```
+
+```{r}
+str(dt)
+```
+
+## Agreement between rankings
+
+We are going to compare rankings from the three traits evaluated in the sweetpotato trial (taste, color and overall) using overall as baseline. We use the function `summarise_agreement()` which computes the [Kendall correlation](https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient) between rankings, and the agreement between the first and last ranked varieties. 
+
+First, we subset the main dataset to retain only the Uganda data. The condition `dt$country == "Uganda"` passed in the rows of `dt` return a logical vector (`TRUE FALSE`) for the observations in `dt$country` that are equal to Uganda.
+
+```{r}
+keep <- dt$country == "Uganda"
+
+dt <- dt[keep, ]
+
+dim(dt)
+```
+
+Now we isolate the strings for the traits assessed in Uganda. We use the function `paste0()` to create a vector that represents the traits and their names in `dt` with the strings `best_` and `worst_`
+
+```{r}
+traits <- c("overall","taste","color")
+
+sel <- paste0(c("best_","worst_"), rep(traits, each = 2))
+
+sel
+```
+
+We use an [iteration](https://r4ds.had.co.nz/iteration.html) with `for` to create the rankings. Iterations are often used to optimize processes and enable a better debugging structure
+
+We create an empty list and the rankings that are going to be created in each iteration `i` performed along the vector `traits`
+
+```{r}
+R <- list()
+
+for(i in seq_along(traits)){
+  
+  R[[i]] <- rank_tricot(dt, 
+                        items = c("item_A", "item_B", "item_C"),
+                        input = paste0(c("best_","worst_"), traits[[i]]))
+  
+}
+```
+
+We can now compare the rankings. The first argument is the baseline wich is the first element in the list `R`, we indicate it with `R[[1]]` where 1 is the index for the first element in the list. The second argument is the list with rankings to compare, we indicate it with `R[-1]` where -1 tells to R to use all the elements in the list besides the first.
+
+```{r}
+a <- summarise_agreement(R[[1]],
+                         compare.to = R[-1],
+                         labels = c("Taste","Colour"))
+
+a
+```
+
+We can also plot it with the ggplot2 methods 
+
+```{r, fig.align='center'}
+plot(a) + 
+  theme_bw() +
+  theme(panel.grid = element_blank())
+```
+
 
 ----
 
