@@ -42,6 +42,10 @@ Watch the lectures from the above topics [here](https://youtube.com/playlist?lis
 
 Click [here](https://github.com/AgrDataSci/cb-tricot-analysis/blob/master/tricot-analysis.zip) to download the classroom materials. This is a .zip file with the project data inside it. Unzip the file and put it in the directory of your preference.
 
+To download the slides of sections 1 to 6 click [here](https://www.dropbox.com/sh/wkebnh449ar8u10/AABjerxCZJ2AZCidkcewbXdsa?dl=0) 
+
+To download the videos of lectures 1 to 6 click [here](https://www.dropbox.com/sh/lc1ucse4fw45iyz/AAAnHUQ1hZzhwJoTHnQBM8J_a?dl=0)
+
 ## Comments and questions 
 
 Please send your comments and/or questions via an issue in the GitHub repository [here](https://github.com/AgrDataSci/cb-tricot-analysis/issues) (preferably) or alternatively to my email <k.desousa@cgiar.org>.

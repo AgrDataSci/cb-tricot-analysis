@@ -26,3 +26,4 @@ slides/rmd/
 *.DS_Store
 dev
 tricot-analysis/data/beans_subset.csv
+videos
