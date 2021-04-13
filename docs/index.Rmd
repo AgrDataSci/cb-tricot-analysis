@@ -31,8 +31,7 @@ These are the topics that we are going to study
 6. [Get data from ClimMob to R](06_climmob_in_r.html) 
 7. [Visualization and summary](07_visualization_and_summary.html) 
 8. [Plackett-Luce Trees](08_pl_trees.html) 
-9. [Model selection](09_model_selection.html) 
-10. Q&A (organize with teams)
+9. Q&A (organize with teams)
 
 ## Lectures
 
