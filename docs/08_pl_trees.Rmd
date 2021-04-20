@@ -2,41 +2,265 @@
 title: "Plackett-Luce Trees"
 author: "Kauê de Sousa"
 date: 2021
-output: html_document
+output: 
+  html_document:
+    toc: true
 ---
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 library("PlackettLuce")
+library("qvcalc")
 library("gosset")
+library("patchwork")
+library("ggparty")
+library("climatrends")
+library("nasapower")
+library("ClimMobTools")
 ```
 
 ----
 
-# Content
-
-This lecture will be available on Wednesday 31 of March 2021
-
 # Set up
 
-For this lecture we need to packages PlackettLuce, ggplot2, gosset, igraph and leaflet. We load the packages with `library()`. Additionally, we load some extra functions from the workflow employed in the [ClimMob platform](https://doi.org/10.5281/zenodo.3976631).
+For this lecture we need to packages following packages. We load the packages with `library()`. 
 
 ```{r eval=FALSE, message=FALSE}
 library("PlackettLuce")
-library("ggplot2")
+library("qvcalc")
 library("gosset")
-library("igraph")
-library("leaflet")
-source("https://raw.githubusercontent.com/AgrDataSci/ClimMob-analysis/master/R/functions.R")
+library("patchwork")
+library("ggparty")
+library("climatrends")
+library("nasapower")
+library("ClimMobTools")
 ```
 
-# Example 1: Beans data
+# Example 1: Sweetpotato data
+
+We first read the .csv file with the function `read.csv()`
+
+```{r eval=TRUE, message=TRUE, echo=FALSE, include=TRUE}
+dt <- read.csv("../data/sweet_potato.csv")
+```
+
+```{r, eval=FALSE}
+dt <- read.csv("data/sweet_potato.csv")
+```
+
+```{r}
+str(dt)
+```
+
+For this analysis we keep only the Ghana data
+
+```{r}
+dt <- dt[dt$country == "Ghana", ]
+```
+
+And then we transform the tricot rankings into a PlackettLuce rankings. We use the overall preference on the genotypes
+
+```{r}
+
+R <- rank_tricot(data = dt,
+                 items = c("item_A","item_B","item_C"),
+                 input = c("best_overall","worst_overall"))
 
 
+head(R)
+
+```
 
 
+## Fit a PlackettLuce model
 
-# Example 2: Sweetpotato data
+To fit a PlackettLuce model we use the function `PlackettLuce()`. To know more about the model read the paper by [Turner et al (2020)](https://doi.org/10.1007/s00180-020-00959-3).
+
+```{r}
+mod <- PlackettLuce(R)
+
+summary(mod)
+```
+
+We define a reference item (variety). This helps us in identifying whether a widely used variety is better of worse than the new genotypes.
+
+```{r}
+ref = "SARI-Nyumingre (Obare)"
+
+summary(mod, ref = ref)
+```
+
+The model coefficients can be obtained using the function `coef()`. The first example take the coefficients in the log format, the log-worth. If we apply the argument `log = FALSE` this returns the probability of winning (worth). The sum of these probabilities should always be 1.
+
+```{r}
+coef(mod, ref = ref)
+
+coef(mod, log = FALSE)
+
+sum(coef(mod, log = FALSE))
+```
+
+We can plot these coefficients with the error bars using the function `qvcalc()`
+
+```{r}
+plot(qvcalc(mod, ref = ref))
+```
+
+## PlackettLuce with covariates
+
+With the function `pltree()` we can fit a PlackettLuce model recursively to find instabilities in the rankings that are represented by a set of covariates. The rankings are recursively split into two groups according to their value on covariates whose values vary between rankings, and a PlackettLuce model is fitted to each subgroup formed. The method proceeds as follows:
+
+1. Fit a Plackett–Luce model to the full data.
+
+2. Assess the stability of the worth parameters with respect to each covariate. That is, test for a structural change in the ranking-level contributions to the first derivatives of the log-likelihood, when these contributions are ordered by covariate values.
+
+3. If there is significant instability, split the full data by the covariate with the strongest instability, using the cut-point that gives the highest improvement in model fit.
+
+4. Repeat steps 1-3 for each subgroup until there are no more significant instabilities, or a split produces a subgroup below a given size threshold.
+
+We select the covariates age and gender. We coerce age into integer and gender into factor.
+
+```{r}
+sel <- c("age", "gender")
+
+covar <- dt[sel]
+
+covar$age <- as.integer(covar$age)
+covar$gender <- as.factor(covar$gender)
+```
+
+Let's check for NA's in these variables. We use the function `apply()` to run over the rows of covar an look for the sum of NAs in each row. A value of 0 means no NA, which is what we are looking for.
+
+```{r}
+sum(is.na(covar))
+
+keep <- apply(covar, 1, function(x){
+  sum(is.na(x))
+})
+
+keep <- keep == 0
+```
+
+Apply the filter in the dt and covar data frames
+
+```{r}
+covar <- covar[keep, ]
+dt <- dt[keep, ]
+
+```
+
+We then use the function `rank_tricot()` to create the `grouped_rankings`. This allows the rankings to be linked to the covariates and fit the model using `pltree()`. The rankings are combined with the covariates using the function `cbind()`.
+
+```{r}
+G <- rank_tricot(data = dt,
+                 items = c("item_A","item_B","item_C"),
+                 input = c("best_overall","worst_overall"),
+                 group = TRUE)
+
+pldt <- cbind(G, covar)
+
+head(pldt)
+```
+
+Now we can fit the tree. The first argument is the formula with response variable being the first followed by the covariates indicated with a `~` sign.
+
+```{r}
+pl <- pltree(G ~ age + gender, data = pldt, alpha = 0.1)
+
+summary(pl)
+```
+
+The rankings split with the covariate age. We can use the function `plot()` to see the tree.
+
+```{r}
+plot(pl)
+```
+
+The function `plot_tree()` is still under development in the package gosset. With this function we can see the tree with the points and error bar.
+
+```{r}
+gosset:::plot_tree(pl)
+```
+
+We can also extract the coefficients from each node like before. 
+
+```{r}
+coef(pl)
+```
+
+The model can also be used for predictions with the function `predict()`
+
+```{r}
+head(predict(pl))
+```
+
+
+# Example 2: Breadwheat data
+
+The breadwheat is a dataframe from tricot trials of bread wheat (*Triticum aestivum* L.) varieties in India. This is a sample data available at [ClimMob](https://climmob.net/) that can be fetched using the function `getDataCM()` from ClimMobTools.
+
+```{r fetch}
+key <- "d39a3c66-5822-4930-a9d4-50e7da041e77"
+
+dt <- getDataCM(key = key,
+                project = "breadwheat",
+                pivot.wider = TRUE)
+
+
+names(dt)
+
+```
+
+We remove some strings in the colunm names 
+
+```{r}
+names(dt) <- gsub("firstassessment_|package_|lastassessment_|registration_", 
+                  "",
+                  names(dt))
+
+```
+
+
+## Tricot data with environmental covariates
+
+We can add environmental covariates from package [climatrends](https://CRAN.R-project.org/package=climatrends). Here we use the function `temperature()` to compute the temperature indices for the first 80 days after planting. We first convert the planting dates into an object of class `Date`, and the longitude and latitude into `numeric`.
+
+```{r temperature}
+dt$plantingdate <- as.Date(dt$plantingdate, format = "%Y-%m-%d")
+dt$lon <- as.numeric(dt$farm_geo_longitude)
+dt$lat <- as.numeric(dt$farm_geo_latitude)
+
+temp <- temperature(dt[, c("lon","lat")], 
+                    day.one = dt[, "plantingdate"],
+                    span = 80)
+
+temp
+```
+
+
+We build the farmers' rankings as an object of class 'grouped_rankings'. 
+
+
+```{r plrankings}
+G <- rank_tricot(dt, 
+                 items = c("item_A","item_B","item_C"), 
+                 input = c("overallperf_pos","overallperf_neg"),
+                 group = TRUE)
+
+dat <- cbind(G, temp)
+
+```
+
+We fit the model using the function `pltree()`
+
+```{r}
+pl <- pltree(G ~ maxNT + maxDT, 
+             data = dat)
+
+summary(pl)
+
+gosset:::plot_tree(pl)
+```
 
 ----
 

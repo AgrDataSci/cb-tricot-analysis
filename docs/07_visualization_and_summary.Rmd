@@ -2,7 +2,9 @@
 title: "Visualization and summary"
 author: "Kauê de Sousa"
 date: 2021
-output: html_document
+output: 
+  html_document:
+    toc: true
 ---
 
 ```{r setup, include=FALSE}
@@ -15,13 +17,6 @@ source("https://raw.githubusercontent.com/AgrDataSci/ClimMob-analysis/master/R/f
 ```
 
 ----
-
-# Content
-
-* Example 1: Bean trial 
-
-
-* Example 2: Sweet potato trial
 
 # Set up
 
