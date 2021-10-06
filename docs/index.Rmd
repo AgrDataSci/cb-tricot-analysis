@@ -2,7 +2,7 @@
 title: "Analysis of ranking data from crowdsourcing citizen-science"
 author:
 - name: Kauê de Sousa, PhD
-  affiliation: Department of Agricultural Sciences, Høgskolen i Innlandet, Hamar, Norway <br> Digital Inclusion, Alliance of Bioversity International and CIAT, Rome, Italy
+  affiliation: Department of Agricultural Sciences, Høgskolen i Innlandet, Hamar, Norway <br> Digital Inclusion, Alliance of Bioversity International and CIAT, Montpellier, France
 output: html_document
 ---
 
@@ -14,7 +14,7 @@ Welcome to the course "Analysis of ranking data from crowdsourcing citizen-scien
 
 The course starts from the understanding that you have a notion on the [R](https://www.r-project.org/) programming language. If you are new in R or never used it, I recommend that you take (and re-take as many times as needed) the "[Short introduction to R](03_introduction_to_R.html)". There you will find the elements that you need to learn for this course and some extra reading to make you ready.
 
-You read the materials and watch the lectures in your own time. Your team leader (or contact point) will probably set a deadline for your group to complete the training. After that the team leader will organize with me a Q&A section where all the group participants will meet (on-line). In this Q&A we will work with your own tricot data (if any) and talk about your questions.
+You read the materials and watch the lectures in your own time. Your team leader (or contact point) will probably set a deadline for your group to complete the course. After that the team leader will organize with me a Q&A section where all the group participants will meet (on-line). In this Q&A we will work with your tricot data (if any) and talk about your questions.
 
 Good luck!
 
@@ -47,7 +47,7 @@ To download the videos of lectures 1 to 8 click [here](https://uinnlandet-my.sha
 
 ## Comments and questions 
 
-Please send your comments and/or questions via an issue in the GitHub repository [here](https://github.com/AgrDataSci/cb-tricot-analysis/issues) (preferably) or alternatively to my email <k.desousa@cgiar.org>.
+Please send your comments and/or questions via an issue in the GitHub repository [here](https://github.com/AgrDataSci/cb-tricot-analysis/issues) (preferably) or alternatively to my email <k.desousa(at)cgiar.org>.
 
 Check the News on this course and troubleshooting [here](news.html).
 
