@@ -6,45 +6,107 @@ library("qvcalc")
 library("gosset")
 library("patchwork")
 library("ggparty")
-library("climatrends")
-library("nasapower")
-library("ClimMobTools")
+
 
 # ................................
 # ................................
 # Example 1: Sweetpotato data
-list.files("data")
+list.files("data", full.names = TRUE)
+
 
 dt <- read.csv("data/sweet_potato.csv")
 
-# keep only the Ghana data
-keep <- dt$country == "Ghana"
+str(dt)
+
+
+# keep only the Uganda data
+keep <- dt$country == "Uganda"
 
 table(keep)
 
 dt <- dt[keep, ]
 
+dim(dt)
 
-head(dt)
+tail(dt)
+
+# Kendall correlation
+#       varA varB varC
+over <- c(1,  2,  3)
+tast <- c(1,  3,  2)
+smel <- c(1,  2,  3)
+
+cor(over, smel, method = "kendall")
+
+###
 
 # tricot into a PlackettLuce rankings
 R <- rank_tricot(data = dt,
                  items = c("item_A","item_B","item_C"),
                  input = c("best_overall","worst_overall"))
 
+# rank for taste
+names(dt)
+RT <- rank_tricot(data = dt,
+                  items = c("item_A","item_B","item_C"),
+                  input = c("best_taste", "worst_taste"))
 
+RT
+names(dt)
+# rank for color
+RC <- rank_tricot(data = dt,
+                  items = c("item_A","item_B","item_C") ,
+                  input = c("best_color", "worst_color"))
 
-head(R)
+# # for loop
+# traits <- c("overall", "color", "taste")
+# Rlist <- list()
+# for (i in seq_along(traits)) {
+#   R_i <- rank_tricot(dt,
+#                      items = c("item_A","item_B","item_C"),
+#                      input = paste0(c("best_", "worst_"), traits[i]))
+#   Rlist[[i]] <- R_i
+# }
+# 
+# Rlist
 
-?PlackettLuce
+R
+RT
+RC
 
+kendallTau(R, RT)
+
+kendallTau(R, RC)
+
+Rlist <- list(Taste = RT, 
+              Color = RC)
+traits <- c("Taste", "Color")
+ag <- summarise_agreement(R, Rlist, traits)
+
+plot(ag) +
+  theme_bw()
+##
+modC <- PlackettLuce(RC)
+
+ref <- "Ejumula"
+
+summary(modC, ref = ref)
+
+qv <- qvcalc(modC, ref = ref)
+
+plot(qv)
+
+# taste
+ref <- "Ejumula"
+modT <- PlackettLuce(RT)
+
+summary(modT, ref = ref)
+
+qvT <- qvcalc(modT, ref = ref)
+plot(qvT)
+
+# overall 
 mod <- PlackettLuce(R)
-
-summary(mod)
-
-unique(dt$item_A)
-
-ref = "SARI-Nyumingre (Obare)"
 
 summary(mod, ref = ref)
 
@@ -52,27 +114,15 @@ qv <- qvcalc(mod, ref = ref)
 
 plot(qv)
 
-coef(mod, ref = ref)
+sort(coef(mod, log = FALSE))
 
-mycoefs <- coef(mod, log = FALSE)
-
-sum(mycoefs)
-
-sort(mycoefs)
-
+sum(coef(mod, log = FALSE))
 
 capture.output(summary(mod),
                coef(mod), 
                file = "output/summary_mod_sweetpotato.txt")
 
 
-png(filename = "output/qvcalc_mod_sweetpotato.png",
-    width = 30,
-    height = 15,
-    units = "cm",
-    res = 400)
-plot(qv)
-dev.off()
 
 
 # ................................
