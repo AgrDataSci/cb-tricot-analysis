@@ -2,29 +2,8 @@
 title: "Project-oriented workflow"
 author: "Kauê de Sousa"
 date: 2021
-output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      ratio: "16:9"
+output: html_document
 ---
-
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-library("xaringanExtra")
-htmltools::tagList(
-  xaringanExtra::use_clipboard(
-    button_text = "<i class=\"fa fa-clipboard\"></i>",
-    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
-    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
-  ),
-  rmarkdown::html_dependency_font_awesome()
-)
-```
-
 
 # Content
 

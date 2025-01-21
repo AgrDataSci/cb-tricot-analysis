@@ -1,14 +1,14 @@
 ---
-title: "Analysis of ranking data from crowdsourcing citizen-science"
+title: "Analysis of experimental data from decentralized trials supported by citizen science"
 author:
 - name: Kauê de Sousa, PhD
-  affiliation: Department of Agricultural Sciences, Høgskolen i Innlandet, Hamar, Norway <br> Digital Inclusion, Alliance of Bioversity International and CIAT, Montpellier, France
+  affiliation: Department of Agricultural Sciences, University of Inland Norway, Hamar, Norway <br> Digital Inclusion, Alliance of Bioversity International and CIAT, Montpellier, France
 output: html_document
 ---
 
 -----
 
-Welcome to the course "Analysis of ranking data from crowdsourcing citizen-science". The aim of this course is that you learn the principles to analyse the ranking data generated through the triadic comparison of technologies (tricot) approach data.  
+Welcome to the course "Analysis of experimental data from decentralized trials supported by citizen science". The aim of this course is that you learn the principles to analyse the ranking data generated through the triadic comparison of technologies (tricot) approach data.  
 
 ## How this course works
 
